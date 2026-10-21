@@ -12,6 +12,6 @@ Az adatbázis és a feltöltött CMS-adatok külön kerülnek átadásra; titkos
 
 ## Publikálás
 
-A GitHub Pages csak statikus fájlokat szolgál ki. Ez az alkalmazás Payload CMS-t, adatbázist, szerveroldali Next.js útvonalakat és API-kat használ, ezért a GitHub Pages önmagában nem tudja futtatni. A javasolt hoszt Railway; a beállítási állapotot és az adatátvitel követelményeit a [GITHUB_PAGES_ELŐKÉSZÍTÉS.md](GITHUB_PAGES_ELŐKÉSZÍTÉS.md) tartalmazza.
+A GitHub Pages csak statikus fájlokat szolgál ki. Ez az alkalmazás Payload CMS-t, adatbázist, szerveroldali Next.js útvonalakat és API-kat használ, ezért ott nem futtatható. A jelenlegi telepítési cél a Render; a beállítási állapotot és az adatátvitel követelményeit a [GITHUB_PAGES_ELŐKÉSZÍTÉS.md](GITHUB_PAGES_ELŐKÉSZÍTÉS.md) tartalmazza.
 
-Az éles webhelyre nem történt publikálás.
+Az alkalmazás forrása a nyilvános GitHub-repóban van. Az éles weboldal Renderen még nincs működő állapotban.
