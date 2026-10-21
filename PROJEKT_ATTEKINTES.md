@@ -88,3 +88,10 @@
 - A gyökérlayout minden oldalt dinamikus szerveroldali renderelésre állít; a production build sikeres volt nem létező tesztadatbázis-útvonallal.
 - A módosítás GitHubra került; Render automatikusan új buildet indít. A szolgáltatás Free csomagú, tartós lemez és production adatátvitel még nincs.
 - Az űrlap CMS-be ment, e-mail értesítést nem küld.
+
+## Render build és futás (2026-10-21)
+
+- A javított GitHub-commit Render buildje sikeres; Next.js szerver elindult, Render „Your service is live” állapotot jelzett.
+- Az első kéréskor a Payload nem találta a SQLite adatbázist (`./data/rm-hungary.db`), ezért az oldal jelenleg nem használható. A szolgáltatás fájlrendszere alapértelmezetten ideiglenes.
+- Szükséges: fizetős web service + tartós lemez `/var/data` csatolással; változók `DATABASE_URL=file:/var/data/rm-hungary.db`, `MEDIA_UPLOAD_DIR=/var/data/uploads`; a helyi adatcsomag átvitele és runtime ellenőrzés.
+- A Render ára a jelenlegi hivatalos díjszabás szerint legalább $7/hó web service + $0.25/GB/hó lemez. A fizetős bővítést a felhasználónak kell véglegesítenie.
