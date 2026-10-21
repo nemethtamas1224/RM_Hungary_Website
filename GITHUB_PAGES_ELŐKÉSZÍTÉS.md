@@ -25,3 +25,9 @@
 - A Render-kompatibilis kód a `MEDIA_UPLOAD_DIR` változóval tartós lemezre irányíthatja a feltöltéseket; a root layout dinamikus, így build közben nem igényel adatbázist.
 - A Render build a `PAYLOAD_SECRET`-et már elfogadta, majd megbukott hiányzó SQLite fájlon. A root layout javítása helyben sikeresen buildelt szándékosan nem létező adatbázis-útvonallal.
 - A forrás commit/push és az új Render build ellenőrzése következik. Tartós lemez és adatcsomag átvitele szükséges az élő tartalomhoz; Render csomagváltás vagy fizetős tárhely nincs engedélyezve.
+
+## Render futási ellenőrzés (2026-10-21)
+
+- A javított build sikeres és a Next.js szerver elindult, de a weboldal első kérésénél hiányzó `./data/rm-hungary.db` miatt hibázik.
+- A Render fájlrendszere tartós lemez nélkül ideiglenes. Éles adatbázishoz és képfeltöltésekhez fizetős web service és `/var/data` lemez szükséges.
+- Ellenőrzött díjszabás: a web service legkisebb fizetős csomagja $7/hó; lemez $0.25/GB/hó. A bővítés és adatcsomag átvitel még nincs elvégezve.
