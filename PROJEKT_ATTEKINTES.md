@@ -84,7 +84,7 @@
 - A szerver a Railway/Render által megadott porton, `0.0.0.0` címen indul. Tiszta telepítés és build sikeres.
 - Adatbázis másolata a gitignore-olt `data/rm-hungary.db` fájlban; titkok, mentések és lokális DB nem kerülhetnek GitHubra.
 - A Railway 2026-10-21-én API/build üzemzavar miatt nem volt használható; a felhasználó Render web service-t indított.
-- Render első buildje hiányzó `PAYLOAD_SECRET` miatt leállt; a felhasználó a titkot Renderben beállította. A szolgáltatás Free csomagú, tartós lemez még nincs.
-- Renderhez a `MEDIA_UPLOAD_DIR` útvonal és dinamikus sitemap kódmódosítása elkészült helyben; `pnpm build` sikeres. Következő: commit/push, Render build ellenőrzése, fizetős csomag/tartós lemez, adatcsomag átvitele és URL ellenőrzése.
-- A Render build megkapta a `PAYLOAD_SECRET`-et, de statikus generálás közben adatbázist igényelt. A gyökérlayout most minden oldalt dinamikus szerveroldali renderelésre állít; ezt lokálisan sikeres production build igazolta hiányzó adatbázis-útvonallal is. A módosítás feltöltése és új Render build még hátravan.
+- Render először hiányzó `PAYLOAD_SECRET` miatt állt le; ezt a felhasználó beállította. A következő build már elfogadta a titkot, de build közben SQLite adatbázist igényelt.
+- A gyökérlayout minden oldalt dinamikus szerveroldali renderelésre állít; a production build sikeres volt nem létező tesztadatbázis-útvonallal.
+- A módosítás GitHubra került; Render automatikusan új buildet indít. A szolgáltatás Free csomagú, tartós lemez és production adatátvitel még nincs.
 - Az űrlap CMS-be ment, e-mail értesítést nem küld.
