@@ -5,7 +5,7 @@
 - **Másolat helye:** `/Users/nemethtamas/RM/RM_Hungary_Website/`; az eredeti Codex-munkamappa változatlan maradt.
 - **Másolat tartalma:** Next.js/Payload forrás, publikus képek és projektleírások. Kihagyott helyi elemek: adatbázisok, mentések, `.env.local`, build-cache, függőségek és auditanyagok.
 - **GitHub Pages állapot:** nem publikálható közvetlenül, mert az alkalmazás szerveroldali CMS-t, adatbázist és API-kat igényel. Nincs Pages workflow hozzáadva. Lásd `GITHUB_PAGES_ELŐKÉSZÍTÉS.md`.
-- **GitHub:** a forrás privát repo-ban van: `nemethtamas1224/RM_Hungary_Website`. Éles publikálás még nem történt.
+- **GitHub:** a forrás a felhasználó jóváhagyásával nyilvános repo-ban van: `nemethtamas1224/RM_Hungary_Website`.
 
 - **Cél:** A rmhungary.hu magyar tartalmának és termékkatalógusának modern, mobilbarát újraépítése Payload adminnal, az eredeti tartalom és URL-ek megőrzésével.
 - **Munkamappa:** `work/rm-hungary-website/`; a szinkronizált `sources/` és `/Users/nemethtamas/Projects/RM/` csak olvasható forrás.
@@ -86,4 +86,5 @@
 - A Railway 2026-10-21-én API/build üzemzavar miatt nem volt használható; a felhasználó Render web service-t indított.
 - Render első buildje hiányzó `PAYLOAD_SECRET` miatt leállt; a felhasználó a titkot Renderben beállította. A szolgáltatás Free csomagú, tartós lemez még nincs.
 - Renderhez a `MEDIA_UPLOAD_DIR` útvonal és dinamikus sitemap kódmódosítása elkészült helyben; `pnpm build` sikeres. Következő: commit/push, Render build ellenőrzése, fizetős csomag/tartós lemez, adatcsomag átvitele és URL ellenőrzése.
+- A Render build megkapta a `PAYLOAD_SECRET`-et, de statikus generálás közben adatbázist igényelt. A gyökérlayout most minden oldalt dinamikus szerveroldali renderelésre állít; ezt lokálisan sikeres production build igazolta hiányzó adatbázis-útvonallal is. A módosítás feltöltése és új Render build még hátravan.
 - Az űrlap CMS-be ment, e-mail értesítést nem küld.
