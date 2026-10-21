@@ -79,3 +79,8 @@
 - A Render már megkapja a `PAYLOAD_SECRET`-et. Az adatbázis nélküli production build miatt a gyökérlayout dinamikus szerveroldali renderelésre váltott; a production build hiányzó tesztadatbázissal sikeres.
 - A javítás GitHubra került, Render automatikusan új buildet indít. A szolgáltatás Free csomagú; tartós lemez, adatbázis/média átvitele és éles URL-ellenőrzés még hátravan.
 - Ajánlatkérési e-mail értesítés nincs beállítva; az űrlap a CMS-be ment.
+
+## Render runtime (2026-10-21)
+
+- A production build sikeres, a szolgáltatás elindult. Az éles oldalkérés hiányzó SQLite adatbázis miatt hibázik (`./data/rm-hungary.db`).
+- Tartós lemez nélkül a Render fájlrendszere ideiglenes. Fizetős szolgáltatás/lemez, adatbázis és feltöltések átvitele, majd URL-ellenőrzés szükséges. A fizetős bővítés még nem történt meg.
