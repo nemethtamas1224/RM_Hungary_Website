@@ -4,7 +4,7 @@
 
 - A friss forrásmappa másolata: `/Users/nemethtamas/RM/RM_Hungary_Website/`.
 - `.env.local`, adatbázisok, mentések, `node_modules`, `.next` és auditfájlok kihagyva. A helyi `.gitignore` tiltja a környezet- és adatbázisfájlok verziókezelését.
-- A projekt Next.js/Payload szerveroldali funkciókat használ, ezért GitHub Pages nem tudja közvetlenül futtatni. A forrás privát GitHub-repóban van; Pages workflow vagy éles publikáció nincs.
+- A projekt Next.js/Payload szerveroldali funkciókat használ, ezért GitHub Pages nem tudja közvetlenül futtatni. A forrás a felhasználó jóváhagyásával nyilvános GitHub-repóban van; Pages workflow nincs.
 - A következő lépéshez választani kell: statikus CMS nélküli export, vagy szerveroldali tárhely a Payload megőrzésére. Részletek: `GITHUB_PAGES_ELŐKÉSZÍTÉS.md`.
 
 - **Goal:** Rebuild the Hungarian RM website and migrate its full product catalog into editable records without losing the original content. Production remains untouched.
@@ -76,6 +76,6 @@
 - Friss SQLite adatbázis külön, Git-ignorált `data/rm-hungary.db` másolatban van; a publikus feltöltések a `public/uploads/` mappában maradnak.
 - Tiszta `pnpm install --frozen-lockfile` és `pnpm build` sikeres, a helyi adatbázismásolattal.
 - A Railway 2026-10-21-én üzemzavar miatt nem volt használható; helyette a felhasználó Render web service-t indított.
-- Render első buildje a hiányzó `PAYLOAD_SECRET` miatt leállt; a felhasználó a Render Environment felületén beállította a titkot. A szolgáltatás Free csomagú, tartós lemez még nincs.
-- Renderhez a `MEDIA_UPLOAD_DIR` útvonal és dinamikus sitemap módosítása elkészült helyben; `pnpm build` sikeres. GitHubra commit/push, új Render build, fizetős csomag/tartós lemez beállítása, adatcsomag átvitele és az URL ellenőrzése van hátra.
+- A Render már megkapja a `PAYLOAD_SECRET`-et. Az adatbázis nélküli production build miatt a gyökérlayout dinamikus szerveroldali renderelésre váltott; a production build hiányzó tesztadatbázissal sikeres.
+- A javítás GitHubra került, Render automatikusan új buildet indít. A szolgáltatás Free csomagú; tartós lemez, adatbázis/média átvitele és éles URL-ellenőrzés még hátravan.
 - Ajánlatkérési e-mail értesítés nincs beállítva; az űrlap a CMS-be ment.
