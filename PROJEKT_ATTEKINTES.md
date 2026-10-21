@@ -5,7 +5,7 @@
 - **Másolat helye:** `/Users/nemethtamas/RM/RM_Hungary_Website/`; az eredeti Codex-munkamappa változatlan maradt.
 - **Másolat tartalma:** Next.js/Payload forrás, publikus képek és projektleírások. Kihagyott helyi elemek: adatbázisok, mentések, `.env.local`, build-cache, függőségek és auditanyagok.
 - **GitHub Pages állapot:** nem publikálható közvetlenül, mert az alkalmazás szerveroldali CMS-t, adatbázist és API-kat igényel. Nincs Pages workflow hozzáadva. Lásd `GITHUB_PAGES_ELŐKÉSZÍTÉS.md`.
-- **Következő lépés:** döntés statikus, CMS nélkül exportált oldalról vagy Payloadot futtató szerveroldali tárhelyről. Nincs GitHubra feltöltés vagy éles publikálás.
+- **GitHub:** a forrás privát repo-ban van: `nemethtamas1224/RM_Hungary_Website`. Éles publikálás még nem történt.
 
 - **Cél:** A rmhungary.hu magyar tartalmának és termékkatalógusának modern, mobilbarát újraépítése Payload adminnal, az eredeti tartalom és URL-ek megőrzésével.
 - **Munkamappa:** `work/rm-hungary-website/`; a szinkronizált `sources/` és `/Users/nemethtamas/Projects/RM/` csak olvasható forrás.
@@ -81,8 +81,9 @@
 ## Élesítés előkészítése (2026-10-21)
 
 - Feltöltési forrás: `/Users/nemethtamas/RM/RM_Hungary_Website/`; a lokális kóddal megegyezik.
-- A Railway-kompatibilis indítás `0.0.0.0` címet és dinamikus `$PORT`-ot használ. Tiszta telepítés és build sikeres.
+- A szerver a Railway/Render által megadott porton, `0.0.0.0` címen indul. Tiszta telepítés és build sikeres.
 - Adatbázis másolata a gitignore-olt `data/rm-hungary.db` fájlban; titkok, mentések és lokális DB nem kerülhetnek GitHubra.
-- A Railway bejelentkezett vezérlőpultja 2026-10-21-én API/build üzemzavart jelzett. Projektet és telepítést emiatt még nem hoztunk létre.
-- Hátra van: biztonságos GitHub repo feltöltés, Railway szolgáltatás és titkok, adatbázis/média tartós kötetre másolása, ideiglenes URL ellenőrzése és domain.
+- A Railway 2026-10-21-én API/build üzemzavar miatt nem volt használható; a felhasználó Render web service-t indított.
+- Render első buildje hiányzó `PAYLOAD_SECRET` miatt leállt; a felhasználó a titkot Renderben beállította. A szolgáltatás Free csomagú, tartós lemez még nincs.
+- Renderhez a `MEDIA_UPLOAD_DIR` útvonal és dinamikus sitemap kódmódosítása elkészült helyben; `pnpm build` sikeres. Következő: commit/push, Render build ellenőrzése, fizetős csomag/tartós lemez, adatcsomag átvitele és URL ellenőrzése.
 - Az űrlap CMS-be ment, e-mail értesítést nem küld.
