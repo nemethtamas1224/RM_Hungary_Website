@@ -1,9 +1,0 @@
-import Image from 'next/image'
-export const sections=[
- {title:'Fix vázas kialakítás',image:'fx-magnum-1.jpg',alt:'RM Magnum FX fix vázas csévélődob',text:'Az FX család fix vázas csévélődobokat foglal magában. A Magnum FX és 900 FX modellek gyártói bemutatója a gépek saját képeit és méretrajzait tartalmazza.'},
- {title:'Hatékony tömlőfeltekerés',image:'Turbina.png',alt:'RM Turbo reduktor',text:'Az RM Turbo reduktor és a víz-bypass rendszer a tömlő feltekerését szolgálja, és csökkenti az öntözési szakasz nyomásveszteségét. Az egyes modellek felszereltsége eltérhet.'},
- {title:'Stabil, iránytartó szórófejkocsi',image:'Ruota.png',alt:'RM szórófejtartó kocsi kereke',text:'A szórófejtartó kocsik több kerékelrendezéssel készülhetnek. A kormányozható pneumatikus kerék követi a letekert tömlő útvonalát; a kerékagyak kúpgörgős csapágyazásúak.'},
- {title:'Tartós felületvédelem',image:'Verniciatura-www-Italiano.png',alt:'RM korrózióálló festési folyamat',text:'A festett alkatrészek előkészítését elektrosztatikus, többrétegű festés követi. A vízbázisú festéket 60 °C-os kemencés stabilizálás egészíti ki.'},
-]
-export const familyOverviewData={title:'Az RM FX család bemutatása',intro:['Az RM FX fix vázas csévélődob-család két itt bemutatott modellje a Magnum FX és a 900 FX. A részletes bemutató összefoglalja a közös konstrukciós jellemzőket.']}
-export default function FXFamilyOverview(){return <section className="gx-family-overview"><h2>Az RM FX család bemutatása</h2><div className="gx-family-sections">{sections.map((s,i)=><article className="gx-family-section" key={s.title}><div className="gx-family-copy"><p className="eyebrow">{String(i+1).padStart(2,'0')}</p><h3>{s.title}</h3><p>{s.text}</p></div><figure><Image src={'/images/rm-products/'+s.image} alt={s.alt} width={700} height={420}/></figure></article>)}</div></section>}

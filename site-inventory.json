@@ -1,0 +1,1605 @@
+{
+  "generatedAt": "2026-10-22",
+  "htmlPageCount": 255,
+  "searchIndexCount": 255,
+  "sourceRecordCounts": {
+    "pages": 6,
+    "categories": 67,
+    "products": 137,
+    "product_families": 32,
+    "manufacturers": 12,
+    "news": 10,
+    "references": 16,
+    "media": 681,
+    "used_machines": 0,
+    "legacy_mappings": 20
+  },
+  "localDocumentReplacements": {
+    "https://www.decloet.it/pdf/depliant_2TTH_eng.pdf": "/documents/decloet/decloet-2tth-eng.pdf",
+    "https://www.decloet.it/pdf/depliant_raccoglitrice_ita.pdf": "/documents/decloet/decloet-harvesters-ita.pdf"
+  },
+  "routes": [
+    {
+      "route": "/",
+      "file": "index.html",
+      "title": "Forgalmazott termékeink",
+      "characters": 2828
+    },
+    {
+      "route": "/ajanlatkeres",
+      "file": "ajanlatkeres/index.html",
+      "title": "Ajánlatkérés",
+      "characters": 218
+    },
+    {
+      "route": "/kapcsolat",
+      "file": "kapcsolat/index.html",
+      "title": "Kapcsolat",
+      "characters": 338
+    },
+    {
+      "route": "/szolgaltatasok",
+      "file": "szolgaltatasok/index.html",
+      "title": "Szolgáltatásaink",
+      "characters": 366
+    },
+    {
+      "route": "/termekek",
+      "file": "termekek/index.html",
+      "title": "Termékek",
+      "characters": 1279
+    },
+    {
+      "route": "/termekek/energiaellatas",
+      "file": "termekek/energiaellatas/index.html",
+      "title": "Energiaellátás",
+      "characters": 597
+    },
+    {
+      "route": "/termekek/energiaellatas/dizel-aramfejlesztok",
+      "file": "termekek/energiaellatas/dizel-aramfejlesztok/index.html",
+      "title": "Dízelmotoros áramfejlesztők",
+      "characters": 313
+    },
+    {
+      "route": "/termekek/energiaellatas/dizel-aramfejlesztok/starpower-aramfejlesztok",
+      "file": "termekek/energiaellatas/dizel-aramfejlesztok/starpower-aramfejlesztok/index.html",
+      "title": "Starpower áramfejlesztők",
+      "characters": 461
+    },
+    {
+      "route": "/termekek/energiaellatas/dizel-aramfejlesztok/starpower-aramfejlesztok/starpower-dizel-aramfejlesztok",
+      "file": "termekek/energiaellatas/dizel-aramfejlesztok/starpower-aramfejlesztok/starpower-dizel-aramfejlesztok/index.html",
+      "title": "Starpower dízelmotoros áramfejlesztők",
+      "characters": 1165
+    },
+    {
+      "route": "/termekek/energiaellatas/dizel-aramfejlesztok/starpower-aramfejlesztok/starpower-eco",
+      "file": "termekek/energiaellatas/dizel-aramfejlesztok/starpower-aramfejlesztok/starpower-eco/index.html",
+      "title": "Starpower ECO sorozat",
+      "characters": 832
+    },
+    {
+      "route": "/termekek/energiaellatas/traktorhajtasu-aramfejlesztok",
+      "file": "termekek/energiaellatas/traktorhajtasu-aramfejlesztok/index.html",
+      "title": "Traktorhajtású áramfejlesztők",
+      "characters": 299
+    },
+    {
+      "route": "/termekek/energiaellatas/traktorhajtasu-aramfejlesztok/starpower-pto-generators",
+      "file": "termekek/energiaellatas/traktorhajtasu-aramfejlesztok/starpower-pto-generators/index.html",
+      "title": "Starpower kardánhajtású generátorok",
+      "characters": 415
+    },
+    {
+      "route": "/termekek/energiaellatas/traktorhajtasu-aramfejlesztok/starpower-pto-generators/starpower-gte",
+      "file": "termekek/energiaellatas/traktorhajtasu-aramfejlesztok/starpower-pto-generators/starpower-gte/index.html",
+      "title": "Starpower GTE sorozat",
+      "characters": 1017
+    },
+    {
+      "route": "/termekek/energiaellatas/traktorhajtasu-aramfejlesztok/starpower-pto-generators/starpower-gts",
+      "file": "termekek/energiaellatas/traktorhajtasu-aramfejlesztok/starpower-pto-generators/starpower-gts/index.html",
+      "title": "Starpower GTS sorozat",
+      "characters": 1022
+    },
+    {
+      "route": "/termekek/energiaellatas/aramfejleszto-kivitelek",
+      "file": "termekek/energiaellatas/aramfejleszto-kivitelek/index.html",
+      "title": "Áramfejlesztő kivitelek",
+      "characters": 142
+    },
+    {
+      "route": "/termekek/energiaellatas/napelemes-rendszerek",
+      "file": "termekek/energiaellatas/napelemes-rendszerek/index.html",
+      "title": "Napelemes rendszerek",
+      "characters": 304
+    },
+    {
+      "route": "/termekek/energiaellatas/napelemes-rendszerek/starpower-apollo",
+      "file": "termekek/energiaellatas/napelemes-rendszerek/starpower-apollo/index.html",
+      "title": "Starpower Apollo napelemes szivattyúrendszer",
+      "characters": 691
+    },
+    {
+      "route": "/termekek/energiaellatas/napelemes-rendszerek/starpower-apollo/apollo-napelemes-vizszivattyu",
+      "file": "termekek/energiaellatas/napelemes-rendszerek/starpower-apollo/apollo-napelemes-vizszivattyu/index.html",
+      "title": "Apollo napelemes vízszivattyúrendszer",
+      "characters": 821
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok",
+      "file": "termekek/ontozesi-tartozekok/index.html",
+      "title": "Öntözési tartozékok és víztechnika",
+      "characters": 870
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/tapoldatozas",
+      "file": "termekek/ontozesi-tartozekok/tapoldatozas/index.html",
+      "title": "Tápoldatozás",
+      "characters": 310
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/tapoldatozas/tapoldatozo-tartaly",
+      "file": "termekek/ontozesi-tartozekok/tapoldatozas/tapoldatozo-tartaly/index.html",
+      "title": "Tápoldatozó tartály",
+      "characters": 1214
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/ontozofejek-vizagyuk",
+      "file": "termekek/ontozesi-tartozekok/ontozofejek-vizagyuk/index.html",
+      "title": "Öntözőfejek és vízágyúk",
+      "characters": 146
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/index.html",
+      "title": "Vízszűrők",
+      "characters": 385
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/index.html",
+      "title": "Giunti szűrőrendszerek",
+      "characters": 1765
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtroquarz-2c-manual",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtroquarz-2c-manual/index.html",
+      "title": "FILTROQUARZ 2C kézi visszamosással",
+      "characters": 1019
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/homokszuro-hidrociklon",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/homokszuro-hidrociklon/index.html",
+      "title": "Homokszűrő-hidrociklon",
+      "characters": 1009
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/acelbetetes-halos-szuro",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/acelbetetes-halos-szuro/index.html",
+      "title": "Acélbetétes hálós szűrő",
+      "characters": 1340
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/kvarchomokos-kozegszuro",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/kvarchomokos-kozegszuro/index.html",
+      "title": "Kvarchomok töltetű közegszűrő",
+      "characters": 1445
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-wire-lock",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-wire-lock/index.html",
+      "title": "Wire Lock gyorsnyitó szűrőfedél",
+      "characters": 650
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/automata-szuroallomas",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/automata-szuroallomas/index.html",
+      "title": "Automata szűrőállomás",
+      "characters": 800
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtrosfer",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtrosfer/index.html",
+      "title": "FILTROSFER hálós szűrő",
+      "characters": 976
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtrofly",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtrofly/index.html",
+      "title": "FILTROFLY hálós szűrő",
+      "characters": 941
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtroquarz-2c-auto",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtroquarz-2c-auto/index.html",
+      "title": "FILTROQUARZ 2C automatikus visszamosással",
+      "characters": 1380
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtroquarz-1c-auto",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/giunti-szuro-rendszerek/giunti-filtroquarz-1c-auto/index.html",
+      "title": "FILTROQUARZ 1C automatikus mosóteleppel",
+      "characters": 1413
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/vizszurok/valducci-szurok",
+      "file": "termekek/ontozesi-tartozekok/vizszurok/valducci-szurok/index.html",
+      "title": "Valducci szűrők",
+      "characters": 608
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok",
+      "file": "termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/index.html",
+      "title": "Gyorscsatlakozók és idomok",
+      "characters": 245
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok",
+      "file": "termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/index.html",
+      "title": "Giunti gyorscsatlakozók",
+      "characters": 923
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/anfor-fejes-idom",
+      "file": "termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/anfor-fejes-idom/index.html",
+      "title": "Anfor fejes idom",
+      "characters": 447
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/mellini-fejes-idom",
+      "file": "termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/mellini-fejes-idom/index.html",
+      "title": "Mellini fejes idom",
+      "characters": 298
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/ferrari-gombcsatlakozo",
+      "file": "termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/ferrari-gombcsatlakozo/index.html",
+      "title": "Ferrari gömbcsatlakozó",
+      "characters": 595
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/bauer-fejes-idom",
+      "file": "termekek/ontozesi-tartozekok/gyorscsatlakozok-idomok/giunti-gyorscsatlakozok/bauer-fejes-idom/index.html",
+      "title": "Bauer fejes idom",
+      "characters": 396
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/csovek-vezetekek",
+      "file": "termekek/ontozesi-tartozekok/csovek-vezetekek/index.html",
+      "title": "Csövek és vezetékek",
+      "characters": 480
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/csovek-vezetekek/horganyzott-gerincvezetek",
+      "file": "termekek/ontozesi-tartozekok/csovek-vezetekek/horganyzott-gerincvezetek/index.html",
+      "title": "Horganyzott gerincvezeték",
+      "characters": 418
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/csovek-vezetekek/layflat-szalagcso",
+      "file": "termekek/ontozesi-tartozekok/csovek-vezetekek/layflat-szalagcso/index.html",
+      "title": "Layflat szalagcső",
+      "characters": 974
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/ontozesi-automatika",
+      "file": "termekek/ontozesi-tartozekok/ontozesi-automatika/index.html",
+      "title": "Öntözési automatika és szerelvények",
+      "characters": 161
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/szelepek-hidranok",
+      "file": "termekek/ontozesi-tartozekok/szelepek-hidranok/index.html",
+      "title": "Szelepek és hidránsok",
+      "characters": 320
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/szelepek-hidranok/tolozar",
+      "file": "termekek/ontozesi-tartozekok/szelepek-hidranok/tolozar/index.html",
+      "title": "Tolózár",
+      "characters": 197
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/szelepek-hidranok/valducci-hidransfejek",
+      "file": "termekek/ontozesi-tartozekok/szelepek-hidranok/valducci-hidransfejek/index.html",
+      "title": "Valducci",
+      "characters": 240
+    },
+    {
+      "route": "/termekek/ontozesi-tartozekok/szelepek-hidranok/valducci-hidransfejek/hidransfej",
+      "file": "termekek/ontozesi-tartozekok/szelepek-hidranok/valducci-hidransfejek/hidransfej/index.html",
+      "title": "Hidránsfej",
+      "characters": 1432
+    },
+    {
+      "route": "/termekek/szivattyuk",
+      "file": "termekek/szivattyuk/index.html",
+      "title": "Szivattyúk és szivattyúegységek",
+      "characters": 1022
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/index.html",
+      "title": "Egyéb centrifugál- és nagynyomású szivattyúk",
+      "characters": 1484
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/rovatti-tk-europa",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/rovatti-tk-europa/index.html",
+      "title": "Rovatti TK Europa",
+      "characters": 1138
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/starpower-elektromos-szivattyuegysegek",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/starpower-elektromos-szivattyuegysegek/index.html",
+      "title": "Starpower elektromos szivattyúegységek",
+      "characters": 667
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/starpower-elektromos-szivattyuegysegek/starpower-elektromos-szivattyuegysegek",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/starpower-elektromos-szivattyuegysegek/starpower-elektromos-szivattyuegysegek/index.html",
+      "title": "Starpower elektromos szivattyúegységek",
+      "characters": 636
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/rovatti-skd-europa",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/rovatti-skd-europa/index.html",
+      "title": "Rovatti SKD Europa",
+      "characters": 1232
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/rovatti-sk",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/rovatti-sk/index.html",
+      "title": "Rovatti SK",
+      "characters": 1182
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/rovatti-sk-europa",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/rovatti-sk-europa/index.html",
+      "title": "Rovatti SK Europa",
+      "characters": 1202
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/rovatti-fk-europa",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/rovatti-fk-europa/index.html",
+      "title": "Rovatti FK Europa",
+      "characters": 1146
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/rovatti-t",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/rovatti-t/index.html",
+      "title": "Rovatti T",
+      "characters": 1104
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/rovatti-fk",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/rovatti-fk/index.html",
+      "title": "Rovatti FK",
+      "characters": 1090
+    },
+    {
+      "route": "/termekek/szivattyuk/egyeb-szivattyuk/rovatti-tk",
+      "file": "termekek/szivattyuk/egyeb-szivattyuk/rovatti-tk/index.html",
+      "title": "Rovatti TK",
+      "characters": 1114
+    },
+    {
+      "route": "/termekek/szivattyuk/kistermeloi-szivattyuk",
+      "file": "termekek/szivattyuk/kistermeloi-szivattyuk/index.html",
+      "title": "Kistermelői szivattyúk",
+      "characters": 232
+    },
+    {
+      "route": "/termekek/szivattyuk/kistermeloi-szivattyuk/rovatti-midy",
+      "file": "termekek/szivattyuk/kistermeloi-szivattyuk/rovatti-midy/index.html",
+      "title": "Midy",
+      "characters": 232
+    },
+    {
+      "route": "/termekek/szivattyuk/kistermeloi-szivattyuk/rovatti-midy/midi-szivattyu",
+      "file": "termekek/szivattyuk/kistermeloi-szivattyuk/rovatti-midy/midi-szivattyu/index.html",
+      "title": "Rovatti Midy szivattyú",
+      "characters": 1397
+    },
+    {
+      "route": "/termekek/szivattyuk/szivattyuvezerles",
+      "file": "termekek/szivattyuk/szivattyuvezerles/index.html",
+      "title": "Szivattyúvezérlés és automatizálás",
+      "characters": 308
+    },
+    {
+      "route": "/termekek/szivattyuk/szivattyuvezerles/mpi-350",
+      "file": "termekek/szivattyuk/szivattyuvezerles/mpi-350/index.html",
+      "title": "MPI 350 vezérlőegység",
+      "characters": 912
+    },
+    {
+      "route": "/termekek/szivattyuk/motoros-szivattyuegysegek",
+      "file": "termekek/szivattyuk/motoros-szivattyuegysegek/index.html",
+      "title": "Dízelmotoros szivattyúegységek",
+      "characters": 482
+    },
+    {
+      "route": "/termekek/szivattyuk/motoros-szivattyuegysegek/starpower-motoros-kuplungegysegek",
+      "file": "termekek/szivattyuk/motoros-szivattyuegysegek/starpower-motoros-kuplungegysegek/index.html",
+      "title": "Starpower motoros kuplungegységek",
+      "characters": 1067
+    },
+    {
+      "route": "/termekek/szivattyuk/motoros-szivattyuegysegek/starpower-motoros-kuplungegysegek/starpower-motoros-kuplungegysegek",
+      "file": "termekek/szivattyuk/motoros-szivattyuegysegek/starpower-motoros-kuplungegysegek/starpower-motoros-kuplungegysegek/index.html",
+      "title": "Starpower motoros kuplungegységek",
+      "characters": 991
+    },
+    {
+      "route": "/termekek/szivattyuk/motoros-szivattyuegysegek/rm-szivattyuegysegek",
+      "file": "termekek/szivattyuk/motoros-szivattyuegysegek/rm-szivattyuegysegek/index.html",
+      "title": "RM Motoros szivattyúegységek",
+      "characters": 2800
+    },
+    {
+      "route": "/termekek/szivattyuk/motoros-szivattyuegysegek/rm-szivattyuegysegek/rm-motoros-szivattyuegyseg",
+      "file": "termekek/szivattyuk/motoros-szivattyuegysegek/rm-szivattyuegysegek/rm-motoros-szivattyuegyseg/index.html",
+      "title": "RM motoros szivattyúegység",
+      "characters": 2781
+    },
+    {
+      "route": "/termekek/szivattyuk/motoros-szivattyuegysegek/starpower-szivattyuegysegek",
+      "file": "termekek/szivattyuk/motoros-szivattyuegysegek/starpower-szivattyuegysegek/index.html",
+      "title": "Starpower motoros szivattyúegységek",
+      "characters": 265
+    },
+    {
+      "route": "/termekek/szivattyuk/motoros-szivattyuegysegek/starpower-szivattyuegysegek/starpower-motoros-szivattyuegyseg",
+      "file": "termekek/szivattyuk/motoros-szivattyuegysegek/starpower-szivattyuegysegek/starpower-motoros-szivattyuegyseg/index.html",
+      "title": "Starpower motoros szivattyúegység",
+      "characters": 1308
+    },
+    {
+      "route": "/termekek/szivattyuk/tobblepcsos-centrifugal",
+      "file": "termekek/szivattyuk/tobblepcsos-centrifugal/index.html",
+      "title": "Többlépcsős centrifugálszivattyúk",
+      "characters": 298
+    },
+    {
+      "route": "/termekek/szivattyuk/tobblepcsos-centrifugal/rovatti-centrifugal",
+      "file": "termekek/szivattyuk/tobblepcsos-centrifugal/rovatti-centrifugal/index.html",
+      "title": "Rovatti centrifugálszivattyúk",
+      "characters": 455
+    },
+    {
+      "route": "/termekek/szivattyuk/tobblepcsos-centrifugal/rovatti-centrifugal/rovatti-mek-europa",
+      "file": "termekek/szivattyuk/tobblepcsos-centrifugal/rovatti-centrifugal/rovatti-mek-europa/index.html",
+      "title": "Rovatti MEK Europa",
+      "characters": 1153
+    },
+    {
+      "route": "/termekek/szivattyuk/tobblepcsos-centrifugal/rovatti-centrifugal/rovatti-sne",
+      "file": "termekek/szivattyuk/tobblepcsos-centrifugal/rovatti-centrifugal/rovatti-sne/index.html",
+      "title": "Rovatti SNE",
+      "characters": 1139
+    },
+    {
+      "route": "/termekek/szivattyuk/kutszivattyuk",
+      "file": "termekek/szivattyuk/kutszivattyuk/index.html",
+      "title": "Kútszivattyúk és merülőszivattyúk",
+      "characters": 308
+    },
+    {
+      "route": "/termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk",
+      "file": "termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/index.html",
+      "title": "Rovatti kútszivattyúk",
+      "characters": 1117
+    },
+    {
+      "route": "/termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-e",
+      "file": "termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-e/index.html",
+      "title": "Rovatti E sorozat",
+      "characters": 1116
+    },
+    {
+      "route": "/termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-ecx",
+      "file": "termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-ecx/index.html",
+      "title": "Rovatti ECX",
+      "characters": 1328
+    },
+    {
+      "route": "/termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-erc",
+      "file": "termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-erc/index.html",
+      "title": "Rovatti ERC",
+      "characters": 1328
+    },
+    {
+      "route": "/termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-ercx",
+      "file": "termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-ercx/index.html",
+      "title": "Rovatti ERCX",
+      "characters": 1329
+    },
+    {
+      "route": "/termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-ec",
+      "file": "termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-ec/index.html",
+      "title": "Rovatti EC",
+      "characters": 1327
+    },
+    {
+      "route": "/termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-4es",
+      "file": "termekek/szivattyuk/kutszivattyuk/rovatti-kutszivattyuk/rovatti-4es/index.html",
+      "title": "Rovatti 4ES",
+      "characters": 1130
+    },
+    {
+      "route": "/termekek/szivattyuk/fuggoleges-szivattyuk",
+      "file": "termekek/szivattyuk/fuggoleges-szivattyuk/index.html",
+      "title": "Függőleges szivattyúk",
+      "characters": 266
+    },
+    {
+      "route": "/termekek/szivattyuk/fuggoleges-szivattyuk/rovatti-fuggoleges",
+      "file": "termekek/szivattyuk/fuggoleges-szivattyuk/rovatti-fuggoleges/index.html",
+      "title": "Rovatti függőleges szivattyúk",
+      "characters": 488
+    },
+    {
+      "route": "/termekek/szivattyuk/fuggoleges-szivattyuk/rovatti-fuggoleges/rovatti-v",
+      "file": "termekek/szivattyuk/fuggoleges-szivattyuk/rovatti-fuggoleges/rovatti-v/index.html",
+      "title": "Rovatti V sorozat",
+      "characters": 1216
+    },
+    {
+      "route": "/termekek/szivattyuk/fuggoleges-szivattyuk/rovatti-fuggoleges/rovatti-mekv-europa",
+      "file": "termekek/szivattyuk/fuggoleges-szivattyuk/rovatti-fuggoleges/rovatti-mekv-europa/index.html",
+      "title": "Rovatti MEKV Europa",
+      "characters": 1123
+    },
+    {
+      "route": "/termekek/ontozogepek",
+      "file": "termekek/ontozogepek/index.html",
+      "title": "Öntözőgépek és öntözőrendszerek",
+      "characters": 807
+    },
+    {
+      "route": "/termekek/ontozogepek/linearis",
+      "file": "termekek/ontozogepek/linearis/index.html",
+      "title": "Lineáris öntözőrendszerek",
+      "characters": 465
+    },
+    {
+      "route": "/termekek/ontozogepek/linearis/vodar-linearis",
+      "file": "termekek/ontozogepek/linearis/vodar-linearis/index.html",
+      "title": "Vodar lineáris rendszerek",
+      "characters": 168
+    },
+    {
+      "route": "/termekek/ontozogepek/linearis/lindsay-omega-linearis",
+      "file": "termekek/ontozogepek/linearis/lindsay-omega-linearis/index.html",
+      "title": "Lindsay Europe OMEGA lineáris-körforgó rendszer",
+      "characters": 270
+    },
+    {
+      "route": "/termekek/ontozogepek/linearis/lindsay-omega-linearis/vodar-9510pl-omega",
+      "file": "termekek/ontozogepek/linearis/lindsay-omega-linearis/vodar-9510pl-omega/index.html",
+      "title": "Lindsay Europe OMEGA 9510PL",
+      "characters": 1270
+    },
+    {
+      "route": "/termekek/ontozogepek/korforgo",
+      "file": "termekek/ontozogepek/korforgo/index.html",
+      "title": "Körforgó öntözőrendszerek",
+      "characters": 457
+    },
+    {
+      "route": "/termekek/ontozogepek/korforgo/vodar-korforgo",
+      "file": "termekek/ontozogepek/korforgo/vodar-korforgo/index.html",
+      "title": "Vodar körforgó rendszerek",
+      "characters": 300
+    },
+    {
+      "route": "/termekek/ontozogepek/korforgo/vodar-korforgo/vodar-center-pivot",
+      "file": "termekek/ontozogepek/korforgo/vodar-korforgo/vodar-center-pivot/index.html",
+      "title": "Vodar Center Pivot",
+      "characters": 1444
+    },
+    {
+      "route": "/termekek/ontozogepek/korforgo/lindsay-zimmatic-center-pivot",
+      "file": "termekek/ontozogepek/korforgo/lindsay-zimmatic-center-pivot/index.html",
+      "title": "Zimmatic körforgó öntözőrendszerek",
+      "characters": 1134
+    },
+    {
+      "route": "/termekek/ontozogepek/korforgo/lindsay-zimmatic-center-pivot/lindsay-zimmatic-7500p",
+      "file": "termekek/ontozogepek/korforgo/lindsay-zimmatic-center-pivot/lindsay-zimmatic-7500p/index.html",
+      "title": "Zimmatic 7500P",
+      "characters": 1054
+    },
+    {
+      "route": "/termekek/ontozogepek/korforgo/lindsay-zimmatic-center-pivot/lindsay-zimmatic-8500p",
+      "file": "termekek/ontozogepek/korforgo/lindsay-zimmatic-center-pivot/lindsay-zimmatic-8500p/index.html",
+      "title": "Zimmatic 8500P",
+      "characters": 1006
+    },
+    {
+      "route": "/termekek/ontozogepek/korforgo/lindsay-zimmatic-center-pivot/vodar-9500p",
+      "file": "termekek/ontozogepek/korforgo/lindsay-zimmatic-center-pivot/vodar-9500p/index.html",
+      "title": "Zimmatic 9500P",
+      "characters": 1228
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos",
+      "file": "termekek/ontozogepek/csevelodobos/index.html",
+      "title": "Csévélődobos öntözőgépek",
+      "characters": 370
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/index.html",
+      "title": "RM XJM",
+      "characters": 1691
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm/rm-800-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/rm-800-xjm/index.html",
+      "title": "RM 800 XJM",
+      "characters": 833
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm/rm-giant-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/rm-giant-xjm/index.html",
+      "title": "RM GIANT XJM",
+      "characters": 1775
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm/rm-magnum-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/rm-magnum-xjm/index.html",
+      "title": "RM Magnum XJM",
+      "characters": 904
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm/rm-900-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/rm-900-xjm/index.html",
+      "title": "RM 900 XJM",
+      "characters": 1992
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm/rm-840-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/rm-840-xjm/index.html",
+      "title": "RM 840 XJM",
+      "characters": 1734
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm/rm-major-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/rm-major-xjm/index.html",
+      "title": "RM Major XJM",
+      "characters": 1995
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm/rm-700-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/rm-700-xjm/index.html",
+      "title": "RM 700 XJM",
+      "characters": 1775
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xjm/rm-600-xjm",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xjm/rm-600-xjm/index.html",
+      "title": "RM 600 XJM",
+      "characters": 813
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-magnum",
+      "file": "termekek/ontozogepek/csevelodobos/rm-magnum/index.html",
+      "title": "RM FX",
+      "characters": 1172
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-magnum/rm-magnum-fx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-magnum/rm-magnum-fx/index.html",
+      "title": "RM Magnum FX",
+      "characters": 2046
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-magnum/rm-magnum",
+      "file": "termekek/ontozogepek/csevelodobos/rm-magnum/rm-magnum/index.html",
+      "title": "RM Magnum",
+      "characters": 520
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-magnum/rm-900-fx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-magnum/rm-900-fx/index.html",
+      "title": "RM 900 FX",
+      "characters": 1811
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/valducci-irromotor",
+      "file": "termekek/ontozogepek/csevelodobos/valducci-irromotor/index.html",
+      "title": "Irromotor",
+      "characters": 1195
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/valducci-irromotor/valducci-irromotor-vi-sorozat",
+      "file": "termekek/ontozogepek/csevelodobos/valducci-irromotor/valducci-irromotor-vi-sorozat/index.html",
+      "title": "Valducci Irromotor Vi hidraulikus sorozat",
+      "characters": 1106
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/valducci-irromotor/valducci-irromotor-new-mini",
+      "file": "termekek/ontozogepek/csevelodobos/valducci-irromotor/valducci-irromotor-new-mini/index.html",
+      "title": "Valducci Irromotor New Mini",
+      "characters": 553
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/valducci-irromotor/valducci-irromotor-v-sorozat",
+      "file": "termekek/ontozogepek/csevelodobos/valducci-irromotor/valducci-irromotor-v-sorozat/index.html",
+      "title": "Valducci Irromotor V sorozat",
+      "characters": 1269
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/index.html",
+      "title": "RM GX",
+      "characters": 6976
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-560-gx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-560-gx/index.html",
+      "title": "RM 560 GX",
+      "characters": 1780
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-1100-gx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-1100-gx/index.html",
+      "title": "RM 1100 GX",
+      "characters": 1918
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-540-gx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-540-gx/index.html",
+      "title": "RM 540 GX",
+      "characters": 1686
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-790-gx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-790-gx/index.html",
+      "title": "RM 790 GX",
+      "characters": 1951
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-570-gx-evo",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-570-gx-evo/index.html",
+      "title": "RM 570 GX EVO",
+      "characters": 1777
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-581-gx-evo",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-581-gx-evo/index.html",
+      "title": "RM 581 GX EVO",
+      "characters": 1918
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-690-gx-evo",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-690-gx-evo/index.html",
+      "title": "RM 690 GX EVO",
+      "characters": 2021
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-890-gx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-890-gx/index.html",
+      "title": "RM 890 GX",
+      "characters": 2210
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-gx/rm-990-gx",
+      "file": "termekek/ontozogepek/csevelodobos/rm-gx/rm-990-gx/index.html",
+      "title": "RM 990 GX",
+      "characters": 2111
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xj",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xj/index.html",
+      "title": "RM JX",
+      "characters": 1738
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xj/rm-800-xj",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xj/rm-800-xj/index.html",
+      "title": "RM 800 XJ",
+      "characters": 1827
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xj/rm-840-xj",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xj/rm-840-xj/index.html",
+      "title": "RM 840 XJ",
+      "characters": 1750
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xj/rm-major-evo",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xj/rm-major-evo/index.html",
+      "title": "RM Major EVO",
+      "characters": 1450
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xj/rm-600-xj",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xj/rm-600-xj/index.html",
+      "title": "RM 600 XJ",
+      "characters": 1783
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xj/rm-magnum-giant",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xj/rm-magnum-giant/index.html",
+      "title": "RM GIANT",
+      "characters": 1705
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xj/rm-700-xj",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xj/rm-700-xj/index.html",
+      "title": "RM 700 XJ",
+      "characters": 1747
+    },
+    {
+      "route": "/termekek/ontozogepek/csevelodobos/rm-xj/rm-900-xj-evo",
+      "file": "termekek/ontozogepek/csevelodobos/rm-xj/rm-900-xj-evo/index.html",
+      "title": "RM 900 XJ EVO",
+      "characters": 1809
+    },
+    {
+      "route": "/termekek/ontozogepek/csepegteto-mikro",
+      "file": "termekek/ontozogepek/csepegteto-mikro/index.html",
+      "title": "Csepegtető és mikroöntöző rendszerek",
+      "characters": 297
+    },
+    {
+      "route": "/termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto",
+      "file": "termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/index.html",
+      "title": "Giunti csepegtető és mikroöntözés",
+      "characters": 845
+    },
+    {
+      "route": "/termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/hydrog-csepegtetoszalag",
+      "file": "termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/hydrog-csepegtetoszalag/index.html",
+      "title": "HydroG csepegtetőszalag",
+      "characters": 362
+    },
+    {
+      "route": "/termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/hydroplus-csepegtetoszalag",
+      "file": "termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/hydroplus-csepegtetoszalag/index.html",
+      "title": "Hydroplus csepegtetőszalag",
+      "characters": 6130
+    },
+    {
+      "route": "/termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/csepegteto-csovek",
+      "file": "termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/csepegteto-csovek/index.html",
+      "title": "Csepegtető csövek",
+      "characters": 853
+    },
+    {
+      "route": "/termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/szetszerelheto-csepegtetogomba",
+      "file": "termekek/ontozogepek/csepegteto-mikro/giunti-csepegteto/szetszerelheto-csepegtetogomba/index.html",
+      "title": "Szétszerelhető csepegtetőgomba",
+      "characters": 800
+    },
+    {
+      "route": "/termekek/ontozogepek/ontozoszarnyak",
+      "file": "termekek/ontozogepek/ontozoszarnyak/index.html",
+      "title": "Öntözőszárnyak és konzolok",
+      "characters": 236
+    },
+    {
+      "route": "/termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak",
+      "file": "termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/index.html",
+      "title": "RM öntözőszárnyak",
+      "characters": 555
+    },
+    {
+      "route": "/termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/condor",
+      "file": "termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/condor/index.html",
+      "title": "Condor",
+      "characters": 122
+    },
+    {
+      "route": "/termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/liquo",
+      "file": "termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/liquo/index.html",
+      "title": "Liquò",
+      "characters": 687
+    },
+    {
+      "route": "/termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/boom",
+      "file": "termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/boom/index.html",
+      "title": "Boom",
+      "characters": 1012
+    },
+    {
+      "route": "/termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/albatros",
+      "file": "termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/albatros/index.html",
+      "title": "Albatros",
+      "characters": 914
+    },
+    {
+      "route": "/termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/falcon",
+      "file": "termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/falcon/index.html",
+      "title": "Falcon",
+      "characters": 1015
+    },
+    {
+      "route": "/termekek/dohanytermesztes",
+      "file": "termekek/dohanytermesztes/index.html",
+      "title": "Dohánytermesztés és növénytermesztés gépei",
+      "characters": 1169
+    },
+    {
+      "route": "/termekek/dohanytermesztes/novenyapolas",
+      "file": "termekek/dohanytermesztes/novenyapolas/index.html",
+      "title": "Növényápoló és sorközművelő gépek",
+      "characters": 305
+    },
+    {
+      "route": "/termekek/dohanytermesztes/novenyapolas/oliveragro-rotosark",
+      "file": "termekek/dohanytermesztes/novenyapolas/oliveragro-rotosark/index.html",
+      "title": "Oliver Agro Rotosark",
+      "characters": 287
+    },
+    {
+      "route": "/termekek/dohanytermesztes/novenyapolas/oliveragro-rotosark/oliveragro-rotosark",
+      "file": "termekek/dohanytermesztes/novenyapolas/oliveragro-rotosark/oliveragro-rotosark/index.html",
+      "title": "Oliver Agro Rotosark",
+      "characters": 3395
+    },
+    {
+      "route": "/termekek/dohanytermesztes/permetezogepek",
+      "file": "termekek/dohanytermesztes/permetezogepek/index.html",
+      "title": "Permetezőgépek",
+      "characters": 561
+    },
+    {
+      "route": "/termekek/dohanytermesztes/permetezogepek/permetezogepek",
+      "file": "termekek/dohanytermesztes/permetezogepek/permetezogepek/index.html",
+      "title": "Permetezőgépek",
+      "characters": 336
+    },
+    {
+      "route": "/termekek/dohanytermesztes/permetezogepek/de-cloet-onjaro-permetezok",
+      "file": "termekek/dohanytermesztes/permetezogepek/de-cloet-onjaro-permetezok/index.html",
+      "title": "De Cloet önjáró permetezők",
+      "characters": 257
+    },
+    {
+      "route": "/termekek/dohanytermesztes/permetezogepek/de-cloet-onjaro-permetezok/de-cloet-sprayer",
+      "file": "termekek/dohanytermesztes/permetezogepek/de-cloet-onjaro-permetezok/de-cloet-sprayer/index.html",
+      "title": "De Cloet Sprayer",
+      "characters": 2015
+    },
+    {
+      "route": "/termekek/dohanytermesztes/permetezogepek/mantovani-permetezogepek",
+      "file": "termekek/dohanytermesztes/permetezogepek/mantovani-permetezogepek/index.html",
+      "title": "Mantovani permetezőgépek",
+      "characters": 282
+    },
+    {
+      "route": "/termekek/dohanytermesztes/permetezogepek/mantovani-permetezogepek/mantovani-1400-vv",
+      "file": "termekek/dohanytermesztes/permetezogepek/mantovani-permetezogepek/mantovani-1400-vv/index.html",
+      "title": "Mantovani 1400 VV",
+      "characters": 256
+    },
+    {
+      "route": "/termekek/dohanytermesztes/permetezogepek/mantovani-permetezogepek/mantovani-idrojet-125",
+      "file": "termekek/dohanytermesztes/permetezogepek/mantovani-permetezogepek/mantovani-idrojet-125/index.html",
+      "title": "Mantovani IDROJET 125",
+      "characters": 246
+    },
+    {
+      "route": "/termekek/dohanytermesztes/magveto-gepek",
+      "file": "termekek/dohanytermesztes/magveto-gepek/index.html",
+      "title": "Magvető gépek",
+      "characters": 252
+    },
+    {
+      "route": "/termekek/dohanytermesztes/magveto-gepek/da-ros-seeders",
+      "file": "termekek/dohanytermesztes/magveto-gepek/da-ros-seeders/index.html",
+      "title": "Da Ros tálcás magvetőgépek",
+      "characters": 184
+    },
+    {
+      "route": "/termekek/dohanytermesztes/magveto-gepek/da-ros-seeders/da-ros-talcas-magvetogep",
+      "file": "termekek/dohanytermesztes/magveto-gepek/da-ros-seeders/da-ros-talcas-magvetogep/index.html",
+      "title": "Da Ros tálcás magvetőgép",
+      "characters": 575
+    },
+    {
+      "route": "/termekek/dohanytermesztes/palantaulteto-gepek",
+      "file": "termekek/dohanytermesztes/palantaulteto-gepek/index.html",
+      "title": "Palántaültető gépek",
+      "characters": 291
+    },
+    {
+      "route": "/termekek/dohanytermesztes/palantaulteto-gepek/palantaulteto-gepek",
+      "file": "termekek/dohanytermesztes/palantaulteto-gepek/palantaulteto-gepek/index.html",
+      "title": "Palántaültető gépek",
+      "characters": 312
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohany-szaritas",
+      "file": "termekek/dohanytermesztes/dohany-szaritas/index.html",
+      "title": "Dohány- és gyógynövényszárító berendezések",
+      "characters": 417
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohany-szaritas/dohany-szarito-kamrak",
+      "file": "termekek/dohanytermesztes/dohany-szaritas/dohany-szarito-kamrak/index.html",
+      "title": "Dohányszárító kamrák",
+      "characters": 484
+    },
+    {
+      "route": "/termekek/dohanytermesztes/talajelokeszites",
+      "file": "termekek/dohanytermesztes/talajelokeszites/index.html",
+      "title": "Talajelőkészítő és bakhátművelő gépek",
+      "characters": 348
+    },
+    {
+      "route": "/termekek/dohanytermesztes/talajelokeszites/bakhathuzo-gepek",
+      "file": "termekek/dohanytermesztes/talajelokeszites/bakhathuzo-gepek/index.html",
+      "title": "Bakháthúzó gépek",
+      "characters": 550
+    },
+    {
+      "route": "/termekek/dohanytermesztes/zold-dohany-feldolgozas",
+      "file": "termekek/dohanytermesztes/zold-dohany-feldolgozas/index.html",
+      "title": "Zölddohány-feldolgozás és anyagmozgatás",
+      "characters": 323
+    },
+    {
+      "route": "/termekek/dohanytermesztes/zold-dohany-feldolgozas/zold-dohany-feldolgozo-gepek",
+      "file": "termekek/dohanytermesztes/zold-dohany-feldolgozas/zold-dohany-feldolgozo-gepek/index.html",
+      "title": "Zölddohány-feldolgozó gépek",
+      "characters": 391
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanytetejezes",
+      "file": "termekek/dohanytermesztes/dohanytetejezes/index.html",
+      "title": "Dohánytetejező gépek",
+      "characters": 234
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanytetejezes/dohanytetejezo-gepek",
+      "file": "termekek/dohanytermesztes/dohanytetejezes/dohanytetejezo-gepek/index.html",
+      "title": "Dohánytetejező gépek",
+      "characters": 302
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanybetakaritas",
+      "file": "termekek/dohanytermesztes/dohanybetakaritas/index.html",
+      "title": "Dohánybetakarító gépek",
+      "characters": 535
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanybetakaritas/de-cloet-dohanybetakaritok",
+      "file": "termekek/dohanytermesztes/dohanybetakaritas/de-cloet-dohanybetakaritok/index.html",
+      "title": "De Cloet dohánybetakarító gépek",
+      "characters": 1338
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanybetakaritas/de-cloet-dohanybetakaritok/de-cloet-2th-ii",
+      "file": "termekek/dohanytermesztes/dohanybetakaritas/de-cloet-dohanybetakaritok/de-cloet-2th-ii/index.html",
+      "title": "De Cloet 2TH-II",
+      "characters": 1199
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanybetakaritas/de-cloet-dohanybetakaritok/de-cloet-1th4",
+      "file": "termekek/dohanytermesztes/dohanybetakaritas/de-cloet-dohanybetakaritok/de-cloet-1th4/index.html",
+      "title": "De Cloet 1TH4",
+      "characters": 1076
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanybetakaritas/de-cloet-dohanybetakaritok/de-cloet-2tth",
+      "file": "termekek/dohanytermesztes/dohanybetakaritas/de-cloet-dohanybetakaritok/de-cloet-2tth/index.html",
+      "title": "De Cloet 2TTH",
+      "characters": 1386
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanybetakaritas/mantovani-dohanybetakaritok",
+      "file": "termekek/dohanytermesztes/dohanybetakaritas/mantovani-dohanybetakaritok/index.html",
+      "title": "Mantovani dohánybetakarító gépek",
+      "characters": 199
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanybetakaritas/mantovani-dohanybetakaritok/mantovani-fm-156-c",
+      "file": "termekek/dohanytermesztes/dohanybetakaritas/mantovani-dohanybetakaritok/mantovani-fm-156-c/index.html",
+      "title": "Mantovani FM 156/C",
+      "characters": 247
+    },
+    {
+      "route": "/termekek/dohanytermesztes/dohanybetakaritas/dohanytoro-kombajnok",
+      "file": "termekek/dohanytermesztes/dohanybetakaritas/dohanytoro-kombajnok/index.html",
+      "title": "Dohánytörő kombájnok",
+      "characters": 340
+    },
+    {
+      "route": "/termekek/arokaso",
+      "file": "termekek/arokaso/index.html",
+      "title": "Árokásó és csatornakarbantartó gépek",
+      "characters": 404
+    },
+    {
+      "route": "/termekek/arokaso/csatornatisztito-gepek",
+      "file": "termekek/arokaso/csatornatisztito-gepek/index.html",
+      "title": "Csatornatisztító gépek",
+      "characters": 429
+    },
+    {
+      "route": "/termekek/arokaso/csatornatisztito-gepek/cosmeco-csatornatisztito",
+      "file": "termekek/arokaso/csatornatisztito-gepek/cosmeco-csatornatisztito/index.html",
+      "title": "Cosmeco csatornatisztító adapterek",
+      "characters": 1713
+    },
+    {
+      "route": "/termekek/arokaso/arokaso-arokmaro",
+      "file": "termekek/arokaso/arokaso-arokmaro/index.html",
+      "title": "Árokásó és árokmaró gépek",
+      "characters": 459
+    },
+    {
+      "route": "/termekek/arokaso/arokaso-arokmaro/cosmeco-arokmaro",
+      "file": "termekek/arokaso/arokaso-arokmaro/cosmeco-arokmaro/index.html",
+      "title": "Cosmeco árokmaró gépek",
+      "characters": 1589
+    },
+    {
+      "route": "/termekek/mezogazdasagi-tarolok",
+      "file": "termekek/mezogazdasagi-tarolok/index.html",
+      "title": "Mezőgazdasági tárolók és ívsátrak",
+      "characters": 144
+    },
+    {
+      "route": "/termekek/mezogazdasagi-tarolok/ivsatrak",
+      "file": "termekek/mezogazdasagi-tarolok/ivsatrak/index.html",
+      "title": "Mezőgazdasági ívsátrak",
+      "characters": 278
+    },
+    {
+      "route": "/termekek/mezogazdasagi-tarolok/ivsatrak/mezogazdasagi-ivsator-termek",
+      "file": "termekek/mezogazdasagi-tarolok/ivsatrak/mezogazdasagi-ivsator-termek/index.html",
+      "title": "Mezőgazdasági ívsátor",
+      "characters": 833
+    },
+    {
+      "route": "/kereses",
+      "file": "kereses/index.html",
+      "title": "Keresés",
+      "characters": 32
+    },
+    {
+      "route": "/referenciak",
+      "file": "referenciak/index.html",
+      "title": "Referenciák",
+      "characters": 2559
+    },
+    {
+      "route": "/referenciak/komplex-ontozesfejlesztes-ujkigyoson",
+      "file": "referenciak/komplex-ontozesfejlesztes-ujkigyoson/index.html",
+      "title": "Komplex öntözésfejlesztés Újkígyóson",
+      "characters": 161
+    },
+    {
+      "route": "/referenciak/takarmanykukorica-ontozesenek-fejlesztese-hajdudorogon",
+      "file": "referenciak/takarmanykukorica-ontozesenek-fejlesztese-hajdudorogon/index.html",
+      "title": "Takarmánykukorica öntözésének fejlesztése Hajdúdorogon",
+      "characters": 188
+    },
+    {
+      "route": "/referenciak/takarmanykukorica-ontozese-zsadanyban",
+      "file": "referenciak/takarmanykukorica-ontozese-zsadanyban/index.html",
+      "title": "Takarmánykukorica öntözése Zsadányban",
+      "characters": 168
+    },
+    {
+      "route": "/referenciak/komplex-ontozesfejlesztes-hajdudorogon",
+      "file": "referenciak/komplex-ontozesfejlesztes-hajdudorogon/index.html",
+      "title": "Komplex öntözésfejlesztés Hajdúdorogon",
+      "characters": 155
+    },
+    {
+      "route": "/referenciak/komplex-ontozorendszer-hajdunanason",
+      "file": "referenciak/komplex-ontozorendszer-hajdunanason/index.html",
+      "title": "Komplex öntözőrendszer Hajdúnánáson",
+      "characters": 168
+    },
+    {
+      "route": "/referenciak/hibridkukorica-ontozese-szabolcson",
+      "file": "referenciak/hibridkukorica-ontozese-szabolcson/index.html",
+      "title": "Hibridkukorica öntözése Szabolcson",
+      "characters": 173
+    },
+    {
+      "route": "/referenciak/vodar-center-ontozogepek-rakamazon",
+      "file": "referenciak/vodar-center-ontozogepek-rakamazon/index.html",
+      "title": "Vodar center öntözőgépek Rakamazon",
+      "characters": 150
+    },
+    {
+      "route": "/referenciak/takarmanykukorica-ontozese-kishodoson",
+      "file": "referenciak/takarmanykukorica-ontozese-kishodoson/index.html",
+      "title": "Takarmánykukorica öntözése Kishódoson",
+      "characters": 170
+    },
+    {
+      "route": "/referenciak/nagy-teljesitmenyu-ontozorendszer-timaron",
+      "file": "referenciak/nagy-teljesitmenyu-ontozorendszer-timaron/index.html",
+      "title": "Nagy teljesítményű öntözőrendszer Timáron",
+      "characters": 165
+    },
+    {
+      "route": "/referenciak/nagy-volumenu-ontozesfejlesztes-debrecenben",
+      "file": "referenciak/nagy-volumenu-ontozesfejlesztes-debrecenben/index.html",
+      "title": "Nagy volumenű öntözésfejlesztés Debrecenben",
+      "characters": 171
+    },
+    {
+      "route": "/referenciak/hibridkukorica-ontozesenek-fejlesztese-szabolcson",
+      "file": "referenciak/hibridkukorica-ontozesenek-fejlesztese-szabolcson/index.html",
+      "title": "Hibridkukorica öntözésének fejlesztése Szabolcson",
+      "characters": 185
+    },
+    {
+      "route": "/referenciak/vodar-korforgo-ontozoberendezes-tiszavasvariban",
+      "file": "referenciak/vodar-korforgo-ontozoberendezes-tiszavasvariban/index.html",
+      "title": "Vodar körforgó öntözőberendezés Tiszavasváriban",
+      "characters": 181
+    },
+    {
+      "route": "/referenciak/dohanytermesztes-referencia",
+      "file": "referenciak/dohanytermesztes-referencia/index.html",
+      "title": "Dohánytermesztés referencia",
+      "characters": 160
+    },
+    {
+      "route": "/referenciak/kukoricaontozes-fejlesztese-nadudvaron",
+      "file": "referenciak/kukoricaontozes-fejlesztese-nadudvaron/index.html",
+      "title": "Kukoricaöntözés fejlesztése Nádudvaron",
+      "characters": 168
+    },
+    {
+      "route": "/referenciak/zoldseg-es-gyumolcsontozes-tiszavasvariban",
+      "file": "referenciak/zoldseg-es-gyumolcsontozes-tiszavasvariban/index.html",
+      "title": "Zöldség- és gyümölcsöntözés Tiszavasváriban",
+      "characters": 172
+    },
+    {
+      "route": "/referenciak/komplex-ontozesfejlesztes-hajduboszormenyben",
+      "file": "referenciak/komplex-ontozesfejlesztes-hajduboszormenyben/index.html",
+      "title": "Komplex öntözésfejlesztés Hajdúböszörményben",
+      "characters": 172
+    },
+    {
+      "route": "/hirek",
+      "file": "hirek/index.html",
+      "title": "Hírek",
+      "characters": 1917
+    },
+    {
+      "route": "/hirek/tobb-viz-nem-mindig-jelent-tobb-profitot-az-optimalis-ontozes-a-megfelelo-dozisrol-szol",
+      "file": "hirek/tobb-viz-nem-mindig-jelent-tobb-profitot-az-optimalis-ontozes-a-megfelelo-dozisrol-szol/index.html",
+      "title": "Több víz nem mindig jelent több profitot: az optimális öntözés a megfelelő dózisról szól",
+      "characters": 240
+    },
+    {
+      "route": "/hirek/12-4-vagy-19-8-tonna-hektaronkent-egy-oteves-alfoldi-ontozesi-kiserlet-tanulsagai",
+      "file": "hirek/12-4-vagy-19-8-tonna-hektaronkent-egy-oteves-alfoldi-ontozesi-kiserlet-tanulsagai/index.html",
+      "title": "12,4 vagy 19,8 tonna hektáronként? Egy ötéves alföldi öntözési kísérlet tanulságai",
+      "characters": 237
+    },
+    {
+      "route": "/hirek/37-2-kal-tobb-kukorica-mit-jelenthet-az-ontozes-egy-aszalyos-evben",
+      "file": "hirek/37-2-kal-tobb-kukorica-mit-jelenthet-az-ontozes-egy-aszalyos-evben/index.html",
+      "title": "37,2%-kal több kukorica: mit jelenthet az öntözés egy aszályos évben?",
+      "characters": 1890
+    },
+    {
+      "route": "/hirek/modern-gepek-a-dohanytermeszteshez",
+      "file": "hirek/modern-gepek-a-dohanytermeszteshez/index.html",
+      "title": "Modern gépek a dohánytermesztéshez",
+      "characters": 187
+    },
+    {
+      "route": "/hirek/aszalyban-mutatkozik-meg-igazan-az-ontozes-erteke-termeshozam-helyett-termesbiztonsagban-i",
+      "file": "hirek/aszalyban-mutatkozik-meg-igazan-az-ontozes-erteke-termeshozam-helyett-termesbiztonsagban-i/index.html",
+      "title": "Aszályban mutatkozik meg igazán az öntözés értéke: terméshozam helyett termésbiztonságban is érdemes",
+      "characters": 243
+    },
+    {
+      "route": "/hirek/ontozorendszer-tervezes-es-szerviz-egy-kezbol",
+      "file": "hirek/ontozorendszer-tervezes-es-szerviz-egy-kezbol/index.html",
+      "title": "Öntözőrendszer-tervezés és szerviz egy kézből",
+      "characters": 200
+    },
+    {
+      "route": "/hirek/rm-my-irrigation-intelligens-ontozes-barhonnan-vezerelheto",
+      "file": "hirek/rm-my-irrigation-intelligens-ontozes-barhonnan-vezerelheto/index.html",
+      "title": "asd",
+      "characters": 149
+    },
+    {
+      "route": "/hirek/mennyit-er-1-millimeter-ontozoviz-a-viz-erteket-a-hasznosulasa-mutatja-meg",
+      "file": "hirek/mennyit-er-1-millimeter-ontozoviz-a-viz-erteket-a-hasznosulasa-mutatja-meg/index.html",
+      "title": "Mennyit ér 1 milliméter öntözővíz? A víz értékét a hasznosulása mutatja meg",
+      "characters": 217
+    },
+    {
+      "route": "/hirek/hatekony-ontozes-a-korszeru-mezogazdasagban",
+      "file": "hirek/hatekony-ontozes-a-korszeru-mezogazdasagban/index.html",
+      "title": "Hatékony öntözés a korszerű mezőgazdaságban",
+      "characters": 197
+    },
+    {
+      "route": "/hirek/ontozorendszer-mint-kockazatkezeles-miert-valik-egyre-fontosabba-a-kiszamithato-vizellatas",
+      "file": "hirek/ontozorendszer-mint-kockazatkezeles-miert-valik-egyre-fontosabba-a-kiszamithato-vizellatas/index.html",
+      "title": "Öntözőrendszer mint kockázatkezelés: miért válik egyre fontosabbá a kiszámítható vízellátás az Alföl",
+      "characters": 248
+    },
+    {
+      "route": "/rolunk",
+      "file": "rolunk/index.html",
+      "title": "Forgalmazott termékeink",
+      "characters": 2828
+    },
+    {
+      "route": "/gyartok",
+      "file": "gyartok/index.html",
+      "title": "Gyártók",
+      "characters": 128
+    },
+    {
+      "route": "/gyartok/da-ros",
+      "file": "gyartok/da-ros/index.html",
+      "title": "Da Ros",
+      "characters": 199
+    },
+    {
+      "route": "/gyartok/mantovani",
+      "file": "gyartok/mantovani/index.html",
+      "title": "Mantovani",
+      "characters": 228
+    },
+    {
+      "route": "/gyartok/lindsay",
+      "file": "gyartok/lindsay/index.html",
+      "title": "Lindsay",
+      "characters": 229
+    },
+    {
+      "route": "/gyartok/starpower",
+      "file": "gyartok/starpower/index.html",
+      "title": "Starpower",
+      "characters": 456
+    },
+    {
+      "route": "/gyartok/rovatti",
+      "file": "gyartok/rovatti/index.html",
+      "title": "Rovatti",
+      "characters": 405
+    },
+    {
+      "route": "/gyartok/giunti",
+      "file": "gyartok/giunti/index.html",
+      "title": "Giunti",
+      "characters": 264
+    },
+    {
+      "route": "/gyartok/de-cloet",
+      "file": "gyartok/de-cloet/index.html",
+      "title": "De Cloet",
+      "characters": 195
+    },
+    {
+      "route": "/gyartok/oliveragro",
+      "file": "gyartok/oliveragro/index.html",
+      "title": "Oliveragro",
+      "characters": 255
+    },
+    {
+      "route": "/gyartok/vodar",
+      "file": "gyartok/vodar/index.html",
+      "title": "Vodar",
+      "characters": 183
+    },
+    {
+      "route": "/gyartok/cosmeco",
+      "file": "gyartok/cosmeco/index.html",
+      "title": "Cosmeco",
+      "characters": 190
+    },
+    {
+      "route": "/gyartok/rm",
+      "file": "gyartok/rm/index.html",
+      "title": "RM",
+      "characters": 99
+    },
+    {
+      "route": "/gyartok/valducci",
+      "file": "gyartok/valducci/index.html",
+      "title": "Valducci",
+      "characters": 182
+    },
+    {
+      "route": "/eredeti-termekoldalak/9",
+      "file": "eredeti-termekoldalak/9/index.html",
+      "title": "Tálcás magvető gépek",
+      "characters": 1093
+    },
+    {
+      "route": "/eredeti-termekoldalak/11",
+      "file": "eredeti-termekoldalak/11/index.html",
+      "title": "Vodar telepített esőztető öntözőberendezések: Vodar lineár- és körforgó",
+      "characters": 1644
+    },
+    {
+      "route": "/eredeti-termekoldalak/7",
+      "file": "eredeti-termekoldalak/7/index.html",
+      "title": "Permetezők, önjáró gépegységek hidraulikus emelőszerkezettel",
+      "characters": 386
+    },
+    {
+      "route": "/eredeti-termekoldalak/16",
+      "file": "eredeti-termekoldalak/16/index.html",
+      "title": "Áramfejlesztők: Starpower",
+      "characters": 3673
+    },
+    {
+      "route": "/eredeti-termekoldalak/42",
+      "file": "eredeti-termekoldalak/42/index.html",
+      "title": "Cosmeco árokmaró, csatorna tisztító adapterek.",
+      "characters": 1177
+    },
+    {
+      "route": "/eredeti-termekoldalak/6",
+      "file": "eredeti-termekoldalak/6/index.html",
+      "title": "Dohány tetejező-gép",
+      "characters": 296
+    },
+    {
+      "route": "/eredeti-termekoldalak/10",
+      "file": "eredeti-termekoldalak/10/index.html",
+      "title": "RM mobil öntözőgépek: RM csévélődobok, öntöző konzolok, vízágyúk: GX, XJ ...",
+      "characters": 3558
+    },
+    {
+      "route": "/eredeti-termekoldalak/8",
+      "file": "eredeti-termekoldalak/8/index.html",
+      "title": "Palánta ültető gépek víz- és műtrágya adagolóval",
+      "characters": 360
+    },
+    {
+      "route": "/eredeti-termekoldalak/44",
+      "file": "eredeti-termekoldalak/44/index.html",
+      "title": "Oliveragro gyártmányok",
+      "characters": 418
+    },
+    {
+      "route": "/eredeti-termekoldalak/43",
+      "file": "eredeti-termekoldalak/43/index.html",
+      "title": "Betakarítógépek, palántázó gépek, hidas permetezők, stb…",
+      "characters": 347
+    },
+    {
+      "route": "/eredeti-termekoldalak/38",
+      "file": "eredeti-termekoldalak/38/index.html",
+      "title": "Vontatott 1 soros és önjáró dohánytörő kombájnok",
+      "characters": 364
+    },
+    {
+      "route": "/eredeti-termekoldalak/37",
+      "file": "eredeti-termekoldalak/37/index.html",
+      "title": "RM mobil öntözőgépek: RM csévélődobok, öntöző konzolok, vízágyúk: 600XJM, 800XJM, 900XJM, Major XJM",
+      "characters": 1605
+    },
+    {
+      "route": "/eredeti-termekoldalak/39",
+      "file": "eredeti-termekoldalak/39/index.html",
+      "title": "Dohány és gyógynövény szárító kamrák, szárítóközpontok",
+      "characters": 427
+    },
+    {
+      "route": "/eredeti-termekoldalak/48",
+      "file": "eredeti-termekoldalak/48/index.html",
+      "title": "Öntöző szárnyak",
+      "characters": 1216
+    },
+    {
+      "route": "/eredeti-termekoldalak/15",
+      "file": "eredeti-termekoldalak/15/index.html",
+      "title": "Motoros szivattyú gépegységek: RM és Starpower",
+      "characters": 3422
+    },
+    {
+      "route": "/eredeti-termekoldalak/40",
+      "file": "eredeti-termekoldalak/40/index.html",
+      "title": "Zöld dohány anyagmozgatás, szállítás, válogatás, mérés, csomagolás gépei",
+      "characters": 380
+    },
+    {
+      "route": "/eredeti-termekoldalak/47",
+      "file": "eredeti-termekoldalak/47/index.html",
+      "title": "Mezőgazdasági ívsátor",
+      "characters": 960
+    },
+    {
+      "route": "/eredeti-termekoldalak/13",
+      "file": "eredeti-termekoldalak/13/index.html",
+      "title": "Giunti szabadföldi mikro- és csepegtető öntözés, szűrők, automata szűrőállomások",
+      "characters": 6072
+    },
+    {
+      "route": "/eredeti-termekoldalak/5",
+      "file": "eredeti-termekoldalak/5/index.html",
+      "title": "Bakháthúzó és -művelő gépek, talajfertőtlenítő, műtrágyaszóró adapterek",
+      "characters": 443
+    },
+    {
+      "route": "/eredeti-termekoldalak/14",
+      "file": "eredeti-termekoldalak/14/index.html",
+      "title": "Rovatti szivattyúk",
+      "characters": 3359
+    },
+    {
+      "route": "/hasznalt-gepek",
+      "file": "hasznalt-gepek/index.html",
+      "title": "Használt gépek",
+      "characters": 157
+    },
+    {
+      "route": "/palyazat",
+      "file": "palyazat/index.html",
+      "title": "Pályázat",
+      "characters": 1855
+    }
+  ],
+  "redirectCount": 49,
+  "redirects": [
+    "/rolunk.php /rolunk 301!",
+    "/szolgaltatasok.php /szolgaltatasok 301!",
+    "/referenciak.php /referenciak 301!",
+    "/hirek.php /hirek 301!",
+    "/palyazat.php /palyazat 301!",
+    "/kapcsolat.php /kapcsolat 301!",
+    "/index.php?alkat=10 /termekek/ontozogepek/csevelodobos 301!",
+    "/index.php?alkat=48 /termekek/ontozogepek/ontozoszarnyak 301!",
+    "/index.php?alkat=37 /termekek/ontozogepek/csevelodobos 301!",
+    "/index.php?alkat=11 /termekek/ontozogepek/linearis 301!",
+    "/index.php?alkat=13 /termekek/ontozogepek/csepegteto-mikro 301!",
+    "/index.php?alkat=14 /termekek/szivattyuk/kutszivattyuk 301!",
+    "/index.php?alkat=15 /termekek/szivattyuk/motoros-szivattyuegysegek 301!",
+    "/index.php?alkat=16 /termekek/energiaellatas/dizel-aramfejlesztok 301!",
+    "/index.php?alkat=9 /termekek/dohanytermesztes/magveto-gepek 301!",
+    "/index.php?alkat=5 /termekek/dohanytermesztes/talajelokeszites 301!",
+    "/index.php?alkat=44 /termekek/dohanytermesztes/novenyapolas 301!",
+    "/index.php?alkat=8 /termekek/dohanytermesztes/palantaulteto-gepek 301!",
+    "/index.php?alkat=7 /termekek/dohanytermesztes/permetezogepek 301!",
+    "/index.php?alkat=6 /termekek/dohanytermesztes/dohanytetejezes 301!",
+    "/index.php?alkat=38 /termekek/dohanytermesztes/dohanybetakaritas 301!",
+    "/index.php?alkat=39 /termekek/dohanytermesztes/dohany-szaritas 301!",
+    "/index.php?alkat=40 /termekek/dohanytermesztes/zold-dohany-feldolgozas 301!",
+    "/index.php?alkat=42 /termekek/arokaso/arokaso-arokmaro 301!",
+    "/index.php?alkat=47 /termekek/mezogazdasagi-tarolok/ivsatrak 301!",
+    "/index.php?alkat=43 /hasznalt-gepek 301!",
+    "/rolunk /#rolunk 301!",
+    "/termekek/ontozogepek/csevelodobos/rm-nagy-teljesitmenyu /termekek/ontozogepek/csevelodobos/rm-magnum 301!",
+    "/termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/albatros-72 /termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/albatros 301!",
+    "/termekek/rm-mobil-ontozogepek-rm-csevelodobok-ontozo-konzolok-vizagyuk-gx-xj /termekek/ontozogepek/csevelodobos 301!",
+    "/termekek/ontozo-szarnyak /termekek/ontozogepek/ontozoszarnyak 301!",
+    "/termekek/rm-mobil-ontozogepek-rm-csevelodobok-ontozo-konzolok-vizagyuk-600xjm-800xjm-900xjm-major-x /termekek/ontozogepek/csevelodobos 301!",
+    "/termekek/vodar-telepitett-esozteto-ontozoberendezesek-vodar-linear-es-korforgo /termekek/ontozogepek/linearis 301!",
+    "/termekek/giunti-szabadfoldi-mikro-es-csepegteto-ontozes-szurok-automata-szuroallomasok /termekek/ontozogepek/csepegteto-mikro 301!",
+    "/termekek/rovatti-szivattyuk /termekek/szivattyuk/kutszivattyuk 301!",
+    "/termekek/motoros-szivattyu-gepegysegek-rm-es-starpower /termekek/szivattyuk/motoros-szivattyuegysegek 301!",
+    "/termekek/aramfejlesztok-starpower /termekek/energiaellatas/dizel-aramfejlesztok 301!",
+    "/termekek/talcas-magveto-gepek /termekek/dohanytermesztes/magveto-gepek 301!",
+    "/termekek/bakhathuzo-es-muvelo-gepek-talajfertotlenito-mutragyaszoro-adapterek /termekek/dohanytermesztes/talajelokeszites 301!",
+    "/termekek/oliveragro-gyartmanyok /termekek/dohanytermesztes/novenyapolas 301!",
+    "/termekek/palanta-ulteto-gepek-viz-es-mutragya-adagoloval /termekek/dohanytermesztes/palantaulteto-gepek 301!",
+    "/termekek/permetezok-onjaro-gepegysegek-hidraulikus-emeloszerkezettel /termekek/dohanytermesztes/permetezogepek 301!",
+    "/termekek/dohany-tetejezo-gep /termekek/dohanytermesztes/dohanytetejezes 301!",
+    "/termekek/vontatott-1-soros-es-onjaro-dohanytoro-kombajnok /termekek/dohanytermesztes/dohanybetakaritas 301!",
+    "/termekek/dohany-es-gyogynoveny-szarito-kamrak-szaritokozpontok /termekek/dohanytermesztes/dohany-szaritas 301!",
+    "/termekek/zold-dohany-anyagmozgatas-szallitas-valogatas-meres-csomagolas-gepei /termekek/dohanytermesztes/zold-dohany-feldolgozas 301!",
+    "/termekek/cosmeco-arokmaro-csatorna-tisztito-adapterek /termekek/arokaso/arokaso-arokmaro 301!",
+    "/termekek/mezogazdasagi-ivsator /termekek/mezogazdasagi-tarolok/ivsatrak 301!",
+    "/termekek/betakaritogepek-palantazo-gepek-hidas-permetezok-stb /hasznalt-gepek 301!"
+  ]
+}
