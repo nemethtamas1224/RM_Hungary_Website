@@ -51,7 +51,7 @@
 - A felhasználó kérése szerint a statikus webhely frissítéseit rendszeresen fel kell tölteni a GitHub `main` ágára.
 - Minden statikus oldalon megjelenik a jobb alsó, lekerekített Széchenyi-pályázati banner, amely a `/palyazat/` oldalra mutat. Az öntözésvezérlés oldal ajánlatkérő gombja piros; célja a kapcsolatoldal.
 - A Rovatti-kártyák zöld keretet kapnak `#3A9043` színnel: az érintett Rovatti családkártyák és termékkártyák, a többi márka kártyáinak stílusa nem változik.
-- Helyi böngészőben a vezérlésoldal és a pályázati banner jelenléte ellenőrizve. A `main` feltöltés és GitHub Pages visszaellenőrzés a commit után következik.
+- A frissítés GitHub `main` ágra feltöltve; a vezérlésoldal piros gombja, a pályázati banner és a Rovatti CSS a statikus kiadás része.
 
 
 ## 2026-10-23 – MOP logóméret
@@ -65,4 +65,4 @@
 - Az RM MOP logó a dízelmotoros szivattyúegységek oldalán a Starpower logóknál kisebb; a közös Starpower-méretezés változatlan.
 - A dohányszárító, dohánytetejező, zölddohány-feldolgozó és magvető oldalakon, valamint az elérhető archív HTML-oldalakon eltávolítottam a korábbi RM-oldalakra utaló megjegyzéseket. A horganyzott gerincvezetéknél is kikerült az ilyen eredetű kínálati hivatkozás.
 - Az összes HTML-oldal célzott átvizsgálásakor nem maradt „korábbi RM” vagy a korábbi RM-weboldalra utaló szöveg. A dohányszárító oldal új leírása megőrzi a 12–18 konténeres és fűtési információt, de nem hivatkozik korábbi oldalra.
-- A szövegjavítások feltöltése után a GitHub Pages telepítés állapotát még vissza kell ellenőrizni.
+- Feltöltött commit: `0512284`; a GitHub Pages telepítés sikeres. Az élő dohányszárító-, motoros szivattyúegység-, öntözésvezérlés-oldal és a közös CSS útvonala HTTP 200 választ adott.
