@@ -4972,3 +4972,8 @@ html {
 .gx-product-card:has(.gx-product-link[href*="rovatti-"]) {
   background: #3A9043;
 }
+
+
+/* Keep the RM MOP mark visibly smaller than the Starpower marks on pump cards. */
+.pump-family-logo-mop { max-width: min(140px, 62%); height: 52px; }
+@media (max-width: 560px) { .pump-family-logo-mop { max-width: min(120px, 60%); height: 46px; } }

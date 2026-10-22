@@ -52,3 +52,9 @@
 - Minden statikus oldalon megjelenik a jobb alsó, lekerekített Széchenyi-pályázati banner, amely a `/palyazat/` oldalra mutat. Az öntözésvezérlés oldal ajánlatkérő gombja piros; célja a kapcsolatoldal.
 - A Rovatti-kártyák zöld keretet kapnak `#3A9043` színnel: az érintett Rovatti családkártyák és termékkártyák, a többi márka kártyáinak stílusa nem változik.
 - Helyi böngészőben a vezérlésoldal és a pályázati banner jelenléte ellenőrizve. A `main` feltöltés és GitHub Pages visszaellenőrzés a commit után következik.
+
+
+## 2026-10-23 – MOP logóméret
+
+- A motoros szivattyúegység kategória RM MOP logója a kártyán 52 px magas/legfeljebb 140 px széles, mobilon 46 px/120 px; a Starpower logók mérete változatlan.
+- A helyi módosítás együtt kerül fel a GitHub `main` ágára a pályázati bannerrel, piros CTA-val és Rovatti-zöld kártyakörvonallal.
