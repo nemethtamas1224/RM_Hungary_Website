@@ -2958,7 +2958,7 @@ h1 em {
   }
 
   .brand picture img {
-    content: url("/images/RM_hajdu_monogram_v01.png");
+    content: url("../../../images/RM_hajdu_monogram_v01.png");
     object-fit: contain;
   }
 
