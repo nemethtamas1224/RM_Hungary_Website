@@ -3,7 +3,7 @@ import { contentEditor } from './access'
 
 export const LegacyMappings: CollectionConfig = {
   slug: 'legacy-mappings', labels: { singular: 'Régi URL megfeleltetés', plural: 'Régi URL megfeleltetések' },
-  admin: { useAsTitle: 'sourceName', defaultColumns: ['legacyKey','sourceName','targetCategory'] },
+  admin: { hidden: true, useAsTitle: 'sourceName', defaultColumns: ['legacyKey','sourceName','targetCategory'] },
   access: { create: contentEditor, delete: contentEditor, read: contentEditor, update: contentEditor },
   fields: [
     { name: 'legacyKey', type: 'text', required: true, unique: true },

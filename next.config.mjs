@@ -1,7 +1,10 @@
 import { withPayload } from '@payloadcms/next/withPayload'
 
 export default withPayload({
-  images: { remotePatterns: [{ protocol: 'https', hostname: 'www.rmhungary.hu' }] },
+  images: {
+    remotePatterns: [{ protocol: 'https', hostname: 'www.rmhungary.hu' }],
+    formats: ['image/avif', 'image/webp'],
+  },
   async redirects() {
     return [
       { source: '/rolunk.php', destination: '/rolunk', permanent: true },

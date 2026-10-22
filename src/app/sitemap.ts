@@ -3,8 +3,6 @@ import { getPayload } from 'payload'
 import config from '@payload-config'
 import { categoryHref, familyHref, productHref } from '@/lib/catalog'
 
-export const dynamic = 'force-dynamic'
-
 export default async function sitemap():Promise<MetadataRoute.Sitemap>{
  const payload=await getPayload({config})
  const [pages,products,categories,families,manufacturers,used,news,references]=await Promise.all([

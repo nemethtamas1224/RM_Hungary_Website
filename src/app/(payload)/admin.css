@@ -70,6 +70,46 @@ body {
   line-height: 1.45;
   overflow-wrap: anywhere;
 }
+.catalog-workflow {
+  margin: 0 0 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid #e4e7e1;
+  border-top: 4px solid #fbd809;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #fff 0%, #f8f9f6 100%);
+  box-shadow: 0 8px 28px rgb(20 36 25 / 5%);
+}
+.catalog-workflow__intro { max-width: 60rem; margin-bottom: 1.2rem; }
+.catalog-workflow__eyebrow {
+  margin: 0 0 0.35rem;
+  color: #c5212e;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.catalog-workflow__intro h2 { margin: 0; font-size: clamp(1.35rem, 2vw, 1.8rem); }
+.catalog-workflow__intro > p:last-child { margin: 0.5rem 0 0; color: #5b655d; }
+.catalog-workflow__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; }
+.catalog-workflow__step {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  padding: 1.05rem;
+  border: 1px solid #e5e8e3;
+  border-radius: 0.7rem;
+  background: #fff;
+}
+.catalog-workflow__number { color: #c5212e; font-size: 0.75rem; font-weight: 800; }
+.catalog-workflow__step h3 { margin: 0.3rem 0; font-size: 1.15rem; }
+.catalog-workflow__step p { margin: 0 0 1rem; color: #5b655d; font-size: 0.92rem; }
+.catalog-workflow__step a { margin-top: auto; color: #8d1721; font-weight: 750; text-decoration: none; }
+.catalog-workflow__step a:hover { text-decoration: underline; }
+.catalog-workflow__note { margin: 1rem 0 0; color: #6b746d; font-size: 0.82rem; }
+@media (max-width: 800px) {
+  .catalog-workflow__steps { grid-template-columns: 1fr; }
+  .catalog-workflow__step { min-height: auto; }
+}
 /* The installed Payload UI styles omit the admin shell layout rules. */
 :root {
   --theme-bg: #f4f6f3;

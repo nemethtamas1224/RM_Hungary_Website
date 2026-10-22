@@ -4,7 +4,7 @@ import { contentEditor, publishedOrAdmin } from './access'
 export const News: CollectionConfig = {
   slug: 'news',
   labels: { singular: 'Hír', plural: 'Hírek és pályázatok' },
-  admin: { useAsTitle: 'title', defaultColumns: ['title', 'publishedAt', 'status'] },
+  admin: { group: 'Tartalom', useAsTitle: 'title', defaultColumns: ['title', 'publishedAt', 'status'] },
   access: { create: contentEditor, delete: contentEditor, read: publishedOrAdmin, update: contentEditor },
   versions: { drafts: { autosave: true, schedulePublish: true }, maxPerDoc: 25 },
   fields: [

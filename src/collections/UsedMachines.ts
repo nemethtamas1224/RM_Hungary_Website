@@ -3,7 +3,7 @@ import { contentEditor, publishedOrAdmin } from './access'
 
 export const UsedMachines: CollectionConfig = {
   slug: 'used-machines', labels: { singular: 'Használt gép', plural: 'Használt gépek' },
-  admin: { useAsTitle: 'title', defaultColumns: ['title','condition','status','updatedAt'] },
+  admin: { group: 'Tartalom', useAsTitle: 'title', defaultColumns: ['title','condition','status','updatedAt'] },
   access: { create: contentEditor, delete: contentEditor, read: publishedOrAdmin, update: contentEditor },
   fields: [
     { name: 'title', type: 'text', required: true },

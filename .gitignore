@@ -5,6 +5,7 @@ node_modules/
 !.env.example
 data/*.db*
 media/
-.DS_Store
 
 backups/
+
+.DS_Store

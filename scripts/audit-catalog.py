@@ -2,7 +2,7 @@
 import json
 import sqlite3
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import unquote, urljoin, urlparse
 
 root = Path(__file__).resolve().parent.parent
 crawl = json.loads((root / 'audit/site-crawl.json').read_text())
@@ -28,8 +28,15 @@ for mapping in mappings:
     page = pages.get(url)
     assert page, f'Missing crawl page {url}'
     images = {urljoin(url, img['src']) for block in page['mainBlocks'] for img in block.get('images', [])}
+    # Count an image as preserved when it is either in Payload media or kept at
+    # its original public URL path. This includes small source logos that are
+    # intentionally not imported into a product's photo gallery.
     saved = images & media_urls
-    absent = sorted(images - media_urls)
+    for image in images - saved:
+        relative_path = unquote(urlparse(image).path).lstrip('/')
+        if (root / 'public' / relative_path).is_file():
+            saved.add(image)
+    absent = sorted(images - saved)
     missing.extend((key, image) for image in absent)
     product = db.execute('select id,source_details from products where legacy_key=?', (key,)).fetchone()
     assert product, f'Missing old product {key}'
@@ -41,6 +48,8 @@ product_count = db.execute("select count(*) from products where product_kind!='l
 pictured_count = db.execute("select count(*) from products where product_kind!='legacy' and image_id is not null").fetchone()[0]
 draft_count = db.execute("select count(*) from products where product_kind!='legacy' and status='draft'").fetchone()[0]
 lines.extend([
+    '',
+    'A mentett képek száma a Payload-médián kívül az eredeti publikus útvonalon visszaállított fájlokat is tartalmazza. A 10-es RM oldalon két GX modellfelirat-logó az archív oldalon külön jelenik meg a 17 galériakép mellett.',
     '',
     f"- Régi oldalak: **{len(mappings)}**; forráskép-hiányok: **{len(missing)}**.",
     f'- Új kategóriák: **{category_count}** (7 fő- és 35 alkategória).',

@@ -22,7 +22,7 @@ for (const series of rmHoseSeries) {
   const existing = await findOne('products', item.slug)
   const data = {
    name: item.name, brand: 'RM', manufacturer: manufacturer.id, family: family.id,
-   category: [category.id], productKind: 'model', reviewState: 'specs-missing',
+   category: category.id, productKind: 'model', reviewState: 'specs-missing',
    reviewNote: 'A méretek a felhasználó 2026-10-21-i katalóguslistájából származnak. Nem igazolt aktuális gyári készlet- vagy rendelhetőségi lista; a további műszaki adatok ellenőrizendők.',
    hoseSizes: item.hoseSizes, status: 'published',
   }
@@ -34,7 +34,7 @@ const canonical = new Set(rmHoseSeries.flatMap(series => series.products.map(ite
 const oldProducts = (await payload.find({ collection: 'products', where: { productKind: { equals: 'model' } }, limit: 500, depth: 0, overrideAccess: true })).docs as any[]
 let archived = 0
 for (const product of oldProducts) {
- const categories = Array.isArray(product.category) ? product.category : []
+ const categories = product.category == null ? [] : Array.isArray(product.category) ? product.category : [product.category]
  if (!categories.some((value: any) => String(typeof value === 'object' ? value.id : value) === String(category.id)) || canonical.has(product.slug)) continue
  await payload.update({ collection: 'products', id: product.id, overrideAccess: true, data: {
   status: 'archived', reviewNote: 'A 2026-10-21-i felhasználói 23 típusos méretlistában nem szerepel. Korábbi forrásadatként megőrizve; a terméktípust külön kell ellenőrizni.'

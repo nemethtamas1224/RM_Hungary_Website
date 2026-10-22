@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getPayload } from 'payload'
 import config from '@payload-config'
-import { productHref } from '@/lib/catalog'
+import { productHref, relationArray } from '@/lib/catalog'
 
 export const dynamic='force-dynamic'
 export default async function ManufacturerPage({params}:{params:Promise<{slug:string}>}){
@@ -17,11 +17,6 @@ export default async function ManufacturerPage({params}:{params:Promise<{slug:st
  ])
  const products=productResult.docs.filter(p=>p.productKind!=='legacy')
  const categories=catResult.docs as any[]
- const groups=categories.filter(category=>products.some(p=>(p.category||[]).some((value:any)=>String(typeof value==='object'?value.id:value)===String(category.id))))
- const rmCards=slug==='rm'?[
-  {category:groups.find(c=>c.slug==='csevelodobos'),label:'Csévélődobok'},
-  {category:groups.find(c=>c.slug==='ontozoszarnyak'),label:'Öntözőszárnyak'},
-  {category:groups.find(c=>c.slug==='motoros-szivattyuegysegek'),label:'Motoros szivattyú gépegység'},
- ]:groups.map(category=>({category,label:category.name}))
- return <main className="plain-page wrap"><p className="eyebrow"><Link href="/gyartok">Gyártók</Link></p><h1>{m.name}</h1>{m.description&&<p className="lead">{m.description}</p>}<div className="category-card-grid">{rmCards.filter(item=>item.category).map(({category,label})=>{const parent=categories.find(c=>String(c.id)===String(typeof category.parent==='object'?category.parent?.id:category.parent));return <Link className="category-card" href={`/termekek/${parent?.slug}/${category.slug}`} key={category.id}><span>{label}</span><b aria-hidden="true">↗</b></Link>})}</div>{!rmCards.some(item=>item.category)&&<p>Ehhez a gyártóhoz még nincs közzétett termékkategória.</p>}{slug==='rm'&&<div className="manufacturer-model-index"><section><h2>Öntözőszárnyak</h2><p>Albatros · Albatros 72 · Liquó · Falcon · Boom · Condor</p></section><section><h2>Motoros szivattyú gépegység</h2><p>RM motoros szivattyúegység</p></section></div>}</main>
+ const groups=categories.filter(category=>products.some(p=>relationArray(p.category).some((value:any)=>String(typeof value==='object'?value.id:value)===String(category.id))))
+ return <main className="plain-page wrap"><p className="eyebrow"><Link href="/gyartok">Gyártók</Link></p><h1>{m.name}</h1>{m.description&&<p className="lead">{m.description}</p>}<div className="category-card-grid">{groups.map(category=>{const parent=categories.find(c=>String(c.id)===String(typeof category.parent==='object'?category.parent?.id:category.parent));return <Link className="category-card" href={`/termekek/${parent?.slug}/${category.slug}`} key={category.id}><span>{category.name}</span><b aria-hidden="true">↗</b></Link>})}</div>{groups.length===0&&<p>Ehhez a gyártóhoz még nincs közzétett termékkategória.</p>}</main>
 }

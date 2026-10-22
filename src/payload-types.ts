@@ -67,18 +67,18 @@ export interface Config {
   };
   blocks: {};
   collections: {
-    users: User;
+    manufacturers: Manufacturer;
     categories: Category;
     'product-families': ProductFamily;
-    manufacturers: Manufacturer;
     products: Product;
     'used-machines': UsedMachine;
-    inquiries: Inquiry;
-    'legacy-mappings': LegacyMapping;
     news: News;
     references: Reference;
     pages: Page;
+    inquiries: Inquiry;
     media: Media;
+    'legacy-mappings': LegacyMapping;
+    users: User;
     'payload-kv': PayloadKv;
     'payload-jobs': PayloadJob;
     'payload-locked-documents': PayloadLockedDocument;
@@ -87,18 +87,18 @@ export interface Config {
   };
   collectionsJoins: {};
   collectionsSelect: {
-    users: UsersSelect<false> | UsersSelect<true>;
+    manufacturers: ManufacturersSelect<false> | ManufacturersSelect<true>;
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
     'product-families': ProductFamiliesSelect<false> | ProductFamiliesSelect<true>;
-    manufacturers: ManufacturersSelect<false> | ManufacturersSelect<true>;
     products: ProductsSelect<false> | ProductsSelect<true>;
     'used-machines': UsedMachinesSelect<false> | UsedMachinesSelect<true>;
-    inquiries: InquiriesSelect<false> | InquiriesSelect<true>;
-    'legacy-mappings': LegacyMappingsSelect<false> | LegacyMappingsSelect<true>;
     news: NewsSelect<false> | NewsSelect<true>;
     references: ReferencesSelect<false> | ReferencesSelect<true>;
     pages: PagesSelect<false> | PagesSelect<true>;
+    inquiries: InquiriesSelect<false> | InquiriesSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    'legacy-mappings': LegacyMappingsSelect<false> | LegacyMappingsSelect<true>;
+    users: UsersSelect<false> | UsersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-jobs': PayloadJobsSelect<false> | PayloadJobsSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
@@ -151,45 +151,28 @@ export interface UserAuthOperations {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users".
+ * via the `definition` "manufacturers".
  */
-export interface User {
-  id: number;
-  role: 'admin' | 'editor';
-  updatedAt: string;
-  createdAt: string;
-  email: string;
-  resetPasswordToken?: string | null;
-  resetPasswordExpiration?: string | null;
-  salt?: string | null;
-  hash?: string | null;
-  resetPasswordRequestedAt?: string | null;
-  loginAttempts?: number | null;
-  lockUntil?: string | null;
-  sessions?:
-    | {
-        id: string;
-        createdAt?: string | null;
-        expiresAt: string;
-      }[]
-    | null;
-  password?: string | null;
-  collection: 'users';
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "categories".
- */
-export interface Category {
+export interface Manufacturer {
   id: number;
   name: string;
   slug: string;
   description?: string | null;
-  parent?: (number | null) | Category;
-  catalogRole: 'catalog' | 'legacy';
-  sortOrder?: number | null;
-  originalUrl?: string | null;
-  image?: (number | null) | Media;
+  logo?: (number | null) | Media;
+  /**
+   * Bekapcsolva a márka megjelenik a kezdőlapi partnerlogók között.
+   */
+  featuredOnHomepage?: boolean | null;
+  /**
+   * A kisebb számú márka előrébb jelenik meg; azonos értéknél a márkanév dönt.
+   */
+  homepageSortOrder?: number | null;
+  sourceUrl?: string | null;
+  /**
+   * Belső ellenőrzési megjegyzés.
+   */
+  reviewNote?: string | null;
+  status: 'draft' | 'published';
   updatedAt: string;
   createdAt: string;
 }
@@ -216,43 +199,82 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "product-families".
+ * via the `definition` "categories".
  */
-export interface ProductFamily {
+export interface Category {
   id: number;
-  name: string;
-  slug: string;
-  sortOrder?: number | null;
-  summary?: string | null;
   /**
-   * Az eredeti termékcsoport oldalon megőrzött szöveg.
+   * Főkategóriát vagy annak alkategóriáját hozd létre. Az alkategóriánál válaszd ki a szülő főkategóriát.
    */
-  sourceDetails?: string | null;
-  category: number | Category;
-  manufacturer?: (number | null) | Manufacturer;
+  name: string;
+  /**
+   * Az oldal URL-jének egyedi azonosítója.
+   */
+  slug: string;
+  description?: string | null;
+  /**
+   * Üresen hagyva főkategória. Alkategóriánál válaszd ki a szülő főkategóriát.
+   */
+  parent?: (number | null) | Category;
+  sortOrder?: number | null;
   image?: (number | null) | Media;
-  sourceUrl?: string | null;
-  reviewNote?: string | null;
-  status: 'draft' | 'published';
+  catalogRole: 'catalog' | 'legacy';
+  originalUrl?: string | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "manufacturers".
+ * via the `definition` "product-families".
  */
-export interface Manufacturer {
+export interface ProductFamily {
   id: number;
+  /**
+   * A termékcsalád gyártója.
+   */
+  manufacturer?: (number | null) | Manufacturer;
+  /**
+   * A főkategória alkategóriáját válaszd ki.
+   */
+  category: number | Category;
   name: string;
   slug: string;
-  description?: string | null;
-  logo?: (number | null) | Media;
-  sourceUrl?: string | null;
-  /**
-   * Belső ellenőrzési megjegyzés.
-   */
-  reviewNote?: string | null;
+  sortOrder?: number | null;
   status: 'draft' | 'published';
+  summary?: string | null;
+  image?: (number | null) | Media;
+  cardLogo?: (number | null) | Media;
+  cardTitle?: string | null;
+  /**
+   * Rövid, a termékcsalád kártyáján és a főoldali választóban megjelenő szöveg.
+   */
+  cardDescription?: string | null;
+  overviewTitle?: string | null;
+  overviewIntro?: string | null;
+  overviewSections?:
+    | {
+        heading: string;
+        body: string;
+        image?: (number | null) | Media;
+        imageAlt?: string | null;
+        secondaryImage?: (number | null) | Media;
+        secondaryImageAlt?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  videos?:
+    | {
+        title: string;
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Az eredeti termékcsoport oldalon megőrzött szöveg.
+   */
+  sourceDetails?: string | null;
+  sourceUrl?: string | null;
+  reviewNote?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -262,13 +284,35 @@ export interface Manufacturer {
  */
 export interface Product {
   id: number;
+  /**
+   * A terméket gyártó márka.
+   */
+  manufacturer?: (number | null) | Manufacturer;
+  /**
+   * Csak akkor töltsd ki, ha nincs külön gyártórekord, vagy a termék több márkához kapcsolódik.
+   */
+  brand?: string | null;
+  /**
+   * A főkategória alkategóriáját válaszd ki. A család- és termékoldal ehhez az ághoz tartozik.
+   */
+  category: number | Category;
+  /**
+   * Csak a kiválasztott alkategóriához tartozó család választható. Közvetlen kategóriaterméknél hagyd üresen.
+   */
+  family?: (number | null) | ProductFamily;
   name: string;
   slug: string;
-  brand?: string | null;
-  manufacturer?: (number | null) | Manufacturer;
-  family?: (number | null) | ProductFamily;
   modelCode?: string | null;
   productKind: 'model' | 'type' | 'accessory' | 'legacy';
+  /**
+   * A kategória- és családoldalon a kisebb számú termék jelenik meg előbb.
+   */
+  sortOrder?: number | null;
+  /**
+   * Kikapcsolva a rekord megmarad és közvetlen termékoldala működik, de nem szerepel a család modellkártyái között.
+   */
+  showInFamily?: boolean | null;
+  status: 'draft' | 'published' | 'archived';
   reviewState: 'source-check' | 'identified' | 'specs-missing' | 'ready';
   /**
    * Belső megjegyzés, a nyilvános termékoldalon nem jelenik meg.
@@ -276,9 +320,9 @@ export interface Product {
   reviewNote?: string | null;
   summary?: string | null;
   /**
-   * Eredeti termékleírás a forrásoldalról.
+   * A termékkártyán megjelenő tömör szöveg. Üresen hagyva a rövid leírást használja.
    */
-  sourceDetails?: string | null;
+  cardDescription?: string | null;
   description?: {
     root: {
       type: string;
@@ -319,11 +363,78 @@ export interface Product {
         id?: string | null;
       }[]
     | null;
-  category?: (number | Category)[] | null;
+  /**
+   * A gyártó 540 GX adatlapjához tartozó technikai táblázat és standard felszerelés megjelenítése.
+   */
+  gxTechnical?: boolean | null;
+  /**
+   * Modellspecifikus leírások és ábrák a termékoldalon.
+   */
+  technicalSections?:
+    | {
+        heading: string;
+        body?: string | null;
+        image?: (number | null) | Media;
+        imageAlt?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Szerkeszthető, reszponzív táblázatok a termékoldalon. A nem használt oszlopokat hagyd üresen.
+   */
+  technicalTables?:
+    | {
+        title: string;
+        column1: string;
+        column2: string;
+        column3?: string | null;
+        column4?: string | null;
+        column5?: string | null;
+        column6?: string | null;
+        rows?:
+          | {
+              cell1: string;
+              cell2: string;
+              cell3?: string | null;
+              cell4?: string | null;
+              cell5?: string | null;
+              cell6?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  videos?:
+    | {
+        title: string;
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
   image?: (number | null) | Media;
+  /**
+   * Ha üres, a termék főképe jelenik meg a kártyán.
+   */
+  cardImage?: (number | null) | Media;
+  cardLogo?: (number | null) | Media;
+  /**
+   * A gyártói kategóriakártyán közölt méretpárok. Külön kezelhető a termékoldal konfigurációitól.
+   */
+  cardHoseSizes?:
+    | {
+        diameterMm: number;
+        lengthM: number;
+        id?: string | null;
+      }[]
+    | null;
   gallery?: (number | Media)[] | null;
   documents?: (number | Media)[] | null;
   relatedProducts?: (number | Product)[] | null;
+  /**
+   * Eredeti termékleírás a forrásoldalról.
+   */
+  sourceDetails?: string | null;
   sourceEvidence?:
     | {
         url: string;
@@ -336,7 +447,6 @@ export interface Product {
   legacyKey?: string | null;
   seoTitle?: string | null;
   seoDescription?: string | null;
-  status: 'draft' | 'published' | 'archived';
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -362,41 +472,6 @@ export interface UsedMachine {
   availability?: ('ask' | 'available' | 'sold') | null;
   sourceUrl?: string | null;
   status: 'draft' | 'published';
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "inquiries".
- */
-export interface Inquiry {
-  id: number;
-  name: string;
-  email: string;
-  phone?: string | null;
-  message: string;
-  product?: (number | null) | Product;
-  usedMachine?: (number | null) | UsedMachine;
-  privacyConsent: boolean;
-  handled?: boolean | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "legacy-mappings".
- */
-export interface LegacyMapping {
-  id: number;
-  legacyKey: string;
-  sourceName: string;
-  sourceUrl: string;
-  legacyCategory?: (number | null) | Category;
-  targetCategory?: (number | null) | Category;
-  targetPath: string;
-  additionalCategories?: (number | Category)[] | null;
-  sourceProduct?: (number | null) | Product;
-  reviewNote?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -473,11 +548,8 @@ export interface Page {
   title: string;
   slug: string;
   pageType: 'page' | 'category' | 'source';
+  status: 'draft' | 'published';
   content?: string | null;
-  /**
-   * Az eredeti oldal hozzáférhető teljes szövege.
-   */
-  sourceText?: string | null;
   layout?:
     | (
         | {
@@ -495,6 +567,12 @@ export interface Page {
           }
       )[]
     | null;
+  seoTitle?: string | null;
+  seoDescription?: string | null;
+  /**
+   * Belső forrásarchívum. A nyilvános oldalakon nem jelenik meg.
+   */
+  sourceText?: string | null;
   sourceHeadings?:
     | {
         [k: string]: unknown;
@@ -515,12 +593,71 @@ export interface Page {
     | null;
   originalUrl?: string | null;
   legacyKey?: string | null;
-  seoTitle?: string | null;
-  seoDescription?: string | null;
-  status: 'draft' | 'published';
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "inquiries".
+ */
+export interface Inquiry {
+  id: number;
+  name: string;
+  email: string;
+  phone?: string | null;
+  message: string;
+  product?: (number | null) | Product;
+  usedMachine?: (number | null) | UsedMachine;
+  privacyConsent: boolean;
+  handled?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "legacy-mappings".
+ */
+export interface LegacyMapping {
+  id: number;
+  legacyKey: string;
+  sourceName: string;
+  sourceUrl: string;
+  legacyCategory?: (number | null) | Category;
+  targetCategory?: (number | null) | Category;
+  targetPath: string;
+  additionalCategories?: (number | Category)[] | null;
+  sourceProduct?: (number | null) | Product;
+  reviewNote?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users".
+ */
+export interface User {
+  id: number;
+  role: 'admin' | 'editor';
+  updatedAt: string;
+  createdAt: string;
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  resetPasswordRequestedAt?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  sessions?:
+    | {
+        id: string;
+        createdAt?: string | null;
+        expiresAt: string;
+      }[]
+    | null;
+  password?: string | null;
+  collection: 'users';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -639,8 +776,8 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
-        relationTo: 'users';
-        value: number | User;
+        relationTo: 'manufacturers';
+        value: number | Manufacturer;
       } | null)
     | ({
         relationTo: 'categories';
@@ -651,24 +788,12 @@ export interface PayloadLockedDocument {
         value: number | ProductFamily;
       } | null)
     | ({
-        relationTo: 'manufacturers';
-        value: number | Manufacturer;
-      } | null)
-    | ({
         relationTo: 'products';
         value: number | Product;
       } | null)
     | ({
         relationTo: 'used-machines';
         value: number | UsedMachine;
-      } | null)
-    | ({
-        relationTo: 'inquiries';
-        value: number | Inquiry;
-      } | null)
-    | ({
-        relationTo: 'legacy-mappings';
-        value: number | LegacyMapping;
       } | null)
     | ({
         relationTo: 'news';
@@ -683,8 +808,20 @@ export interface PayloadLockedDocument {
         value: number | Page;
       } | null)
     | ({
+        relationTo: 'inquiries';
+        value: number | Inquiry;
+      } | null)
+    | ({
         relationTo: 'media';
         value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'legacy-mappings';
+        value: number | LegacyMapping;
+      } | null)
+    | ({
+        relationTo: 'users';
+        value: number | User;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -730,27 +867,20 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users_select".
+ * via the `definition` "manufacturers_select".
  */
-export interface UsersSelect<T extends boolean = true> {
-  role?: T;
+export interface ManufacturersSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  description?: T;
+  logo?: T;
+  featuredOnHomepage?: T;
+  homepageSortOrder?: T;
+  sourceUrl?: T;
+  reviewNote?: T;
+  status?: T;
   updatedAt?: T;
   createdAt?: T;
-  email?: T;
-  resetPasswordToken?: T;
-  resetPasswordExpiration?: T;
-  salt?: T;
-  hash?: T;
-  resetPasswordRequestedAt?: T;
-  loginAttempts?: T;
-  lockUntil?: T;
-  sessions?:
-    | T
-    | {
-        id?: T;
-        createdAt?: T;
-        expiresAt?: T;
-      };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -761,10 +891,10 @@ export interface CategoriesSelect<T extends boolean = true> {
   slug?: T;
   description?: T;
   parent?: T;
-  catalogRole?: T;
   sortOrder?: T;
-  originalUrl?: T;
   image?: T;
+  catalogRole?: T;
+  originalUrl?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -773,32 +903,40 @@ export interface CategoriesSelect<T extends boolean = true> {
  * via the `definition` "product-families_select".
  */
 export interface ProductFamiliesSelect<T extends boolean = true> {
+  manufacturer?: T;
+  category?: T;
   name?: T;
   slug?: T;
   sortOrder?: T;
+  status?: T;
   summary?: T;
-  sourceDetails?: T;
-  category?: T;
-  manufacturer?: T;
   image?: T;
+  cardLogo?: T;
+  cardTitle?: T;
+  cardDescription?: T;
+  overviewTitle?: T;
+  overviewIntro?: T;
+  overviewSections?:
+    | T
+    | {
+        heading?: T;
+        body?: T;
+        image?: T;
+        imageAlt?: T;
+        secondaryImage?: T;
+        secondaryImageAlt?: T;
+        id?: T;
+      };
+  videos?:
+    | T
+    | {
+        title?: T;
+        url?: T;
+        id?: T;
+      };
+  sourceDetails?: T;
   sourceUrl?: T;
   reviewNote?: T;
-  status?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "manufacturers_select".
- */
-export interface ManufacturersSelect<T extends boolean = true> {
-  name?: T;
-  slug?: T;
-  description?: T;
-  logo?: T;
-  sourceUrl?: T;
-  reviewNote?: T;
-  status?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -807,17 +945,21 @@ export interface ManufacturersSelect<T extends boolean = true> {
  * via the `definition` "products_select".
  */
 export interface ProductsSelect<T extends boolean = true> {
+  manufacturer?: T;
+  brand?: T;
+  category?: T;
+  family?: T;
   name?: T;
   slug?: T;
-  brand?: T;
-  manufacturer?: T;
-  family?: T;
   modelCode?: T;
   productKind?: T;
+  sortOrder?: T;
+  showInFamily?: T;
+  status?: T;
   reviewState?: T;
   reviewNote?: T;
   summary?: T;
-  sourceDetails?: T;
+  cardDescription?: T;
   description?: T;
   specifications?:
     | T
@@ -841,11 +983,60 @@ export interface ProductsSelect<T extends boolean = true> {
         lengthM?: T;
         id?: T;
       };
-  category?: T;
+  gxTechnical?: T;
+  technicalSections?:
+    | T
+    | {
+        heading?: T;
+        body?: T;
+        image?: T;
+        imageAlt?: T;
+        id?: T;
+      };
+  technicalTables?:
+    | T
+    | {
+        title?: T;
+        column1?: T;
+        column2?: T;
+        column3?: T;
+        column4?: T;
+        column5?: T;
+        column6?: T;
+        rows?:
+          | T
+          | {
+              cell1?: T;
+              cell2?: T;
+              cell3?: T;
+              cell4?: T;
+              cell5?: T;
+              cell6?: T;
+              id?: T;
+            };
+        id?: T;
+      };
+  videos?:
+    | T
+    | {
+        title?: T;
+        url?: T;
+        id?: T;
+      };
   image?: T;
+  cardImage?: T;
+  cardLogo?: T;
+  cardHoseSizes?:
+    | T
+    | {
+        diameterMm?: T;
+        lengthM?: T;
+        id?: T;
+      };
   gallery?: T;
   documents?: T;
   relatedProducts?: T;
+  sourceDetails?: T;
   sourceEvidence?:
     | T
     | {
@@ -858,7 +1049,6 @@ export interface ProductsSelect<T extends boolean = true> {
   legacyKey?: T;
   seoTitle?: T;
   seoDescription?: T;
-  status?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -883,39 +1073,6 @@ export interface UsedMachinesSelect<T extends boolean = true> {
   availability?: T;
   sourceUrl?: T;
   status?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "inquiries_select".
- */
-export interface InquiriesSelect<T extends boolean = true> {
-  name?: T;
-  email?: T;
-  phone?: T;
-  message?: T;
-  product?: T;
-  usedMachine?: T;
-  privacyConsent?: T;
-  handled?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "legacy-mappings_select".
- */
-export interface LegacyMappingsSelect<T extends boolean = true> {
-  legacyKey?: T;
-  sourceName?: T;
-  sourceUrl?: T;
-  legacyCategory?: T;
-  targetCategory?: T;
-  targetPath?: T;
-  additionalCategories?: T;
-  sourceProduct?: T;
-  reviewNote?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -961,8 +1118,8 @@ export interface PagesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
   pageType?: T;
+  status?: T;
   content?: T;
-  sourceText?: T;
   layout?:
     | T
     | {
@@ -982,16 +1139,32 @@ export interface PagesSelect<T extends boolean = true> {
               blockName?: T;
             };
       };
+  seoTitle?: T;
+  seoDescription?: T;
+  sourceText?: T;
   sourceHeadings?: T;
   sourceLinks?: T;
   originalUrl?: T;
   legacyKey?: T;
-  seoTitle?: T;
-  seoDescription?: T;
-  status?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "inquiries_select".
+ */
+export interface InquiriesSelect<T extends boolean = true> {
+  name?: T;
+  email?: T;
+  phone?: T;
+  message?: T;
+  product?: T;
+  usedMachine?: T;
+  privacyConsent?: T;
+  handled?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1012,6 +1185,47 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "legacy-mappings_select".
+ */
+export interface LegacyMappingsSelect<T extends boolean = true> {
+  legacyKey?: T;
+  sourceName?: T;
+  sourceUrl?: T;
+  legacyCategory?: T;
+  targetCategory?: T;
+  targetPath?: T;
+  additionalCategories?: T;
+  sourceProduct?: T;
+  reviewNote?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users_select".
+ */
+export interface UsersSelect<T extends boolean = true> {
+  role?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  email?: T;
+  resetPasswordToken?: T;
+  resetPasswordExpiration?: T;
+  salt?: T;
+  hash?: T;
+  resetPasswordRequestedAt?: T;
+  loginAttempts?: T;
+  lockUntil?: T;
+  sessions?:
+    | T
+    | {
+        id?: T;
+        createdAt?: T;
+        expiresAt?: T;
+      };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1093,17 +1307,34 @@ export interface SiteSetting {
   companyName?: string | null;
   address?: string | null;
   mailingAddress?: string | null;
+  /**
+   * A nyilvános weboldalon megjelenő telefonszám. A hivatkozás kattintható telefonhívást indít.
+   */
   phone?: string | null;
   email?: string | null;
-  seoTitle?: string | null;
-  seoDescription?: string | null;
+  /**
+   * A Google Térkép megosztásából származó beágyazási URL.
+   */
   mapEmbedUrl?: string | null;
-  emailSourceUrl?: string | null;
-  heroHeadline?: string | null;
+  /**
+   * Rövid kiegészítő mondat a kezdőoldal nyitóképe mellett.
+   */
   heroSubhead?: string | null;
+  /**
+   * A kezdőoldal nagy nyitóképe.
+   */
   heroImage?: (number | null) | Media;
-  logo?: (number | null) | Media;
+  /**
+   * A kezdőoldali szolgáltatások blokk képe.
+   */
   serviceImage?: (number | null) | Media;
+  /**
+   * A fejléc és lábléc RM logója.
+   */
+  logo?: (number | null) | Media;
+  /**
+   * Felső menüpontok. A hivatkozás lehet belső útvonal, például /kapcsolat.
+   */
   navigation?:
     | {
         label: string;
@@ -1111,10 +1342,14 @@ export interface SiteSetting {
         id?: string | null;
       }[]
     | null;
+  seoTitle?: string | null;
+  seoDescription?: string | null;
+  emailSourceUrl?: string | null;
+  heroHeadline?: string | null;
   footerNavigation?:
     | {
-        label: string;
-        href: string;
+        label?: string | null;
+        href?: string | null;
         id?: string | null;
       }[]
     | null;
@@ -1131,15 +1366,11 @@ export interface SiteSettingsSelect<T extends boolean = true> {
   mailingAddress?: T;
   phone?: T;
   email?: T;
-  seoTitle?: T;
-  seoDescription?: T;
   mapEmbedUrl?: T;
-  emailSourceUrl?: T;
-  heroHeadline?: T;
   heroSubhead?: T;
   heroImage?: T;
-  logo?: T;
   serviceImage?: T;
+  logo?: T;
   navigation?:
     | T
     | {
@@ -1147,6 +1378,10 @@ export interface SiteSettingsSelect<T extends boolean = true> {
         href?: T;
         id?: T;
       };
+  seoTitle?: T;
+  seoDescription?: T;
+  emailSourceUrl?: T;
+  heroHeadline?: T;
   footerNavigation?:
     | T
     | {

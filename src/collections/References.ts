@@ -4,7 +4,7 @@ import { contentEditor, publishedOrAdmin } from './access'
 export const References: CollectionConfig = {
   slug: 'references',
   labels: { singular: 'Referencia', plural: 'Referenciák' },
-  admin: { useAsTitle: 'title', defaultColumns: ['title', 'location', 'status'] },
+  admin: { group: 'Tartalom', useAsTitle: 'title', defaultColumns: ['title', 'location', 'status'] },
   access: { create: contentEditor, delete: contentEditor, read: publishedOrAdmin, update: contentEditor },
   fields: [
     { name: 'title', type: 'text', required: true, index: true },

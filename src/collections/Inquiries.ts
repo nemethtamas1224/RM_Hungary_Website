@@ -3,7 +3,7 @@ import { contentEditor } from './access'
 
 export const Inquiries: CollectionConfig = {
   slug: 'inquiries', labels: { singular: 'Ajánlatkérés', plural: 'Ajánlatkérések' },
-  admin: { useAsTitle: 'name', defaultColumns: ['name','email','product','createdAt'] },
+  admin: { group: 'Kapcsolat', useAsTitle: 'name', defaultColumns: ['name','email','product','createdAt'] },
   access: { create: contentEditor, delete: contentEditor, read: contentEditor, update: contentEditor },
   fields: [
     { name: 'name', type: 'text', required: true },

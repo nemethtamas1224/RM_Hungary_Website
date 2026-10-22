@@ -3,18 +3,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
+import { relationArray } from '@/lib/catalog'
 
 type Media = { url?: string | null; alt?: string | null } | number | null
 type Category = { id: number | string; name: string; slug: string; parent?: number | string | { id: number | string } | null }
-type Product = { id: number | string; name: string; slug: string; href: string; brand?: string | null; summary?: string | null; image?: Media; category?: (number | { id: number | string })[] | null }
-type Family = { id: number | string; name: string; slug: string }
-
-const reelSeries = [
-  { slug: 'rm-gx', code: 'GX', detail: '9 típus' },
-  { slug: 'rm-xj', code: 'XJ', detail: '6 típus' },
-  { slug: 'rm-magnum', code: 'Magnum / FX', detail: '3 típus' },
-  { slug: 'rm-xjm', code: 'XJM', detail: '5 típus' },
-]
+type Product = { id: number | string; name: string; slug: string; href: string; brand?: string | null; summary?: string | null; image?: Media; cardImage?: Media; category?: number | string | { id: number | string } | (number | { id: number | string })[] | null }
+type Family = { id: number | string; name: string; slug: string; sortOrder?: number | null; summary?: string | null; cardTitle?: string | null; cardDescription?: string | null; cardLogo?: Media; category?: number | string | { id: number | string } | null }
 
 export function CategoryIcon({ slug }: { slug: string }) {
   const shared = { width: 52, height: 52, viewBox: '0 0 64 64', fill: 'none', stroke: 'currentColor', strokeWidth: 2.3, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true as const }
@@ -39,13 +33,12 @@ export default function HomeCatalog({ categories, products, families }: { catego
   const activeChildren = children.filter(category => String(typeof category.parent === 'object' ? category.parent?.id : category.parent) === groupId)
   const chosenCategory = activeChildren.find(category => String(category.id) === categoryId)
   const items = useMemo(() => chosenCategory ? products.filter(product =>
-    (product.category || []).some(value => String(typeof value === 'object' ? value.id : value) === String(chosenCategory.id))
+    relationArray(product.category).some(value => String(typeof value === 'object' ? value.id : value) === String(chosenCategory.id))
   ) : [], [products, chosenCategory])
   const visible = items.length ? Array.from({ length: Math.min(3, items.length) }, (_, index) => items[(offset + index) % items.length]) : []
-  const availableReelSeries = reelSeries.flatMap(series => {
-    const family = families.find(item => item.slug === series.slug)
-    return family ? [{ ...series, family }] : []
-  })
+  const availableReelSeries = families
+    .filter(item => String(typeof item.category === 'object' ? item.category?.id : item.category) === String(chosenCategory?.id))
+    .sort((a, b) => Number(a.sortOrder || 0) - Number(b.sortOrder || 0))
   const selectGroup = (id: string) => { setGroupId(current => current === id ? '' : id); setCategoryId(''); setOffset(0) }
   useEffect(() => {
     if (!groupId) return
@@ -67,8 +60,8 @@ export default function HomeCatalog({ categories, products, families }: { catego
       })}</div>
       {activeGroup && <div className="home-subcategory-panel" id="home-subcategories"><div className="subcategory-panel-head"><div><p className="eyebrow">{activeGroup.name}</p><h3>Melyik típust keresi?</h3></div><Link href={`/termekek/${activeGroup.slug}`}>Összes alkategória</Link></div><div className="subcategory-choice-grid" aria-label="Alkategóriák">{activeChildren.map(category => <button className={String(category.id) === categoryId ? 'active' : ''} key={category.id} onClick={() => { setCategoryId(String(category.id)); setOffset(0) }} type="button" aria-pressed={String(category.id) === categoryId}><span>{category.name}</span></button>)}</div></div>}
       {chosenCategory && <div className="selected-products" id="home-selected-products"><div className="selected-products-heading"><div><p className="eyebrow">Kiválasztott alkategória</p><h3>{chosenCategory.name}</h3></div>{activeGroup && <Link className="text-link" href={`/termekek/${activeGroup.slug}/${chosenCategory.slug}`}>Alkategória megnyitása</Link>}</div>
-        {chosenCategory.slug === 'csevelodobos' ? <div className="reel-series-grid" aria-label="RM csévélődob sorozatok">{availableReelSeries.map(({ slug, code, detail, family }, index) => <Link className="reel-series-card" href={`/termekek/ontozogepek/csevelodobos/${slug}`} key={family.id}><span className="reel-series-index">{String(index + 1).padStart(2, '0')}</span><span className="reel-series-monogram" aria-hidden="true">RM</span><strong>{code}</strong><span className="reel-series-count">{detail}</span></Link>)}</div>
-        : visible.length ? <div className="catalog-showcase"><button className="slide-arrow" aria-label="Előző termékek" onClick={() => setOffset((offset + items.length - 1) % items.length)}>Előző</button><div className="showcase-track">{visible.map((product, index) => { const image = product.image && typeof product.image === 'object' ? product.image : null; return <Link className="showcase-card" href={product.href} key={`${product.id}-${index}`}><div className="showcase-image">{image?.url && <Image src={image.url} alt={image.alt || product.name} fill sizes="(max-width: 700px) 80vw, 28vw"/>}</div><span>{product.brand || 'RM Hajdú Hungary'}</span><h3>{product.name}</h3>{product.summary && <p>{product.summary}</p>}</Link> })}</div><button className="slide-arrow" aria-label="Következő termékek" onClick={() => setOffset((offset + 1) % items.length)}>Következő</button></div>
+        {chosenCategory.slug === 'csevelodobos' ? <div className="reel-series-grid" aria-label="Csévélődob termékcsaládok">{availableReelSeries.map((family, index) => { const logo = family.cardLogo && typeof family.cardLogo === 'object' ? family.cardLogo : null; return <Link className="reel-series-card" href={`/termekek/ontozogepek/csevelodobos/${family.slug}`} key={family.id}><span className="reel-series-index">{String(index + 1).padStart(2, '0')}</span><span className="reel-series-logo">{logo?.url && <Image src={logo.url} alt={logo.alt || `${family.cardTitle || family.name} logó`} fill sizes="(max-width: 850px) 40vw, 18vw"/>}</span><strong>{family.cardTitle || family.name}</strong><span className="reel-series-count">{family.cardDescription || family.summary}</span></Link> })}</div>
+        : visible.length ? <div className="catalog-showcase"><button className="slide-arrow" aria-label="Előző termékek" onClick={() => setOffset((offset + items.length - 1) % items.length)}>Előző</button><div className="showcase-track">{visible.map((product, index) => { const selectedImage = product.cardImage || product.image; const image = selectedImage && typeof selectedImage === 'object' ? selectedImage : null; return <Link className="showcase-card" href={product.href} key={`${product.id}-${index}`}><div className="showcase-image">{image?.url && <Image src={image.url} alt={image.alt || product.name} fill sizes="(max-width: 700px) 80vw, 28vw"/>}</div><span>{product.brand || 'RM Hajdú Hungary'}</span><h3>{product.name}</h3>{product.summary && <p>{product.summary}</p>}</Link> })}</div><button className="slide-arrow" aria-label="Következő termékek" onClick={() => setOffset((offset + 1) % items.length)}>Következő</button></div>
         : <div className="catalog-empty"><p>Ebben az alkategóriában még nincsenek ellenőrzött, közzétett termékek.</p><Link href={`/termekek/${activeGroup?.slug}/${chosenCategory.slug}`}>Alkategória megnyitása</Link></div>}
       </div>}
     </div>

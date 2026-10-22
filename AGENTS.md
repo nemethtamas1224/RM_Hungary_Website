@@ -29,6 +29,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - The approved 7-root, 35-subcategory structure is recorded in `audit/catalog-structure-user-2026-10-21.md` and seeded by `scripts/catalog-data.ts` / `scripts/migrate-catalog.ts`.
 - Keep the original 20 product records, images and documents accessible via `/eredeti-termekoldalak/[key]`; maintain all 20 `index.php?alkat=` mappings. Use `scripts/audit-catalog.py` to refresh the preservation report after material changes.
 - New products belong to a nested category, optionally a family, with explicit `reviewState`. Unknown model facts stay draft or marked `specs-missing`; never infer specifications or assign ambiguous images.
+- The Payload CMS is the single source for public category, family, and product copy, images, technical sections, tables, and videos. Migration modules may retain source data for repeatable import, but do not render hardcoded catalog content at runtime.
+- Preserve the hierarchy and relationships: manufacturer → root category → subcategory → family → product. Product family must belong to its assigned subcategory; keep the RM Major EVO and RM Major XJ EVO records distinct.
 - Keep manufacturer, used-machine and inquiry records CMS-managed. Inquiry data is private; public requests only enter through the validated form API. No email delivery is configured yet.
 - Local development SQLite can attempt a schema push on startup; avoid simultaneous schema-changing scripts and the dev server. Run data-only migration with `NODE_ENV=production` after schema exists.
 

@@ -1,0 +1,660 @@
+{
+  "generatedFrom": "data/rm-hungary.db",
+  "createdAt": "2026-10-22",
+  "candidateCount": 93,
+  "bytes": 3565258,
+  "method": "No current or versioned media relationships; no non-media database text or code reference to filename; exact SHA-256 copy retained outside public/uploads.",
+  "items": [
+    {
+      "id": 1,
+      "filename": "1700fe3c128a-palyazat_2024_v2.webp",
+      "sha256": "7c1a8fe81b9df9f7e4708b06c4cbb94bfea816370541ad594cb9243423990e80",
+      "bytes": 122998,
+      "preservedCopy": "public/source-media/1700fe3c128a-palyazat_2024_v2.webp"
+    },
+    {
+      "id": 2,
+      "filename": "fe8c6ab24580-palyazat_2026_1.webp",
+      "sha256": "1d8f9b0e6a280891de12d330ef7c18a1461048c8f0d53d5a17a89184e71b6243",
+      "bytes": 118416,
+      "preservedCopy": "public/source-media/fe8c6ab24580-palyazat_2026_1.webp"
+    },
+    {
+      "id": 3,
+      "filename": "b6d101b2f5da-palyazat_2026_2.webp",
+      "sha256": "3b74677450000626e0128d40fa457672b85218fb5f553897ee01d49cfed8cd67",
+      "bytes": 72994,
+      "preservedCopy": "public/source-media/b6d101b2f5da-palyazat_2026_2.webp"
+    },
+    {
+      "id": 4,
+      "filename": "96d4efd081d7-palyazat_2026_3.webp",
+      "sha256": "823afa972addd319f6c98a426916158d8dadd41768d2aa2563a4313793ab30b5",
+      "bytes": 68696,
+      "preservedCopy": "public/source-media/96d4efd081d7-palyazat_2026_3.webp"
+    },
+    {
+      "id": 5,
+      "filename": "52b49fe04f3f-rolunk_decloet.png",
+      "sha256": "74e270481384dd55087827f3ff11f5f2f85efab4ebd134486371f16843a40dd4",
+      "bytes": 20281,
+      "preservedCopy": "public/source-media/52b49fe04f3f-rolunk_decloet.png"
+    },
+    {
+      "id": 6,
+      "filename": "11c3385a86be-rolunk_giunti.png",
+      "sha256": "1051d3074b1214f7c1c3a908c6b73c89768357049f1ba13d44cc018fd2ce5815",
+      "bytes": 10497,
+      "preservedCopy": "public/source-media/11c3385a86be-rolunk_giunti.png"
+    },
+    {
+      "id": 8,
+      "filename": "8ea9c33d2803-rolunk_rovatti.png",
+      "sha256": "6df3d7b723f750d7a606343917e92309e34cd91ae6397475e4121272398a9e43",
+      "bytes": 26279,
+      "preservedCopy": "public/source-media/8ea9c33d2803-rolunk_rovatti.png"
+    },
+    {
+      "id": 10,
+      "filename": "dcf7bd283aec-telepfejlesztes.jpg",
+      "sha256": "fae996f3ce18fdc8a242a04ce9551f594634685d032899be583eeadbe643ae6f",
+      "bytes": 92418,
+      "preservedCopy": "public/source-media/dcf7bd283aec-telepfejlesztes.jpg"
+    },
+    {
+      "id": 134,
+      "filename": "b8f1e50a211f-124-vagy-198-tonna-hektaronkent-egy-oteves-alfoldi-ontozesi-kiserlet-tanulsagai_1_1_350x220.jpg",
+      "sha256": "000795a07302d52606ff7241114ecd704fbad2f8697ea7082711ee56d65ae3fe",
+      "bytes": 64504,
+      "preservedCopy": "public/source-media/b8f1e50a211f-124-vagy-198-tonna-hektaronkent-egy-oteves-alfoldi-ontozesi-kiserlet-tanulsagai_1_1_350x220.jpg"
+    },
+    {
+      "id": 135,
+      "filename": "71e0f9d507f8-372-kal-tobb-kukorica-mit-jelenthet-az-ontozes-egy-aszalyos-evben_2_350x220.jpg",
+      "sha256": "dec697a97b5f1abbd9ad1deacfad9c1515760f3545ff7d5eae85705958edf1c7",
+      "bytes": 69493,
+      "preservedCopy": "public/source-media/71e0f9d507f8-372-kal-tobb-kukorica-mit-jelenthet-az-ontozes-egy-aszalyos-evben_2_350x220.jpg"
+    },
+    {
+      "id": 136,
+      "filename": "025f8ffeef42-aszalyban-mutatkozik-meg-igazan-az-ontozes-erteke-termeshozam-helyett-termesbiztonsagban-is-erdemes_2_350x220.jpg",
+      "sha256": "7305d0ef9aa1d891b666f6df30599188097cc79536667966c7017a49cce52955",
+      "bytes": 69507,
+      "preservedCopy": "public/source-media/025f8ffeef42-aszalyban-mutatkozik-meg-igazan-az-ontozes-erteke-termeshozam-helyett-termesbiztonsagban-is-erdemes_2_350x220.jpg"
+    },
+    {
+      "id": 137,
+      "filename": "59e3b627d2f8-hatekony-ontozes-a-korszeru-mezogazdasagban_1_1_350x220.jpg",
+      "sha256": "c575ab98beab9f9e4afc33fb2d99523937e810ab36a9b825f8364a0299080465",
+      "bytes": 26878,
+      "preservedCopy": "public/source-media/59e3b627d2f8-hatekony-ontozes-a-korszeru-mezogazdasagban_1_1_350x220.jpg"
+    },
+    {
+      "id": 138,
+      "filename": "91f6f05d36c2-mennyit-er-1-millimeter-ontozoviz-a-viz-erteket-a-hasznosulasa-mutatja-meg_1_350x220.jpg",
+      "sha256": "b085dd6598c784ad2f2c853063194ceb986346f9b0a7042614a324fe17a5f210",
+      "bytes": 69606,
+      "preservedCopy": "public/source-media/91f6f05d36c2-mennyit-er-1-millimeter-ontozoviz-a-viz-erteket-a-hasznosulasa-mutatja-meg_1_350x220.jpg"
+    },
+    {
+      "id": 139,
+      "filename": "594f71303922-modern-gepek-a-dohanytermeszteshez_1_1_350x220.jpg",
+      "sha256": "84e6f677813e74e253885134a80cf325090684ff4585a1bf61f0249f95fe18c0",
+      "bytes": 65661,
+      "preservedCopy": "public/source-media/594f71303922-modern-gepek-a-dohanytermeszteshez_1_1_350x220.jpg"
+    },
+    {
+      "id": 141,
+      "filename": "d495bc27bace-ontozorendszer-tervezes-es-szerviz-egy-kezbol_1_1_350x220.jpg",
+      "sha256": "c0f6f0dc4c37ff77b195d7e897ff4de3edc2351422b364837092dec9ff77bdba",
+      "bytes": 33367,
+      "preservedCopy": "public/source-media/d495bc27bace-ontozorendszer-tervezes-es-szerviz-egy-kezbol_1_1_350x220.jpg"
+    },
+    {
+      "id": 143,
+      "filename": "2baa999eb386-tobb-viz-nem-mindig-jelent-tobb-profitot-az-optimalis-ontozes-a-megfelelo-dozisrol-szol_1_350x220.jpg",
+      "sha256": "2d8e1ee5434cfe1a1b507701937adbf95c1e97abba4890e6c4d7992dd7d2fa65",
+      "bytes": 63416,
+      "preservedCopy": "public/source-media/2baa999eb386-tobb-viz-nem-mindig-jelent-tobb-profitot-az-optimalis-ontozes-a-megfelelo-dozisrol-szol_1_350x220.jpg"
+    },
+    {
+      "id": 144,
+      "filename": "2f044c4aceff-image1.jpeg",
+      "sha256": "79fba188519982cdea50f926bd9ac4af7294cb22cae1992c2946d34e1321d2d5",
+      "bytes": 78365,
+      "preservedCopy": "public/source-media/2f044c4aceff-image1.jpeg"
+    },
+    {
+      "id": 145,
+      "filename": "a04133fad3c4-image14.jpg",
+      "sha256": "c050130000ac7bc1703fe03db32c1cabefb1ae6e7c755f18d48f38fe33b5e07f",
+      "bytes": 17269,
+      "preservedCopy": "public/source-media/a04133fad3c4-image14.jpg"
+    },
+    {
+      "id": 146,
+      "filename": "06e317d3525a-image14_350x220.jpg",
+      "sha256": "e53c7dcf1f925c329a3febe3164560772facbd32f493dd9d1ba259c14acc9155",
+      "bytes": 34038,
+      "preservedCopy": "public/source-media/06e317d3525a-image14_350x220.jpg"
+    },
+    {
+      "id": 147,
+      "filename": "d27a7bad19ba-image15.jpg",
+      "sha256": "fb76ec1267ac66d44a0b6ce203f5d538e6ade02e016d480fff6b646e150e238f",
+      "bytes": 10959,
+      "preservedCopy": "public/source-media/d27a7bad19ba-image15.jpg"
+    },
+    {
+      "id": 148,
+      "filename": "e102e3ff8643-image16.jpg",
+      "sha256": "dc38de14543a267a3fa8ceef654df4bccb7e350789730942800f9257ba00752c",
+      "bytes": 34935,
+      "preservedCopy": "public/source-media/e102e3ff8643-image16.jpg"
+    },
+    {
+      "id": 149,
+      "filename": "f937522b2c00-image16_350x220.jpg",
+      "sha256": "39537a94ba38fc4426f6628922a3fe4d60a66fabd4892d2cf28eb2d879fc9faa",
+      "bytes": 33377,
+      "preservedCopy": "public/source-media/f937522b2c00-image16_350x220.jpg"
+    },
+    {
+      "id": 150,
+      "filename": "a10ce81555ae-image17.jpg",
+      "sha256": "f7bb2f54ee43dc6083161aefb333556b2ac611f24437a5718448749481226cac",
+      "bytes": 191372,
+      "preservedCopy": "public/source-media/a10ce81555ae-image17.jpg"
+    },
+    {
+      "id": 151,
+      "filename": "66cf7c932098-image17_350x220.jpg",
+      "sha256": "259c8785cf31ab002f92acacd5b5be6314ff549e58413cb478c3b09d6a7c6aca",
+      "bytes": 51465,
+      "preservedCopy": "public/source-media/66cf7c932098-image17_350x220.jpg"
+    },
+    {
+      "id": 152,
+      "filename": "5edf39ab124d-image1_350x220.jpeg",
+      "sha256": "900a79d7fdea192117893c2ffb665bc613a2e13c2938cdc24defab5a094dd21f",
+      "bytes": 60057,
+      "preservedCopy": "public/source-media/5edf39ab124d-image1_350x220.jpeg"
+    },
+    {
+      "id": 153,
+      "filename": "377fb26978ce-image2.jpeg",
+      "sha256": "2f84b26411faa40dbf83eae3054788bbf675531fef55b1b9865c26cc3809fe42",
+      "bytes": 103221,
+      "preservedCopy": "public/source-media/377fb26978ce-image2.jpeg"
+    },
+    {
+      "id": 154,
+      "filename": "03e7a3982ca5-image2_350x220.jpeg",
+      "sha256": "7102bad54eb1c80151fa90b772d1e380422f5495f1b1ee62d8e4156a0b30d387",
+      "bytes": 54243,
+      "preservedCopy": "public/source-media/03e7a3982ca5-image2_350x220.jpeg"
+    },
+    {
+      "id": 155,
+      "filename": "a44744594458-image3.jpeg",
+      "sha256": "46b9b6b55e3e5d5b0ff1c21d1fe3e51a0963aa3aa4422234687847d2c6400b83",
+      "bytes": 12132,
+      "preservedCopy": "public/source-media/a44744594458-image3.jpeg"
+    },
+    {
+      "id": 156,
+      "filename": "fe0723a7a7b0-image3_350x220.jpeg",
+      "sha256": "7b36d8d3b0f68313f6cabb26302fce7b126c4a466ddeb1665992c9fa850d55e5",
+      "bytes": 28845,
+      "preservedCopy": "public/source-media/fe0723a7a7b0-image3_350x220.jpeg"
+    },
+    {
+      "id": 157,
+      "filename": "7e1c355d443f-image4.jpeg",
+      "sha256": "d814e78b78daa9885fb11e544d0cdba17cf8b4e2c67adb8d1ce86fad7278619d",
+      "bytes": 31625,
+      "preservedCopy": "public/source-media/7e1c355d443f-image4.jpeg"
+    },
+    {
+      "id": 158,
+      "filename": "3bced53ffdd2-image4_350x220.jpeg",
+      "sha256": "76b67e6510f9fa8216fcd5a5740b60544934ab57ea702744cccdae0514410b3b",
+      "bytes": 21340,
+      "preservedCopy": "public/source-media/3bced53ffdd2-image4_350x220.jpeg"
+    },
+    {
+      "id": 159,
+      "filename": "c734e8b72563-image5.jpeg",
+      "sha256": "218e3acd191cff03bedc1c8ffb284f7e23df3113c7ae76ded3d3d4a67b3456ba",
+      "bytes": 70470,
+      "preservedCopy": "public/source-media/c734e8b72563-image5.jpeg"
+    },
+    {
+      "id": 160,
+      "filename": "4818292e2c1e-image5_350x220.jpeg",
+      "sha256": "63c0e3a46e3eadbdd7d5f644fad358f1d380d36982b1965b76c3a6e11393075e",
+      "bytes": 27973,
+      "preservedCopy": "public/source-media/4818292e2c1e-image5_350x220.jpeg"
+    },
+    {
+      "id": 161,
+      "filename": "c25f7eebe356-image6.jpeg",
+      "sha256": "a17d8f975fb29b85ca4906f81c386c767e9649134c79dea437c803b25adf7d07",
+      "bytes": 8893,
+      "preservedCopy": "public/source-media/c25f7eebe356-image6.jpeg"
+    },
+    {
+      "id": 162,
+      "filename": "1beedcd43901-image6_350x220.jpeg",
+      "sha256": "3c769bfe6c25e6f6f077f963b93c328c780fb0b005e49d53c92b1745ff9ba9f2",
+      "bytes": 24688,
+      "preservedCopy": "public/source-media/1beedcd43901-image6_350x220.jpeg"
+    },
+    {
+      "id": 163,
+      "filename": "70881c4c7dd8-image7.jpeg",
+      "sha256": "1b695d1032efdd506503e6ed31096447b1e3dc29d6cae6c290ed26d38000b0bf",
+      "bytes": 144024,
+      "preservedCopy": "public/source-media/70881c4c7dd8-image7.jpeg"
+    },
+    {
+      "id": 164,
+      "filename": "2c3abc7c42d8-image7_350x220.jpeg",
+      "sha256": "962126d6119db4e798ab681f21b491349d245624e3f7c6b91cfb2715d2e2d612",
+      "bytes": 45048,
+      "preservedCopy": "public/source-media/2c3abc7c42d8-image7_350x220.jpeg"
+    },
+    {
+      "id": 165,
+      "filename": "cda2515cd9f1-image8.jpeg",
+      "sha256": "978be1579e897b1ce290d8604f36c69ac933a1f3809ab36a4d1d201829699e54",
+      "bytes": 61556,
+      "preservedCopy": "public/source-media/cda2515cd9f1-image8.jpeg"
+    },
+    {
+      "id": 166,
+      "filename": "2f4e2e0116cd-image8_350x220.jpeg",
+      "sha256": "e6fbb49b45af2320fee34ebc4d7bf66d1ab60152f60b80e68f9fe4a3f462f116",
+      "bytes": 43374,
+      "preservedCopy": "public/source-media/2f4e2e0116cd-image8_350x220.jpeg"
+    },
+    {
+      "id": 188,
+      "filename": "be67c13bccb1-slide_1.jpg",
+      "sha256": "6fc4e5b48b77b99cb83f65699929030a8fd1a5703ca8816bc350d0ce03830999",
+      "bytes": 63711,
+      "preservedCopy": "public/source-media/be67c13bccb1-slide_1.jpg"
+    },
+    {
+      "id": 235,
+      "filename": "570-gx-evo_2_340x280.jpg",
+      "sha256": "e660e70eeecdc09354587c15ffad8f60eb7149fc9f8f10fd38c6f62b00efbeae",
+      "bytes": 18002,
+      "preservedCopy": "public/images/rm-products/570-gx-evo_2_340x280.jpg"
+    },
+    {
+      "id": 245,
+      "filename": "570-gx-evo_3_340x280.jpg",
+      "sha256": "a04a017586294c4ef246b7d4d30195b73d3364de3e9acaf28c331518f41676cb",
+      "bytes": 34099,
+      "preservedCopy": "public/images/rm-products/570-gx-evo_3_340x280.jpg"
+    },
+    {
+      "id": 329,
+      "filename": "albatros-72_10_190x140.jpg",
+      "sha256": "233d220c1a1d6fcc4e8161d04f3ebf3f02870a8d50030efccea726b0c3d6bc17",
+      "bytes": 29432,
+      "preservedCopy": "public/images/rm-products/albatros-72_10_190x140.jpg"
+    },
+    {
+      "id": 330,
+      "filename": "albatros-72_11_190x140.jpg",
+      "sha256": "f67e03afcc0447d8aded501a86d200fd99b08be2edba46b790a170d1dfb207bf",
+      "bytes": 27555,
+      "preservedCopy": "public/images/rm-products/albatros-72_11_190x140.jpg"
+    },
+    {
+      "id": 331,
+      "filename": "albatros-72_12_190x140.jpg",
+      "sha256": "682fae198e216bbf90c323e5121c86f48791adf7734f14dedfbe1a2039aceb9a",
+      "bytes": 17114,
+      "preservedCopy": "public/images/rm-products/albatros-72_12_190x140.jpg"
+    },
+    {
+      "id": 332,
+      "filename": "albatros-72_13_190x140.jpg",
+      "sha256": "5af97879068ff98ef7434a378a998d6a3f52b13ee4f7d6ade5b9fc4c7de9057f",
+      "bytes": 16382,
+      "preservedCopy": "public/images/rm-products/albatros-72_13_190x140.jpg"
+    },
+    {
+      "id": 333,
+      "filename": "albatros-72_14_190x140.jpg",
+      "sha256": "0ce716e9b41400f05c3f9ef55a312c94a81b75197530afa3c693e32e3db13493",
+      "bytes": 24296,
+      "preservedCopy": "public/images/rm-products/albatros-72_14_190x140.jpg"
+    },
+    {
+      "id": 334,
+      "filename": "albatros-72_15_190x140.jpg",
+      "sha256": "3d5bb4a87fee7ad98287112276eacbbd21e1152e4de083cba6a3fbf27a31752d",
+      "bytes": 24783,
+      "preservedCopy": "public/images/rm-products/albatros-72_15_190x140.jpg"
+    },
+    {
+      "id": 335,
+      "filename": "albatros-72_16_190x140.jpg",
+      "sha256": "2ca4b02249c213c046a057948cbb62026cd750a76da75aa203fce33a0a0b305d",
+      "bytes": 18030,
+      "preservedCopy": "public/images/rm-products/albatros-72_16_190x140.jpg"
+    },
+    {
+      "id": 336,
+      "filename": "albatros-72_17_190x140.jpg",
+      "sha256": "a6ff5d498cb2a5059273c2176413db1cf788b86a041a3c476d60160f809a5cae",
+      "bytes": 21277,
+      "preservedCopy": "public/images/rm-products/albatros-72_17_190x140.jpg"
+    },
+    {
+      "id": 337,
+      "filename": "albatros-72_18_190x140.jpg",
+      "sha256": "38021bbdbff768476aad3ab91cc61102ff1ce41eeb1c32694c8795301520dc36",
+      "bytes": 19655,
+      "preservedCopy": "public/images/rm-products/albatros-72_18_190x140.jpg"
+    },
+    {
+      "id": 338,
+      "filename": "albatros-72_19_190x140.jpg",
+      "sha256": "bfd057744da547c3d037dc0f15584bc41d579c557cc77c8ba4bcca567cf4ad65",
+      "bytes": 20349,
+      "preservedCopy": "public/images/rm-products/albatros-72_19_190x140.jpg"
+    },
+    {
+      "id": 340,
+      "filename": "albatros-72_1_2_853x387.jpg",
+      "sha256": "e66ac006cb890f5f2b1fa5defb45002c46fc1a597e9325a2631b3daa9bd81a76",
+      "bytes": 152337,
+      "preservedCopy": "public/images/rm-products/albatros-72_1_2_853x387.jpg"
+    },
+    {
+      "id": 341,
+      "filename": "albatros-72_20_190x140.jpg",
+      "sha256": "98e16ef575902e5f1aca678c6b80756930ad6cbd9e4cfc5ec9fe1f52dfa13794",
+      "bytes": 20275,
+      "preservedCopy": "public/images/rm-products/albatros-72_20_190x140.jpg"
+    },
+    {
+      "id": 342,
+      "filename": "albatros-72_21_190x140.jpg",
+      "sha256": "e012be3c729c77b615c8aa22978118b57a2324933873d8587ed1c4f0e6c4dd79",
+      "bytes": 20958,
+      "preservedCopy": "public/images/rm-products/albatros-72_21_190x140.jpg"
+    },
+    {
+      "id": 343,
+      "filename": "albatros-72_22_190x140.jpg",
+      "sha256": "7f831833e2504b67d71580473399892c531a7394eae0773b0c8558710b3fe997",
+      "bytes": 22158,
+      "preservedCopy": "public/images/rm-products/albatros-72_22_190x140.jpg"
+    },
+    {
+      "id": 344,
+      "filename": "albatros-72_2_190x140.jpg",
+      "sha256": "beddd1c45f405e38012b15b1c35aa7dc244a7a684e9a275671acf625bc69bb8d",
+      "bytes": 19972,
+      "preservedCopy": "public/images/rm-products/albatros-72_2_190x140.jpg"
+    },
+    {
+      "id": 345,
+      "filename": "albatros-72_3_190x140.jpg",
+      "sha256": "9be77622465acab7580b51f017de1bc64801e7f019e74517b7d91285d2cabaae",
+      "bytes": 25811,
+      "preservedCopy": "public/images/rm-products/albatros-72_3_190x140.jpg"
+    },
+    {
+      "id": 346,
+      "filename": "albatros-72_4_190x140.jpg",
+      "sha256": "02d7d9c25bf893017013aca2f2e0ed066c981a742b7c8e22e6443b43d1c8e2b8",
+      "bytes": 23068,
+      "preservedCopy": "public/images/rm-products/albatros-72_4_190x140.jpg"
+    },
+    {
+      "id": 347,
+      "filename": "albatros-72_5_190x140.jpg",
+      "sha256": "c69208a480a0bdef8bc2488981a4bd0ae99c210f61c437227d3beaf0598c6262",
+      "bytes": 13469,
+      "preservedCopy": "public/images/rm-products/albatros-72_5_190x140.jpg"
+    },
+    {
+      "id": 348,
+      "filename": "albatros-72_6_190x140.jpg",
+      "sha256": "878b508b92b25ec89e04f36fd941ced45b7beaa04c7f7a3017bd6cb2e9b49f43",
+      "bytes": 21780,
+      "preservedCopy": "public/images/rm-products/albatros-72_6_190x140.jpg"
+    },
+    {
+      "id": 349,
+      "filename": "albatros-72_7_190x140.jpg",
+      "sha256": "db8f79c0244c744fe96fb6ec01921f3a3e595720f35439939d37ee56e1ce79a2",
+      "bytes": 15341,
+      "preservedCopy": "public/images/rm-products/albatros-72_7_190x140.jpg"
+    },
+    {
+      "id": 350,
+      "filename": "albatros-72_8_190x140.jpg",
+      "sha256": "640160593dae97ee294995ae26bed6f5a5fb2791d665cd85490d26aedfa8c64a",
+      "bytes": 13794,
+      "preservedCopy": "public/images/rm-products/albatros-72_8_190x140.jpg"
+    },
+    {
+      "id": 351,
+      "filename": "albatros-72_9_190x140.jpg",
+      "sha256": "5c95fbf88adeedb45475a2094f1c301474d62c57680f53545f54fe6b520e56e5",
+      "bytes": 15666,
+      "preservedCopy": "public/images/rm-products/albatros-72_9_190x140.jpg"
+    },
+    {
+      "id": 352,
+      "filename": "albatros_10_340x280.png",
+      "sha256": "d918e7d4ddbf9946f15489149c6ee848f2f6acf6d1100c716900f8a19d1c5ae9",
+      "bytes": 87712,
+      "preservedCopy": "public/images/rm-products/albatros_10_340x280.png"
+    },
+    {
+      "id": 355,
+      "filename": "albatros_2_190x140.jpg",
+      "sha256": "8446a16f5013782d42726f6b3a2794ed61ec813dbeba0078ac8119b8a352a036",
+      "bytes": 22180,
+      "preservedCopy": "public/images/rm-products/albatros_2_190x140.jpg"
+    },
+    {
+      "id": 356,
+      "filename": "albatros_3_190x140.jpg",
+      "sha256": "bbdf6b3bbb45fbaa1c64b057b069f9d78ba966a2867cc6ead88f13026bad0228",
+      "bytes": 19452,
+      "preservedCopy": "public/images/rm-products/albatros_3_190x140.jpg"
+    },
+    {
+      "id": 357,
+      "filename": "albatros_4_190x140.jpg",
+      "sha256": "118e582b5ef0954b2ba10f653d7cfa2acbc40fac6d61ca43492343f439c0c81a",
+      "bytes": 25249,
+      "preservedCopy": "public/images/rm-products/albatros_4_190x140.jpg"
+    },
+    {
+      "id": 358,
+      "filename": "albatros_5_190x140.jpg",
+      "sha256": "aeda1178a7d50a1bca9b7a8640e6cf24a57d0cc8d265003420c358f611975c59",
+      "bytes": 18839,
+      "preservedCopy": "public/images/rm-products/albatros_5_190x140.jpg"
+    },
+    {
+      "id": 359,
+      "filename": "albatros_6_190x140.jpg",
+      "sha256": "21aa223bf450aa95a7296303545fcfdeda27df2232814adf67bdfeb7b3e50606",
+      "bytes": 20106,
+      "preservedCopy": "public/images/rm-products/albatros_6_190x140.jpg"
+    },
+    {
+      "id": 360,
+      "filename": "albatros_7_190x140.jpg",
+      "sha256": "5888205cdc26a11f72739c8f1b39c86f4cdd76706ea4d77217e0fdc8aa395976",
+      "bytes": 16010,
+      "preservedCopy": "public/images/rm-products/albatros_7_190x140.jpg"
+    },
+    {
+      "id": 361,
+      "filename": "albatros_8_190x140.jpg",
+      "sha256": "557c79d11a29b154dc523e70107756062470d009cb677d887d1dc49406489138",
+      "bytes": 24225,
+      "preservedCopy": "public/images/rm-products/albatros_8_190x140.jpg"
+    },
+    {
+      "id": 362,
+      "filename": "albatros_9_190x140.jpg",
+      "sha256": "da463350b2bf8751cb0808cd0ca238fbb2ba7e7e10549ec380e978b4a6604703",
+      "bytes": 17396,
+      "preservedCopy": "public/images/rm-products/albatros_9_190x140.jpg"
+    },
+    {
+      "id": 365,
+      "filename": "boom_2_190x140.jpg",
+      "sha256": "8df07c4b1c6be2a982afbadc9f375ba18cf88c96b63f0bb510cf3989d65ba945",
+      "bytes": 15620,
+      "preservedCopy": "public/images/rm-products/boom_2_190x140.jpg"
+    },
+    {
+      "id": 366,
+      "filename": "boom_3_190x140.jpg",
+      "sha256": "41a62c1c67fddf79720ef0eed848e46a66bc1440dc60d60546548a8bf0d485a3",
+      "bytes": 11922,
+      "preservedCopy": "public/images/rm-products/boom_3_190x140.jpg"
+    },
+    {
+      "id": 367,
+      "filename": "boom_4_190x140.jpg",
+      "sha256": "c3689699f0cda9727e11d83f9d72937a988dbde30794e269081e0922a1ca971f",
+      "bytes": 19686,
+      "preservedCopy": "public/images/rm-products/boom_4_190x140.jpg"
+    },
+    {
+      "id": 368,
+      "filename": "boom_5_190x140.jpg",
+      "sha256": "4d895e56b8127b4fa5724febb03541635c5e182e05a8d0b342450902e5be0320",
+      "bytes": 20694,
+      "preservedCopy": "public/images/rm-products/boom_5_190x140.jpg"
+    },
+    {
+      "id": 369,
+      "filename": "boom_6_190x140.jpg",
+      "sha256": "0cb50a5fb434df93e8e0c1a14ae7f34c1751298a3be06969e8e0e472dac7c370",
+      "bytes": 21386,
+      "preservedCopy": "public/images/rm-products/boom_6_190x140.jpg"
+    },
+    {
+      "id": 370,
+      "filename": "boom_7_190x140.jpg",
+      "sha256": "bb5856bd3c85c9f95a237724e81c7340da26c2adc11c78627f66e12f76ea7787",
+      "bytes": 21920,
+      "preservedCopy": "public/images/rm-products/boom_7_190x140.jpg"
+    },
+    {
+      "id": 371,
+      "filename": "boom_8_190x140.jpg",
+      "sha256": "35cc86e54b8996e9a8dff9c52999a1b0707a2b14de733c7fb4e5efc0dd43ca53",
+      "bytes": 15631,
+      "preservedCopy": "public/images/rm-products/boom_8_190x140.jpg"
+    },
+    {
+      "id": 372,
+      "filename": "boom_9_340x280.png",
+      "sha256": "93edb41620a5ebd40087702e0864e3491e33b12a8f001a81412bf340091a119b",
+      "bytes": 55773,
+      "preservedCopy": "public/images/rm-products/boom_9_340x280.png"
+    },
+    {
+      "id": 375,
+      "filename": "condor_2_190x140.jpg",
+      "sha256": "b22b97ede54d85922e8b384741c59dd2cb42487346028019e5068158050d5217",
+      "bytes": 21337,
+      "preservedCopy": "public/images/rm-products/condor_2_190x140.jpg"
+    },
+    {
+      "id": 376,
+      "filename": "condor_3_190x140.jpg",
+      "sha256": "0a74b3d1aaf3c86951c3ec1c60c5cc4d466ba7b754621448adb2281d0db1c0f4",
+      "bytes": 22879,
+      "preservedCopy": "public/images/rm-products/condor_3_190x140.jpg"
+    },
+    {
+      "id": 377,
+      "filename": "condor_4_190x140.jpg",
+      "sha256": "1d908f84e2bea29091cd20ed22516234bafe0e32dd7614fe3ce5b987680454d9",
+      "bytes": 24736,
+      "preservedCopy": "public/images/rm-products/condor_4_190x140.jpg"
+    },
+    {
+      "id": 380,
+      "filename": "falcon_2_190x140.jpg",
+      "sha256": "61e7688a1119a82c1220f85cea3f9acde6267fc39e1ed15fc1373d2a3952f33f",
+      "bytes": 22158,
+      "preservedCopy": "public/images/rm-products/falcon_2_190x140.jpg"
+    },
+    {
+      "id": 381,
+      "filename": "falcon_3_190x140.jpg",
+      "sha256": "0d5426a5c341b310c7c9f0369ac2415579687c8b8587f858167a8dbb6b3afa80",
+      "bytes": 24215,
+      "preservedCopy": "public/images/rm-products/falcon_3_190x140.jpg"
+    },
+    {
+      "id": 382,
+      "filename": "falcon_4_190x140.jpg",
+      "sha256": "2b4d4364ccd644d05608563ffdc2f7cb0177fdc407854e31cc0b08790ec3e6ac",
+      "bytes": 20815,
+      "preservedCopy": "public/images/rm-products/falcon_4_190x140.jpg"
+    },
+    {
+      "id": 383,
+      "filename": "falcon_5_190x140.jpg",
+      "sha256": "981667b8c7f6e69e3f3e460c44b454e04e748ff4cd719b542b996a562b894e59",
+      "bytes": 24813,
+      "preservedCopy": "public/images/rm-products/falcon_5_190x140.jpg"
+    },
+    {
+      "id": 384,
+      "filename": "falcon_6_190x140.jpg",
+      "sha256": "6935c93563f5d8de2827546bd943842317ad5fd8f619445f7fe4f32e918d2ef4",
+      "bytes": 20762,
+      "preservedCopy": "public/images/rm-products/falcon_6_190x140.jpg"
+    },
+    {
+      "id": 385,
+      "filename": "falcon_7_190x140.jpg",
+      "sha256": "affd05aae767f6bf86dfadc967d1eb6c712e47af30853d8b9314378b45dbd004",
+      "bytes": 22860,
+      "preservedCopy": "public/images/rm-products/falcon_7_190x140.jpg"
+    },
+    {
+      "id": 386,
+      "filename": "falcon_8_340x280.png",
+      "sha256": "580d69b44ec36be13f3695561900b6b94aecd32cc24358ad926be3166851501f",
+      "bytes": 6110,
+      "preservedCopy": "public/images/rm-products/falcon_8_340x280.png"
+    },
+    {
+      "id": 389,
+      "filename": "liqu_2_190x140.jpg",
+      "sha256": "9d7f374240cfc3dac1f1cfd1b643ec3545caf8cf555f36e227544825c07528f8",
+      "bytes": 24556,
+      "preservedCopy": "public/images/rm-products/liqu_2_190x140.jpg"
+    },
+    {
+      "id": 390,
+      "filename": "liqu_3_190x140.jpg",
+      "sha256": "d8f9075ed08a4632f72b1c28acd2fcc283100490e3fe84cf61ef685b9b1bf4db",
+      "bytes": 12622,
+      "preservedCopy": "public/images/rm-products/liqu_3_190x140.jpg"
+    }
+  ]
+}

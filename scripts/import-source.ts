@@ -91,7 +91,7 @@ for(const [id,entry] of categoryById){
  const image=localMedia.get(localProductImage[id]||'')|| (block?.images||[]).map((im:any)=>mediaBySourcePath(im.src)).find(Boolean)
  const gallery=(block?.images||[]).map((im:any)=>mediaBySourcePath(im.src)).filter(Boolean).map((m:any)=>m.id).filter((v:any,i:number,a:any[])=>a.indexOf(v)===i)
  const docs=assets.filter((a:any)=>a.url.toLowerCase().endsWith('.pdf')&&(a.pages||[]).includes(page?.url)).map((a:any)=>mediaForUrl(a.url)?.id).filter(Boolean)
- const data:any={name:entry.name,slug:entry.slug,brand,summary,sourceDetails:details,category:[entry.doc.id],image:image?.id,gallery,documents:docs,originalUrl:page?.url,legacyKey:id,sortOrder:Number(id),status:'published'}
+ const data:any={name:entry.name,slug:entry.slug,brand,summary,sourceDetails:details,category:entry.doc.id,image:image?.id,gallery,documents:docs,originalUrl:page?.url,legacyKey:id,sortOrder:Number(id),status:'published'}
  const exists=await payload.find({collection:'products',where:{slug:{equals:entry.slug}},limit:1,overrideAccess:true});
  if(exists.docs[0])await payload.update({collection:'products',id:(exists.docs[0] as any).id,overrideAccess:true,data} as any)
  else{await payload.create({collection:'products',overrideAccess:true,data} as any);productsAdded++}
