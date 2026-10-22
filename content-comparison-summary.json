@@ -1,0 +1,9 @@
+{
+  "routesCompared": 255,
+  "sourceAndCopyBothRespondedAndMatched": 131,
+  "sourceTimedOutCopyResponded": 74,
+  "sourceAndCopyTimedOut": 50,
+  "contentMismatchesWhereBothResponded": 0,
+  "fullContentEquivalenceVerified": false,
+  "details": "The development source server stalled under the 255-route crawl. Only successful two-sided fetches are counted as verified matches."
+}

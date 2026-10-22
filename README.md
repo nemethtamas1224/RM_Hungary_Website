@@ -1,17 +1,13 @@
-# RM Hajdú Hungary weboldal
+# RM Hungary — statikus webhely
 
-Ez a mappa az RM weboldal Next.js és Payload CMS forrásprojektjének külön munkapéldánya.
+Ez az ág a jelenlegi RM Hungary projekt statikus HTML/CSS/JavaScript exportját tartalmazza.
 
-## Helyi futtatás
+- Főoldal: `index.html`
+- Aloldalak: azonos útvonalú mappák `index.html` fájljai
+- Képek és dokumentumok: `images/`, `uploads/`, `documents/`
+- Átirányítási szabályok: `_redirects` (az ezt támogató statikus tárhelyhez)
+- Katalógus és keresés adatai: `catalog.json`, `search-index.json`
 
-1. Telepíts Node.js-t és pnpm-et.
-2. Másold az `.env.example` fájlt `.env.local` néven, majd állítsd be a helyi adatbázist és az admin titkos kulcsot.
-3. Futtasd: `pnpm install`, majd `pnpm dev`.
+Helyi előnézethez futtatható például `python3 -m http.server 8080`; majd nyisd meg a `http://127.0.0.1:8080/` címet. A repó feltöltése nem állít be GitHub Pages-t és nem publikálja az oldalt.
 
-Az adatbázis és a feltöltött CMS-adatok külön kerülnek átadásra; titkos vagy helyi fájlokat ne tölts fel a GitHubra.
-
-## Publikálás
-
-A GitHub Pages csak statikus fájlokat szolgál ki. Ez az alkalmazás Payload CMS-t, adatbázist, szerveroldali Next.js útvonalakat és API-kat használ, ezért ott nem futtatható. A jelenlegi telepítési cél a Render; a beállítási állapotot és az adatátvitel követelményeit a [GITHUB_PAGES_ELŐKÉSZÍTÉS.md](GITHUB_PAGES_ELŐKÉSZÍTÉS.md) tartalmazza.
-
-Az alkalmazás forrása a nyilvános GitHub-repóban van. Az éles weboldal Renderen még nincs működő állapotban.
+A teljes, útvonalankénti tartalmi összehasonlítás részben blokkolva maradt a forráskiszolgáló timeoutjai miatt; részletek: `content-comparison-summary.json` és `PROJEKT_ATTEKINTES.md`.
