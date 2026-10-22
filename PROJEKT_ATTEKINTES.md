@@ -58,3 +58,11 @@
 
 - A motoros szivattyúegység kategória RM MOP logója a kártyán 52 px magas/legfeljebb 140 px széles, mobilon 46 px/120 px; a Starpower logók mérete változatlan.
 - A helyi módosítás együtt kerül fel a GitHub `main` ágára a pályázati bannerrel, piros CTA-val és Rovatti-zöld kártyakörvonallal.
+
+
+## 2026-10-23 – Szövegtisztítás és szivattyúlogó
+
+- Az RM MOP logó a dízelmotoros szivattyúegységek oldalán a Starpower logóknál kisebb; a közös Starpower-méretezés változatlan.
+- A dohányszárító, dohánytetejező, zölddohány-feldolgozó és magvető oldalakon, valamint az elérhető archív HTML-oldalakon eltávolítottam a korábbi RM-oldalakra utaló megjegyzéseket. A horganyzott gerincvezetéknél is kikerült az ilyen eredetű kínálati hivatkozás.
+- Az összes HTML-oldal célzott átvizsgálásakor nem maradt „korábbi RM” vagy a korábbi RM-weboldalra utaló szöveg. A dohányszárító oldal új leírása megőrzi a 12–18 konténeres és fűtési információt, de nem hivatkozik korábbi oldalra.
+- A szövegjavítások feltöltése után a GitHub Pages telepítés állapotát még vissza kell ellenőrizni.
