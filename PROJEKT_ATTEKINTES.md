@@ -1,3 +1,9 @@
+## 2026-10-22 – A főoldali partnerek teljes listája
+
+- A főoldali „Az általunk forgalmazott márkák” rács most mind a 12, a statikus `/gyartok/` oldalon szereplő gyártót linkeli a saját adatlapjára: Cosmeco, Da Ros, De Cloet, Giunti, Lindsay, Mantovani, Oliveragro, RM, Rovatti, Starpower, Valducci és Vodar.
+- A forrásban 11 gyártói logófájl található; ezek a logók jelennek meg. A Lindsay-adatlap a forráshoz hű szöveges márkanevet használ, mert a projektben nincs Lindsay-logófájl; nem készült kitalált logó.
+- Ellenőrzés: helyi böngészőben mind a 12 kártya és belső gyártói hivatkozás megjelent; 11/11 képlogó betöltött. 1280 px-es nézetben 6 oszlop, 390 px-es mobilnézetben 2 oszlop és 390 px-es dokumentumszélesség látszott. A változtatás helyi; a GitHub Pages friss ellenőrzése még hátravan.
+
 # RM Hungary statikus weboldal
 
 - **Cél:** a jelenlegi projekt különálló, statikus, feltölthető változata. A GitHub `main` ága a statikus webhelyet tartalmazza; a GitHub Pages a `main` ágról települ.
@@ -15,4 +21,4 @@
 - A statikus export 105 HTML-oldalán található termékgalériák eddig csak markupként voltak jelen, működtető kliensoldali kód nélkül. A közös `static.js` most kezeli az előző/következő gombokat, bélyegképeket, körbefordulást, számlálót, billentyűzetet és mobilos lapozást.
 - 700 px alatt a Termékek menüpont az áttekintő oldalra navigál; a sok helyet foglaló almenü nem nyílik ki.
 - Oldalbetöltéskor és oldalak közötti navigációnál finom áttűnés fut; a horgonyokra görgetés sima, a gombok/képek enyhe visszajelző mozgást kapnak. A `prefers-reduced-motion` beállítást tiszteletben tartja.
-- Helyi ellenőrzés: a De Cloet 1TH4 galéria a 2/3 képre váltott; 390 px-es nézetben a hamburger megnyitotta a navigációt, a Termékek almenü rejtve maradt, a Termékek hivatkozás az áttekintő oldalra navigált. A GitHub Pagesre történő feltöltés és publikus ellenőrzés még hátravan.
+- Ellenőrzés: helyi és GitHub Pages nézetben a De Cloet 1TH4 galéria „Következő kép” gombja 2/3-ra váltott. 390 px-es helyi nézetben a hamburger megnyitotta a navigációt, a Termékek almenü rejtve maradt, a Termékek hivatkozás az áttekintő oldalra navigált. A main commit `2db4e59` és a Pages deployment sikeres; az élő galéria képe és számlálója működik.
