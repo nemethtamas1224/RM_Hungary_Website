@@ -8,4 +8,11 @@
 - **Fennmaradó munka:** stabil forráskiszolgálóról vagy előre rögzített HTML-pillanatképből futtasd újra a 124 nem ellenőrizhető útvonal tartalmi összevetését; ezután ismételd az érintett vizuális ellenőrzést. Ez a bizonytalanság dokumentált marad.
 - **Főoldali képkorrekció:** a kategória kiválasztásával betöltődő termékcsalád-logók a konténerhez igazodnak, az eredeti képarányt tartják (`contain`), és lusta/dekódolt betöltést használnak. Kézi böngészős ellenőrzés: 5 logó betöltött, mind 237×76 px dobozt töltött ki.
 
-- **GitHub Pages útvonaljavítás (2026-10-22):** ellenőrzött statikus előnézetben a CSS, a logók, a termékkép és a menü-/kategórialinkek helyesen töltődtek be a `/RM_Hungary_Website/` útvonalat utánzó előnézetben. Az éles URL-en a 404 okát a hiányzó `.nojekyll` fájl igazolta; hozzáadva, telepítése ellenőrzés alatt. A GitHub Pages automatikus telepítése a `main` ágra történő frissítésre állítva; a nyilvános URL ellenőrzése a workflow lefutása után szükséges.
+- **GitHub Pages útvonaljavítás (2026-10-22):** a `main` ágon beállított telepítés és a `.nojekyll` fájl mellett a publikus oldalon a CSS, logók, termékképek és navigáció betöltése ellenőrizve.
+
+## 2026-10-22 – Galéria, mobilmenü és átmenetek
+
+- A statikus export 105 HTML-oldalán található termékgalériák eddig csak markupként voltak jelen, működtető kliensoldali kód nélkül. A közös `static.js` most kezeli az előző/következő gombokat, bélyegképeket, körbefordulást, számlálót, billentyűzetet és mobilos lapozást.
+- 700 px alatt a Termékek menüpont az áttekintő oldalra navigál; a sok helyet foglaló almenü nem nyílik ki.
+- Oldalbetöltéskor és oldalak közötti navigációnál finom áttűnés fut; a horgonyokra görgetés sima, a gombok/képek enyhe visszajelző mozgást kapnak. A `prefers-reduced-motion` beállítást tiszteletben tartja.
+- Helyi ellenőrzés: a De Cloet 1TH4 galéria a 2/3 képre váltott; 390 px-es nézetben a hamburger megnyitotta a navigációt, a Termékek almenü rejtve maradt, a Termékek hivatkozás az áttekintő oldalra navigált. A GitHub Pagesre történő feltöltés és publikus ellenőrzés még hátravan.

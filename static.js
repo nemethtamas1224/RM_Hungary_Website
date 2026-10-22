@@ -1,4 +1,87 @@
 (() => {
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches
+  document.documentElement.classList.add('motion-ready')
+
+  // The source HTML contains the gallery markup; static exports do not hydrate
+  // the original React client, so wire every gallery up here.
+  document.querySelectorAll('.product-slideshow').forEach((gallery) => {
+    const main = gallery.querySelector('.product-slideshow-main')
+    const image = main?.querySelector('img')
+    const thumbs = [...gallery.querySelectorAll('.product-slideshow-thumbs button')]
+    const counter = gallery.querySelector('.slideshow-counter')
+    const previous = gallery.querySelector('.slideshow-prev')
+    const next = gallery.querySelector('.slideshow-next')
+    if (!main || !image || !thumbs.length) return
+
+    let current = Math.max(0, thumbs.findIndex((button) => button.classList.contains('active')))
+    const originalAlt = image.alt
+    const show = (index) => {
+      current = (index + thumbs.length) % thumbs.length
+      const button = thumbs[current]
+      const thumbImage = button.querySelector('img')
+      const source = thumbImage?.currentSrc || thumbImage?.src
+      if (source) {
+        main.classList.add('is-changing')
+        window.setTimeout(() => {
+          image.src = source
+          image.removeAttribute('srcset')
+          image.alt = current === 0 ? originalAlt : `${originalAlt} – ${current + 1}. kép`
+          requestAnimationFrame(() => main.classList.remove('is-changing'))
+        }, reduceMotion ? 0 : 100)
+      }
+      thumbs.forEach((thumb, i) => {
+        const active = i === current
+        thumb.classList.toggle('active', active)
+        if (active) thumb.setAttribute('aria-current', 'true')
+        else thumb.removeAttribute('aria-current')
+      })
+      if (counter) counter.textContent = `${current + 1} / ${thumbs.length}`
+    }
+
+    previous?.addEventListener('click', () => show(current - 1))
+    next?.addEventListener('click', () => show(current + 1))
+    thumbs.forEach((thumb, index) => thumb.addEventListener('click', () => show(index)))
+    gallery.tabIndex = 0
+    gallery.addEventListener('keydown', (event) => {
+      if (event.target.closest('button, a, input, textarea, select')) return
+      if (event.key === 'ArrowLeft') { event.preventDefault(); show(current - 1) }
+      if (event.key === 'ArrowRight') { event.preventDefault(); show(current + 1) }
+    })
+    let touchStart = null
+    main.addEventListener('touchstart', (event) => {
+      const touch = event.changedTouches[0]
+      touchStart = [touch.clientX, touch.clientY]
+    }, { passive: true })
+    main.addEventListener('touchend', (event) => {
+      if (!touchStart) return
+      const touch = event.changedTouches[0]
+      const dx = touch.clientX - touchStart[0]
+      const dy = touch.clientY - touchStart[1]
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.25) show(current + (dx < 0 ? 1 : -1))
+      touchStart = null
+    }, { passive: true })
+    if (thumbs.length < 2) {
+      if (previous) previous.hidden = true
+      if (next) next.hidden = true
+      const thumbRow = gallery.querySelector('.product-slideshow-thumbs')
+      if (thumbRow) thumbRow.hidden = true
+    } else show(current)
+  })
+
+  // Smooth page-to-page transitions without interfering with downloads,
+  // external links, new tabs, or browser navigation shortcuts.
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]')
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+    if (link.target && link.target !== '_self' || link.hasAttribute('download')) return
+    const destination = new URL(link.href, location.href)
+    if (destination.origin !== location.origin || destination.pathname === location.pathname || destination.hash && destination.pathname === location.pathname) return
+    if (reduceMotion || !document.body.animate) return
+    event.preventDefault()
+    document.body.classList.add('page-leaving')
+    window.setTimeout(() => { location.href = destination.href }, 180)
+  })
+
   const basePath = location.pathname.startsWith('/RM_Hungary_Website/') ? '/RM_Hungary_Website' : ''
   const siteUrl = (value) => { const path = String(value || ''); return path.startsWith('/') && !path.startsWith('//') ? `${basePath}${path}` : path }
   const normalize = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('hu').trim()

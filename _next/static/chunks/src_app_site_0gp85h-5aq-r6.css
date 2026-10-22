@@ -1629,8 +1629,11 @@ h1 em {
     transform: none;
   }
 
-  .has-dropdown:hover .nav-dropdown, .has-dropdown:focus-within .nav-dropdown {
-    display: block;
+  /* On touch-width layouts, Termékek navigates to its overview page. Never
+     expand the very long desktop category tree over the mobile menu. */
+  .nav .has-dropdown:hover .nav-dropdown,
+  .nav .has-dropdown:focus-within .nav-dropdown {
+    display: none !important;
   }
 
   .dropdown-grid {
@@ -3421,6 +3424,12 @@ h1 em {
 
 .product-slideshow-main img {
   object-fit: contain;
+  transition: opacity .28s ease, transform .38s cubic-bezier(.2,.75,.25,1);
+}
+
+.product-slideshow-main.is-changing img {
+  opacity: .3;
+  transform: scale(.985);
 }
 
 .slideshow-arrow {
@@ -3480,8 +3489,62 @@ h1 em {
   border-color: var(--red);
 }
 
+.product-slideshow-thumbs button {
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.product-slideshow-thumbs button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px #1112;
+}
+
 .product-slideshow-thumbs img {
   object-fit: cover;
+}
+
+.motion-ready main {
+  animation: page-enter .42s cubic-bezier(.2,.7,.25,1) both;
+}
+
+.page-leaving main,
+.page-leaving footer {
+  animation: page-leave .18s ease both;
+}
+
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes page-leave {
+  to { opacity: 0; transform: translateY(-5px); }
+}
+
+a, button {
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+a:active:not(.brand), button:active {
+  transform: translateY(1px) scale(.985);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
 }
 
 .gx-dimensions {
