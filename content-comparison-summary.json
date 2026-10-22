@@ -1,9 +1,11 @@
 {
-  "routesCompared": 255,
   "sourceAndCopyBothRespondedAndMatched": 131,
   "sourceTimedOutCopyResponded": 74,
   "sourceAndCopyTimedOut": 50,
   "contentMismatchesWhereBothResponded": 0,
   "fullContentEquivalenceVerified": false,
-  "details": "The development source server stalled under the 255-route crawl. Only successful two-sided fetches are counted as verified matches."
+  "details": "The development source server stalled under the 255-route crawl. Only successful two-sided fetches are counted as verified matches. This comparison is a historical baseline from before the latest static-only updates; the current static copy has 252 HTML routes and has not had a full source text comparison rerun.",
+  "comparisonBaselineRouteCount": 255,
+  "currentStaticHtmlRoutes": 252,
+  "recomparedAfterLatestStaticChanges": false
 }

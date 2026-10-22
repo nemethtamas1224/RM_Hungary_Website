@@ -4774,3 +4774,163 @@ html {
 }
 
 /*# sourceMappingURL=src_app_site_0gp85h-5aq-r6.css.map*/
+
+/* Editorial pages: verified reference/news sources and official grant imagery. */
+.reference-card-photo { display:block; width:100%; aspect-ratio:16/9; overflow:hidden; background:var(--paper); margin-bottom:12px; }
+.reference-card-photo img { display:block; width:100%; height:100%; object-fit:cover; }
+.article-richtext { color:var(--ink); font-size:16px; line-height:1.75; }
+.article-richtext p { margin:0 0 1.15em; }
+.article-richtext h2,.article-richtext h3 { line-height:1.25; margin:1.7em 0 .6em; }
+.article-richtext ul,.article-richtext ol { padding-left:1.5em; margin:0 0 1.2em; }
+.article-richtext li { margin:.3em 0; }
+.article-richtext a { color:var(--forest); text-decoration:underline; text-underline-offset:.15em; }
+.article-richtext img { max-width:100%; height:auto; }
+.article-gallery-title { margin:2em 0 .8em; }
+.article-gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px; margin:1em 0 2em; }
+.article-gallery a { display:block; aspect-ratio:4/3; overflow:hidden; background:var(--paper); }
+.article-gallery img { width:100%; height:100%; object-fit:cover; display:block; }
+.grant-gallery { display:grid; grid-template-columns:1fr; gap:30px; margin:32px auto 70px; max-width:980px; }
+.grant-gallery figure { margin:0; background:#fff; border:1px solid var(--line); padding:12px; }
+.grant-gallery img { display:block; width:100%; height:auto; }
+.grant-gallery figcaption { padding:10px 4px 0; text-align:right; font-size:13px; }
+.grant-gallery figcaption a { color:var(--forest); text-decoration:underline; }
+@media (max-width:700px) { .reference-card-photo { aspect-ratio:16/10; } .article-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; } .grant-gallery { gap:18px; } .grant-gallery figure { padding:8px; } }
+.article-list.reference-list,.article-list.news-list { display:grid; gap:24px; margin-top:45px; border-top:0; }
+.reference-list .reference-card { padding:0; gap:0; overflow:hidden; }
+.reference-list .reference-card-photo { margin:0; }
+.reference-list .reference-card strong { margin:18px 22px 8px; }
+.reference-list .reference-card p { margin:0 22px 22px; }
+.news-card .article-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.article-detail-image img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+
+/* Legacy source-page media uses Next/Image fill markup; give each image its own responsive frame. */
+.media-gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr)); gap:16px; margin:16px 0 24px; }
+.media-gallery > div { position:relative; min-width:0; aspect-ratio:4/3; overflow:hidden; border:1px solid var(--line); border-radius:12px; background:var(--paper); }
+.media-gallery > div > img { object-fit:contain; }
+
+/* VODAR shared product overview and its five verified system variants. */
+.vodar-system-types {
+  margin: 8px 0 58px;
+}
+
+.vodar-type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.vodar-type-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+}
+
+.vodar-type-card > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--paper);
+}
+
+.vodar-type-copy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px 24px 24px;
+}
+
+.vodar-type-copy .eyebrow {
+  margin: 0 0 8px;
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .07em;
+}
+
+.vodar-type-copy h2 {
+  margin: 0 0 10px;
+  font-size: clamp(20px, 2.1vw, 26px);
+  line-height: 1.2;
+}
+
+.vodar-type-copy > p:not(.eyebrow) {
+  margin: 0 0 18px;
+  color: #454b45;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.vodar-type-copy .text-link {
+  margin-top: auto;
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.vodar-type-copy .text-link:hover {
+  color: var(--red-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .vodar-type-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .vodar-type-copy {
+    padding: 19px 20px 21px;
+  }
+}
+
+
+/* Click-to-load map facade: keep third-party map requests out of page startup. */
+.map-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+  text-align: center;
+  background: linear-gradient(135deg, #edf1ed, #dfe7e0);
+}
+
+.map-placeholder p {
+  max-width: 24ch;
+  margin: 0;
+  color: var(--forest-deep);
+  font-weight: 700;
+}
+
+/* The compiled stylesheet has a later global palette block that can set
+   --forest-deep to white. Keep the map placeholder readable in either palette. */
+.about-map-box .map-placeholder p {
+  color: #0e2b21;
+}
+
+.about-map-box .map-placeholder .map-load-button {
+  color: #fff;
+  background-color: #0e2b21;
+}
+
+.category-card-grid > [hidden] {
+  display: none !important;
+}
+
+
+@media (max-width: 700px) {
+  .hero-image img {
+    object-position: right center;
+  }
+}
+.irrigation-control-showcase{margin-top:2rem}.irrigation-control-card{max-width:420px}.irrigation-control-page{padding-bottom:4rem}.irrigation-control-hero{margin:2rem 0 2.5rem;background:#f4f5f3;border-radius:18px;overflow:hidden}.irrigation-control-hero img{display:block;width:100%;max-height:560px;object-fit:contain;background:#f4f5f3}.irrigation-control-hero figcaption{padding:1rem 1.25rem;color:#45504a;font-size:.95rem}.irrigation-control-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.irrigation-control-features article{padding:1.4rem;border:1px solid #e2e6e2;border-radius:14px;background:#fff}.irrigation-control-features h2{font-size:1.25rem;margin:0 0 .6rem}.irrigation-control-features p{margin:0;line-height:1.65}.irrigation-control-note{margin:1.5rem 0;line-height:1.65}@media(max-width:700px){.irrigation-control-features{grid-template-columns:1fr}.irrigation-control-hero{margin:1.25rem 0 1.75rem}.irrigation-control-hero img{max-height:390px}}

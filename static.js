@@ -2,6 +2,31 @@
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches
   document.documentElement.classList.add('motion-ready')
 
+  // Keep the third-party map out of the initial request. Start loading it
+  // automatically shortly before it enters the viewport.
+  const mapBoxes = [...document.querySelectorAll('.about-map-box[data-map-src]')]
+  const loadMap = (box) => {
+    const frame = document.createElement('iframe')
+    frame.src = box.dataset.mapSrc
+    frame.title = 'RM Hajdú Hungary Kft. – Tépe térkép'
+    frame.loading = 'lazy'
+    frame.referrerPolicy = 'strict-origin-when-cross-origin'
+    frame.allowFullscreen = true
+    box.replaceChildren(frame)
+  }
+  if ('IntersectionObserver' in window) {
+    const mapObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        loadMap(entry.target)
+        mapObserver.unobserve(entry.target)
+      })
+    }, { rootMargin: '400px 0px' })
+    mapBoxes.forEach((box) => mapObserver.observe(box))
+  } else {
+    mapBoxes.forEach(loadMap)
+  }
+
   // The source HTML contains the gallery markup; static exports do not hydrate
   // the original React client, so wire every gallery up here.
   document.querySelectorAll('.product-slideshow').forEach((gallery) => {
@@ -84,6 +109,14 @@
 
   const basePath = location.pathname.startsWith('/RM_Hungary_Website/') ? '/RM_Hungary_Website' : ''
   const siteUrl = (value) => { const path = String(value || ''); return path.startsWith('/') && !path.startsWith('//') ? `${basePath}${path}` : path }
+  const familyFilter = new URLSearchParams(location.search).get('families')
+  if (familyFilter) {
+    const allowedFamilies = new Set(familyFilter.split(',').filter(Boolean))
+    document.querySelectorAll('.category-card-grid > a').forEach((card) => {
+      const slug = new URL(card.href, location.href).pathname.replace(/\/+$/, '').split('/').pop()
+      card.hidden = !allowedFamilies.has(slug)
+    })
+  }
   const normalize = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('hu').trim()
   const cleanMail = (value) => String(value || '').replace(/[\r\n\0]/g, ' ').trim()
   const cleanBody = (value) => String(value || '').replace(/\0/g, '').trim()
@@ -141,13 +174,15 @@
     })
   })
 
-  fetch(siteUrl('/catalog.json')).then((r) => r.ok ? r.json() : null).then((catalog) => {
-    if (!catalog) return
-    catalogProductNames = Object.fromEntries(catalog.products.map(product => [product.slug, product.name]))
-    setupHomeCatalog(catalog)
-  }).catch(() => {})
+  if (document.querySelector('.category-choice-grid, .quote-form')) {
+    fetch(siteUrl('/catalog.json')).then((r) => r.ok ? r.json() : null).then((catalog) => {
+      if (!catalog) return
+      catalogProductNames = Object.fromEntries(catalog.products.map(product => [product.slug, product.name]))
+      setupHomeCatalog(catalog)
+    }).catch(() => {})
+  }
 
-  fetch(siteUrl('/search-index.json')).then((r) => r.ok ? r.json() : []).then((index) => {
+  if (document.querySelector('.search-large')) fetch(siteUrl('/search-index.json')).then((r) => r.ok ? r.json() : []).then((index) => {
     let resultBox = document.querySelector('.search-results')
     if (!resultBox) {
       const form = document.querySelector('.search-large')
@@ -202,7 +237,8 @@
         const choices = document.createElement('div'); choices.className = 'subcategory-choice-grid'; choices.setAttribute('aria-label', 'Alkategóriák')
         children.filter(c => String(c.parent) === selectedGroup).forEach(c => { const b = document.createElement('button'); b.type = 'button'; b.textContent = c.name; b.addEventListener('click', () => { selectedCategory = String(c.id); offset = 0; choices.querySelectorAll('button').forEach(x => { x.classList.toggle('active', x === b); x.setAttribute('aria-pressed', String(x === b)) }); showProducts(panel, group, c) }); choices.append(b) })
         panel.append(head, choices); grid.after(panel)
-        panel.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' })
+        // Keep the category chooser in view; the subcategory panel is rendered
+        // directly below it without moving the page.
       })
     })
 
@@ -231,7 +267,8 @@
         }
       }
       panel.append(section)
-      section.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'})
+      // Product results stay inline with the category chooser instead of
+      // forcing the visitor down the page.
     }
   }
 })()

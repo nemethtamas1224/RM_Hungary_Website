@@ -1,7 +1,7 @@
 ## 2026-10-22 – A főoldali partnerek teljes listája
 
 - A főoldali „Az általunk forgalmazott márkák” rács most mind a 12, a statikus `/gyartok/` oldalon szereplő gyártót linkeli a saját adatlapjára: Cosmeco, Da Ros, De Cloet, Giunti, Lindsay, Mantovani, Oliveragro, RM, Rovatti, Starpower, Valducci és Vodar.
-- A forrásban 11 gyártói logófájl található; ezek a logók jelennek meg. A Lindsay-adatlap a forráshoz hű szöveges márkanevet használ, mert a projektben nincs Lindsay-logófájl; nem készült kitalált logó.
+- A márkarács mind a 12 gyártót megjeleníti. A Lindsay-kártya a felhasználó által megadott helyi logófájlt használja; a logó jelen van a statikus kiadásban.
 - Ellenőrzés: helyi böngészőben mind a 12 kártya és belső gyártói hivatkozás megjelent; 11/11 képlogó betöltött. 1280 px-es nézetben 6 oszlop, 390 px-es mobilnézetben 2 oszlop és 390 px-es dokumentumszélesség látszott. A változtatás helyi; a GitHub Pages friss ellenőrzése még hátravan.
 
 # RM Hungary statikus weboldal
@@ -22,3 +22,19 @@
 - 700 px alatt a Termékek menüpont az áttekintő oldalra navigál; a sok helyet foglaló almenü nem nyílik ki.
 - Oldalbetöltéskor és oldalak közötti navigációnál finom áttűnés fut; a horgonyokra görgetés sima, a gombok/képek enyhe visszajelző mozgást kapnak. A `prefers-reduced-motion` beállítást tiszteletben tartja.
 - Ellenőrzés: helyi és GitHub Pages nézetben a De Cloet 1TH4 galéria „Következő kép” gombja 2/3-ra váltott. 390 px-es helyi nézetben a hamburger megnyitotta a navigációt, a Termékek almenü rejtve maradt, a Termékek hivatkozás az áttekintő oldalra navigált. A main commit `2db4e59` és a Pages deployment sikeres; az élő galéria képe és számlálója működik.
+
+
+## 2026-10-22 – Frissített statikus kiadás feltöltése
+
+- A statikus webhely forrása a külön munkapéldány `site/` könyvtára. A `main` repó gyökere változatlanul statikus HTML/CSS/JavaScript kiadás; a Next.js forrásprojektet, adatbázist és `source-snapshot/` mappát nem másoltam a repóba.
+- Frissített tartalom: automatikus, közelség alapú térképbetöltés; márkacsaládhoz közvetlen navigáció; a vegyes De Cloet/Mantovani dohánytörő kártya eltávolítása és régi útvonalának átirányítása; mobil nyitókép jobb oldali fókusza; öntözésvezérlés bemutatóoldal és négy kategóriakártya.
+- A statikus mappa ellenőrzött állapota: 252 HTML-oldal, 250 keresőbejegyzés, 19 105 helyi hivatkozás, 0 hiányzó fájl; a JavaScript szintaxisellenőrzése sikeres. A teljes forrás-szövegegyezés és a külső linkek teljes elérhetősége továbbra sincs igazolva.
+- A `main` ágra történő push elindítja a repó GitHub Pages workflow-ját. A forrásprojekt és az éles, nem GitHub Pages webhely változatlan marad.
+
+
+## Friss statikus feltöltés előkészítése (2026-10-22)
+
+- A friss külön `site/` kiadást a GitHub `main` legutóbbi statikus állapotából indított, tiszta klón gyökerébe szinkronizáltam. A Next.js alkalmazás forrása, az adatbázis és a `source-snapshot/` nem került át; a `.github/workflows/static.yml` telepítési munkafolyamat megmaradt.
+- Az új kiadás 252 HTML-oldalt, 250 keresőbejegyzést, 19 105 helyi URL-hivatkozást tartalmaz; a helyi hivatkozás-ellenőrzés 0 hiányzó fájlt talált. 2 195 statikus forrásfájlt hash alapján összevetettem a szinkronizált tartalommal; mind egyezik. A `static.js` szintaxisellenőrzése és a `git diff --check` sikeres.
+- A 255 útvonalas tartalmi összehasonlítás régebbi baseline, nem futott újra az új tartalommal; ezt a `content-comparison-summary.json` jelöli.
+- A `main` ágra történő push automatikusan elindítja a GitHub Pages telepítést.
