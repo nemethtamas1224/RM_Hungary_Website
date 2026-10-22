@@ -109,6 +109,24 @@
 
   const basePath = location.pathname.startsWith('/RM_Hungary_Website/') ? '/RM_Hungary_Website' : ''
   const siteUrl = (value) => { const path = String(value || ''); return path.startsWith('/') && !path.startsWith('//') ? `${basePath}${path}` : path }
+
+  // Keep the Széchenyi grant link available from every page.
+  if (!document.querySelector('.floating-grant-link')) {
+    const grantLink = document.createElement('a')
+    grantLink.className = 'floating-grant-link'
+    grantLink.href = siteUrl('/palyazat')
+    grantLink.setAttribute('aria-label', 'Széchenyi pályázat – pályázati oldal megnyitása')
+    const grantImage = document.createElement('img')
+    grantImage.src = siteUrl('/elemek/szechenyi.webp')
+    grantImage.alt = 'Széchenyi Terv Plusz pályázat'
+    grantImage.width = 300
+    grantImage.height = 79
+    grantImage.decoding = 'async'
+    grantImage.fetchPriority = 'low'
+    grantLink.append(grantImage)
+    document.body.append(grantLink)
+  }
+
   const familyFilter = new URLSearchParams(location.search).get('families')
   if (familyFilter) {
     const allowedFamilies = new Set(familyFilter.split(',').filter(Boolean))

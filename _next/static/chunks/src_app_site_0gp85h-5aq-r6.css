@@ -4934,3 +4934,41 @@ html {
   }
 }
 .irrigation-control-showcase{margin-top:2rem}.irrigation-control-card{max-width:420px}.irrigation-control-page{padding-bottom:4rem}.irrigation-control-hero{margin:2rem 0 2.5rem;background:#f4f5f3;border-radius:18px;overflow:hidden}.irrigation-control-hero img{display:block;width:100%;max-height:560px;object-fit:contain;background:#f4f5f3}.irrigation-control-hero figcaption{padding:1rem 1.25rem;color:#45504a;font-size:.95rem}.irrigation-control-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.irrigation-control-features article{padding:1.4rem;border:1px solid #e2e6e2;border-radius:14px;background:#fff}.irrigation-control-features h2{font-size:1.25rem;margin:0 0 .6rem}.irrigation-control-features p{margin:0;line-height:1.65}.irrigation-control-note{margin:1.5rem 0;line-height:1.65}@media(max-width:700px){.irrigation-control-features{grid-template-columns:1fr}.irrigation-control-hero{margin:1.25rem 0 1.75rem}.irrigation-control-hero img{max-height:390px}}
+
+/* Persistent Széchenyi grant shortcut */
+.floating-grant-link {
+  position: fixed;
+  z-index: 1000;
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  display: block;
+  width: clamp(174px, 21vw, 250px);
+  overflow: hidden;
+  border: 1px solid rgba(18, 42, 70, .14);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(16, 34, 52, .22);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.floating-grant-link:hover,
+.floating-grant-link:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 34px rgba(16, 34, 52, .3);
+}
+.floating-grant-link:focus-visible { outline: 3px solid #174b91; outline-offset: 3px; }
+.floating-grant-link img { display: block; width: 100%; height: auto; }
+@media (max-width: 600px) {
+  .floating-grant-link { right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); width: min(176px, 48vw); border-radius: 13px; }
+}
+@media (prefers-reduced-motion: reduce) { .floating-grant-link { transition: none; } }
+
+/* Rovatti product and family cards use the manufacturer's green outline. */
+.category-card[href*="rovatti-"] {
+  border-color: #3A9043;
+}
+.category-card[href*="rovatti-"]:hover {
+  border-color: #3A9043;
+}
+.gx-product-card:has(.gx-product-link[href*="rovatti-"]) {
+  background: #3A9043;
+}

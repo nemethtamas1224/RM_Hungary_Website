@@ -38,3 +38,17 @@
 - Az új kiadás 252 HTML-oldalt, 250 keresőbejegyzést, 19 105 helyi URL-hivatkozást tartalmaz; a helyi hivatkozás-ellenőrzés 0 hiányzó fájlt talált. 2 195 statikus forrásfájlt hash alapján összevetettem a szinkronizált tartalommal; mind egyezik. A `static.js` szintaxisellenőrzése és a `git diff --check` sikeres.
 - A 255 útvonalas tartalmi összehasonlítás régebbi baseline, nem futott újra az új tartalommal; ezt a `content-comparison-summary.json` jelöli.
 - A `main` ágra történő push automatikusan elindítja a GitHub Pages telepítést.
+
+
+## GitHub-frissítési szokás – 2026-10-23
+
+- A felhasználó kérése szerint a statikus weboldal érdemi frissítéseit ezentúl a GitHub `main` ágára is fel kell tölteni. Az eredeti Next.js projektet és a nem GitHub Pages éles oldalt továbbra sem szabad módosítani.
+- A pályázati banner és az öntözésvezérlés oldali piros ajánlatkérő gomb ebben a frissítésben együtt kerül fel.
+
+
+## 2026-10-23 – Pályázati banner, ajánlatkérés és Rovatti-kártyák
+
+- A felhasználó kérése szerint a statikus webhely frissítéseit rendszeresen fel kell tölteni a GitHub `main` ágára.
+- Minden statikus oldalon megjelenik a jobb alsó, lekerekített Széchenyi-pályázati banner, amely a `/palyazat/` oldalra mutat. Az öntözésvezérlés oldal ajánlatkérő gombja piros; célja a kapcsolatoldal.
+- A Rovatti-kártyák zöld keretet kapnak `#3A9043` színnel: az érintett Rovatti családkártyák és termékkártyák, a többi márka kártyáinak stílusa nem változik.
+- Helyi böngészőben a vezérlésoldal és a pályázati banner jelenléte ellenőrizve. A `main` feltöltés és GitHub Pages visszaellenőrzés a commit után következik.
