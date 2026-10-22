@@ -19,7 +19,7 @@
 - A `main` repó tartalmát a munkamappa friss `site/` könyvtárával szinkronizáltam. A változásban benne van az RM MOP logó Starpower logóknál kisebb megjelenítése (desktop 98×52 px, mobil 86×46 px; a Starpower logók nem változtak), a friss reszponzív termékfotók és a 252 HTML-oldalon használt helyes relatív alapútvonal.
 - Helyi böngészős ellenőrzés: 252 útvonal × 3 nézet = 756/756; nincs HTTP-, túlcsordulási, helyi képhiány- vagy JavaScript-hiba. A mobil/desktop MOP-logóméretek és az interakciók (márkasorrend, kategóriaválasztó, menü, galéria, keresés) rendben.
 - A statikus forrásmásolat, Next.js projekt és nem Pages éles weboldal változatlan. A teljes tartalmi egyezés továbbra sem igazolt; lásd a fenti összehasonlítási korlátot.
-- GitHub `main` feltöltése és Pages-visszaellenőrzése: frissítendő a push után.
+- A statikus frissítés helyi commitja elkészült (`02f3a8b`), a GitHubra nem került fel: a parancssori hitelesítés hiányzik, a GitHub Desktop pedig a zárolt Mac miatt nem volt elérhető. Feltöltés előtt oldd fel a Macet; ezután a kész commit feltölthető. A GitHub Pages ellenőrzése még hátravan.
 
 - **GitHub Pages útvonaljavítás (2026-10-22):** a `main` ágon beállított telepítés és a `.nojekyll` fájl mellett a publikus oldalon a CSS, logók, termékképek és navigáció betöltése ellenőrizve.
 
