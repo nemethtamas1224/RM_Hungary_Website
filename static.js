@@ -147,6 +147,11 @@
     document.body.classList.add('page-leaving')
     window.setTimeout(() => { location.href = destination.href }, 180)
   })
+  // Back/Forward Cache can restore this document while its exit animation
+  // class is still applied. Clear it so the main content is visible again.
+  window.addEventListener('pageshow', () => {
+    document.body.classList.remove('page-leaving')
+  })
 
   const basePath = location.pathname.startsWith('/RM_Hungary_Website/') ? '/RM_Hungary_Website' : ''
   const siteUrl = (value) => { const path = String(value || ''); return path.startsWith('/') && !path.startsWith('//') ? `${basePath}${path}` : path }
