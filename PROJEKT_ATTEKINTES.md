@@ -78,3 +78,10 @@
 
 - A motoros szivattyúegységek kártyáján az RM MOP logó további kisebbítést kapott: 42 px magas asztali, 36 px mobilnézetben; a Starpower logók mérete változatlan.
 - Helyi előnézeti mérés 390/1440 px-en: 2/2 HTTP 200; minden logó betöltött; nincs vízszintes kilógás vagy böngészőhiba. A módosítás és az aktuális statikus kiadás a `main` ágra feltöltésre kerül.
+
+## 2026-10-23 – Egytermékes családok közvetlen hivatkozásai
+
+- A `catalog.json` alapján 12 termékcsaládhoz pontosan egy közzétett termék tartozik. A családkártyák közül 22 kártyahivatkozást állítottam át 19 gyártói/kategóriaoldalon a megfelelő termékoldalra; a családoldalak URL-jei továbbra is elérhetők.
+- A Da Ros gyártói kártya közvetlenül a Da Ros tálcás magvetőgép oldalára visz. Hasonlóan közvetlenek lettek többek között a De Cloet, Lindsay, Mantovani, Oliveragro, RM, Rovatti, Starpower és Valducci egytermékes kártyái.
+- Ellenőrzés: mind a 22 új célútvonal létezik. Helyi böngészőben a Da Ros kártya a termékoldal URL-jét mutatja; a termékoldal HTTP 200-zal és teljes főtartalommal betöltött. `git diff --check` hibát nem jelzett.
+- A kártyák szövege, képe és stílusa nem változott. GitHub Desktop feltöltés és GitHub Pages ellenőrzés még hátravan.
