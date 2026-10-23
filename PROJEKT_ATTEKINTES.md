@@ -111,3 +111,9 @@
 - Mind a 108 katalógusbeli termékoldal rövid leírását és a 77 részletes bemutatót áttekintettem. Ahol a szöveg gyártói hangon szólt vagy félreérthető volt, kereskedői megfogalmazásra javítottam; a már tárgyszerű termékleírásokat nem láttam el ismétlődő cégnév-előtaggal. A szöveges módosítás 36 termékoldalt érintett.
 - A Starpower motoros szivattyúegység részletes leírását kereskedői hangra írtam át: az ajánlat szerinti konfiguráció egyeztetését emeli ki; a Starpower által jelzett gyártói szolgáltatásokat továbbra is külön attribuálja. A termék műszaki tartalma nem változott.
 - Ellenőrzés: mind a 108 termékoldal 200-as HTTP-választ ad, a rövid bevezetők mind megmaradtak, a sablonos előtag egyik oldalon sem szerepel. A friss helyi böngészőnézetben a Starpower termékoldal új szövege, műszaki adatai és ajánlatkérő hivatkozása asztali és keskeny mobilnézetben ellenőrizve. A sablonos előtag egyik statikus HTML-oldalon sem szerepel. A 183 termék- és kategóriaútvonal helyi HTTP-ellenőrzése 183/183 sikeres; a változtatások csak szöveges mezőket érintenek, a képek és hivatkozások változatlanok. `git diff --check` tiszta. Feltöltve a GitHub `main` ágra (`a4e6c6e`, az előző helyi commitot is tartalmazza); a Pages automatikus telepítésének ellenőrzése még hátravan.
+
+## 2026-10-23 – Főoldali alkategória-választó pozíciója
+
+- Főkategória kiválasztásakor az oldal finoman az újonnan megjelenő alkategória-választóhoz gördül. A fejléc magasságát figyelembe veszi, így a panel teteje a fejléc alatt marad; a rendszer mozgáscsökkentési beállítását is tiszteletben tartja.
+- Ellenőrzés: helyi, 1280×820-as és 390×844-es böngészőnézetben a kiválasztott öntözőgép-kategória után az alkategória-panel a képernyőn látható, 5 választható alkategóriával. A `static.js` szintaxisellenőrzése és `git diff --check` sikeres.
+- A változtatás helyi előnézeten van ellenőrizve; GitHub-feltöltés a Desktopból még hátravan.
