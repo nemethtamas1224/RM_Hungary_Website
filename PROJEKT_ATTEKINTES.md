@@ -104,3 +104,10 @@
 - Javítottam a mobilos lebegő pályázati elemet: telefonon és összecsukott állapotban is a Széchenyi banner képe látható, 136–150 px szélességű, lekerekített kártyán. A kép 300×79 px-es képarányát megtartja; a CSS cache-verzió 249 HTML-oldalon frissült.
 - Ellenőrzés: az `elemek/szechenyi.webp` fájl megvan (300×79 px), a CSS mobil szabálya láthatóvá teszi a képet, az összecsukott stílus sem rejti el, a hivatkozás továbbra is a pályázat oldalra visz. `git diff --check` tiszta. A localhost előnézeti szerver nem érhető el ebben a munkamenetben.
 - Feltöltve GitHub Desktopból a `main` ágra; a `2595340` commit Pages buildje és telepítése sikeres. A publikált `/termekek/` oldalon asztali képen és 390/320 px-es telefonos nézetben is ellenőriztem, hogy a banner képe látható marad összecsukott állapotban; a link a `/palyazat/` oldalra nyit.
+
+
+## 2026-10-23 – Termékoldalak kereskedői megfogalmazása
+
+- Mind a 108 katalógusbeli termékoldal, valamint a 77 részletes bemutató áttekintve. A Starpower motoros szivattyúegység részletes szövegét kereskedői hangra írtam át; más, közvetlenül terméket leíró szövegeknél sablonos kínálati előtagot nem alkalmaztam.
+- A Starpower motoros szivattyúegység részletes leírását kereskedői hangra írtam át: az ajánlat szerinti konfiguráció egyeztetését emeli ki; a Starpower által jelzett gyártói szolgáltatásokat továbbra is külön attribuálja. A termék műszaki tartalma nem változott.
+- Ellenőrzés: mind a 108 termékoldal 200-as HTTP-választ ad, a rövid bevezetők mind megmaradtak, a sablonos előtag egyik oldalon sem szerepel. A friss helyi böngészőnézetben a Starpower termékoldal új szövege, műszaki adatai és ajánlatkérő hivatkozása ellenőrizve. A megadott sablonos cégnév-előtag egyik statikus termékoldalon sem szerepel. A mobilnézeti teljes összevetés és a GitHub-feltöltés még hátravan.
