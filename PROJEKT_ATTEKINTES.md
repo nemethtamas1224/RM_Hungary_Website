@@ -116,4 +116,4 @@
 
 - Főkategória kiválasztásakor az oldal finoman az újonnan megjelenő alkategória-választóhoz gördül. A fejléc magasságát figyelembe veszi, így a panel teteje a fejléc alatt marad; a rendszer mozgáscsökkentési beállítását is tiszteletben tartja.
 - Ellenőrzés: helyi, 1280×820-as és 390×844-es böngészőnézetben a kiválasztott öntözőgép-kategória után az alkategória-panel a képernyőn látható, 5 választható alkategóriával. A `static.js` szintaxisellenőrzése és `git diff --check` sikeres.
-- A változtatás helyi előnézeten van ellenőrizve; GitHub-feltöltés a Desktopból még hátravan.
+- A változtatást a GitHub Desktopból feltöltöttem a `main` ágra (`b4245e6`); a távoli `main` SHA megegyezik a helyi commit SHA-val.
