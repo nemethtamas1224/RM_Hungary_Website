@@ -67,7 +67,16 @@
     const counter = gallery.querySelector('.slideshow-counter')
     const previous = gallery.querySelector('.slideshow-prev')
     const next = gallery.querySelector('.slideshow-next')
-    if (!main || !image || !thumbs.length) return
+    if (!main || !image) return
+
+    const compactLogoSources = ['600-xjm_1.png', '800-xjm_1.png', 'magnum-xjm_1.png', 'albatros_1_1.png', 'boom_1_1.png', 'condor_1_1.png', 'falcon_1_1.png', 'liqu_1_1.png']
+    const syncCompactLogoPresentation = () => {
+      if (!gallery.classList.contains('product-slideshow-compact-logo')) return
+      const source = image.getAttribute('src') || ''
+      gallery.classList.toggle('product-slideshow-logo-active', compactLogoSources.some((name) => source.endsWith(name)))
+    }
+    syncCompactLogoPresentation()
+    if (!thumbs.length) return
 
     let current = Math.max(0, thumbs.findIndex((button) => button.classList.contains('active')))
     const originalAlt = image.alt
@@ -82,6 +91,7 @@
           image.src = source
           image.removeAttribute('srcset')
           image.alt = current === 0 ? originalAlt : `${originalAlt} – ${current + 1}. kép`
+          syncCompactLogoPresentation()
           requestAnimationFrame(() => main.classList.remove('is-changing'))
         }, reduceMotion ? 0 : 100)
       }
@@ -288,7 +298,7 @@
       const rect = grantLink.getBoundingClientRect()
       const xPoints = [rect.left + 8, rect.left + rect.width / 2, rect.right - 8]
       const yPoints = [rect.top + 7, rect.top + rect.height / 2, rect.bottom - 7]
-      const meaningful = 'a,button,input,select,textarea,img,video,figure,figcaption,p,h1,h2,h3,h4,h5,h6,table,dt,dd,footer,.footer-contact,.footer-categories,.footer-brand,.category-card,.product-card,.product-slideshow'
+      const meaningful = 'a,button,input,select,textarea,img,video,figure,figcaption,p,h1,h2,h3,h4,h5,h6,table,dt,dd,footer,.footer-contact,.footer-categories,.footer-brand,.category-card,.product-card,.product-slideshow,.gx-family-section,.gx-product-grid,.catalog-grid'
       const previousVisibility = grantLink.style.visibility
       grantLink.style.visibility = 'hidden'
       const coversContent = xPoints.some((x) => yPoints.some((y) => document.elementsFromPoint(x, y).some((element) =>

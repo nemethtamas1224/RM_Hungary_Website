@@ -572,7 +572,8 @@ h1 em {
 }
 
 /* Keep a lone category card visually balanced instead of leaving it at the far left. */
-.catalog-section .catalog-grid:has(> .product-card:only-child) {
+.catalog-section .catalog-grid:has(> .product-card:only-child),
+.plain-page > .catalog-grid:has(> .product-card:only-child) {
   grid-template-columns: minmax(0, min(100%, 400px));
   justify-content: center;
 }
@@ -603,6 +604,14 @@ h1 em {
 
 .product-detail h1 {
   font-size: clamp(38px, 5vw, 62px);
+}
+
+/* Keep long Hungarian model names intact; size this unusually long family heading to its copy. */
+.product-detail h1.hyphen-manual {
+  font-size: clamp(32px, 4.1vw, 58px);
+  hyphens: manual;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .product-detail .button {
@@ -1803,6 +1812,14 @@ h1 em {
   gap: 16px;
   margin-top: 36px;
   display: grid;
+}
+
+/* Center a sole family card within its section at wider widths. */
+@media (min-width: 561px) {
+  .catalog-section .category-card-grid:has(> .category-card:only-child) {
+    grid-template-columns: minmax(0, min(100%, 400px));
+    justify-content: center;
+  }
 }
 
 .category-card {
@@ -4572,6 +4589,14 @@ html {
   max-width: 820px;
 }
 
+@media (min-width: 561px) {
+  .pump-family-grid > .pump-family-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: min(100%, 400px);
+    justify-self: center;
+  }
+}
+
 .pump-family-card {
   text-align: center;
   background: #fff;
@@ -5245,6 +5270,9 @@ html {
 .pump-family-logo-mop { max-width: min(110px, 56%); height: 42px; }
 @media (max-width: 560px) { .pump-family-logo-mop { max-width: min(96px, 54%); height: 36px; } }
 
+/* Keep short specification labels intact instead of leaving a single letter on a second line. */
+.spec-section dt { overflow-wrap: normal; word-break: normal; }
+
 /* Keep product specification labels readable on narrow screens. */
 @media (max-width: 700px) {
   .spec-section dl div {
@@ -5289,3 +5317,41 @@ html {
 
 /* Keep the low-resolution dryer gallery at a restrained display size after base gallery rules. */
 .plain-page .product-slideshow.product-slideshow-low-res { max-width: 500px; }
+
+
+/* The RM Magnum source provides a small 180×52 brand mark, not a machine photo. Keep it sharp and compact. */
+.product-detail-logo .detail-image { min-height: 140px; aspect-ratio: auto; background: #fff; }
+.product-detail-logo .detail-image img,
+.product-slideshow-logo .product-slideshow-main img {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+.product-slideshow-logo { max-width: 500px; }
+.product-slideshow-logo .product-slideshow-main {
+  display: grid;
+  min-height: 80px;
+  aspect-ratio: auto;
+  place-items: center;
+  background: #fff;
+}
+
+/* Keep tiny XJM model marks legible; full machine photos return to normal gallery sizing. */
+.product-slideshow-compact-logo.product-slideshow-logo-active .product-slideshow-main {
+  display: grid;
+  min-height: 80px;
+  aspect-ratio: auto;
+  place-items: center;
+  background: #fff;
+}
+.product-slideshow-compact-logo.product-slideshow-logo-active .product-slideshow-main > img {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
