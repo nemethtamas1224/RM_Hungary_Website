@@ -98,3 +98,9 @@
 - A kezdőnézeti `/termekek/` CSS, JavaScript és favicon együttes nyers mérete 258 013-ról 90 914 bájtra csökkent (64,8%). A közös CSS 92 459→71 916 bájt, a JavaScript 27 571→17 307 bájt, a `catalog.json` 95 863→75 748 bájt. A keresési index 265 430→258 499 bájt; tartalma szemantikailag azonos.
 - Összevetés: 252 HTML-oldal; 0 látható szövegváltozás, 0 hivatkozásváltozás, 0 hiányzó helyi kép-, stílus-, ikon- vagy scriptfájl. Mind a 358 WebP megvan, kisebb az eredetinél, mérete megegyezik a forrásképével; eredeti médiák megmaradtak. `static.js` szintaxisellenőrzése és CSS feldolgozása sikeres, `git diff --check` tiszta.
 - Korlát: a futó `127.0.0.1:3180` előnézetet ebben a munkamenetben nem sikerült böngészőből ellenőrizni, ezért annak teljes betöltési/asztali-mobil vizuális állapota nem igazolt. A helyi commit elkészült (`1a74ada`), de a feltöltés függőben: a GitHub Desktop a zárolt Mac miatt nem használható, a parancssori Git-hitelesítés hiányzik. Következő lépés: a Mac feloldása után GitHub Desktopból feltölteni a `main` ágra, majd a GitHub Pages verziót böngészőben ellenőrizni.
+
+## 2026-10-23 – Pályázati lebegő kép mobilon
+
+- Javítottam a mobilos lebegő pályázati elemet: telefonon és összecsukott állapotban is a Széchenyi banner képe látható, 136–150 px szélességű, lekerekített kártyán. A kép 300×79 px-es képarányát megtartja; a CSS cache-verzió 249 HTML-oldalon frissült.
+- Ellenőrzés: az `elemek/szechenyi.webp` fájl megvan (300×79 px), a CSS mobil szabálya láthatóvá teszi a képet, az összecsukott stílus sem rejti el, a hivatkozás továbbra is a pályázat oldalra visz. `git diff --check` tiszta. A localhost előnézeti szerver nem érhető el ebben a munkamenetben.
+- A feltöltés most a GitHub Desktopból történik; a Pages telepítés és publikus mobilnézet ellenőrzése még hátravan.
