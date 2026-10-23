@@ -90,3 +90,11 @@
 
 - A statikus kiadás 252 HTML-oldalának `<head>` részébe favicon-hivatkozás került. Forrása a meglévő `images/RM_hajdu_monogram_v01.png` kis RM monogram; tartalmat és oldalkinézetet nem módosít.
 - Ellenőrzés: mind a 252 oldal azonos ikont hivatkozik; helyben a `/termekek/` oldal 200, az ikon PNG-je 200 és `image/png` típusú. Feltöltés és élő ikonellenőrzés még hátravan.
+
+## 2026-10-23 – Betöltési méret és navigációs javítás
+
+- A lassú vagy csak frissítés után látszó oldalak egyik lehetséges oka a navigációs effektus volt: az előző oldal tartalma teljesen elhalványult, mielőtt a következő statikus HTML betöltött. A közös effektus most rövid, csak mozgást használ, és nem rejti el a tartalmat betöltés alatt. A `static.js` a `<head>`-ben `defer` attribútummal fut.
+- 358 megjelenített képre optimalizált WebP változat készült; az eredeti képek megmaradtak. A megjelenített képfájlok összmérete 8 573 679 bájttal csökkent. A tömör plakátképek eredeti JPEG-ként maradtak, mert a WebP változat nagyobb lett volna.
+- A kezdőnézeti `/termekek/` CSS, JavaScript és favicon együttes nyers mérete 258 013-ról 90 914 bájtra csökkent (64,8%). A közös CSS 92 459→71 916 bájt, a JavaScript 27 571→17 307 bájt, a `catalog.json` 95 863→75 748 bájt. A keresési index 265 430→258 499 bájt; tartalma szemantikailag azonos.
+- Összevetés: 252 HTML-oldal; 0 látható szövegváltozás, 0 hivatkozásváltozás, 0 hiányzó helyi kép-, stílus-, ikon- vagy scriptfájl. Mind a 358 WebP megvan, kisebb az eredetinél, mérete megegyezik a forrásképével; eredeti médiák megmaradtak. `static.js` szintaxisellenőrzése és CSS feldolgozása sikeres, `git diff --check` tiszta.
+- Korlát: a futó `127.0.0.1:3180` előnézetet ebben a munkamenetben nem sikerült böngészőből ellenőrizni, ezért annak teljes betöltési/asztali-mobil vizuális állapota nem igazolt. A helyi commit elkészült (`1a74ada`), de a feltöltés függőben: a GitHub Desktop a zárolt Mac miatt nem használható, a parancssori Git-hitelesítés hiányzik. Következő lépés: a Mac feloldása után GitHub Desktopból feltölteni a `main` ágra, majd a GitHub Pages verziót böngészőben ellenőrizni.

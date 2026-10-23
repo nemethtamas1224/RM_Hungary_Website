@@ -1,0 +1,3252 @@
+{
+  "generatedAt": "2026-10-23T15:03:07.090Z",
+  "settings": {
+    "png": "lossless WebP",
+    "jpeg": "WebP quality 88, effort 6",
+    "technicalJpeg": "lossless WebP"
+  },
+  "raster": {
+    "count": 358,
+    "sourceBytes": 21169227,
+    "optimizedBytes": 12595548,
+    "savedBytes": 8573679
+  },
+  "posters": {
+    "count": 55,
+    "sourceBytes": 751472,
+    "optimizedBytes": 0,
+    "savedBytes": 0,
+    "retainedOriginals": true,
+    "reason": "At the 320x180 display size, WebP outputs were larger than the existing compact JPEGs."
+  },
+  "files": [
+    {
+      "source": "images/bartalis-levente-source.png",
+      "target": "optimized-media/raster/images/bartalis-levente-source.png.webp",
+      "sourceBytes": 54520,
+      "targetBytes": 34228,
+      "savedBytes": 20292,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "images/lindsay/lindsay-logo.png",
+      "target": "optimized-media/raster/images/lindsay/lindsay-logo.png.webp",
+      "sourceBytes": 114793,
+      "targetBytes": 31792,
+      "savedBytes": 83001,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "images/vodar/system-types/04-hose-fed-linear-w800-v18.jpg",
+      "target": "optimized-media/raster/images/vodar/system-types/04-hose-fed-linear-w800-v18.jpg.webp",
+      "sourceBytes": 172369,
+      "targetBytes": 108674,
+      "savedBytes": 63695,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/124-vagy-198-tonna-hektaronkent-egy-oteves-alfoldi-ontozesi-kiserlet-tanulsagai_1_1_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/124-vagy-198-tonna-hektaronkent-egy-oteves-alfoldi-ontozesi-kiserlet-tanulsagai_1_1_350x220.jpg.webp",
+      "sourceBytes": 64504,
+      "targetBytes": 22196,
+      "savedBytes": 42308,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/372-kal-tobb-kukorica-mit-jelenthet-az-ontozes-egy-aszalyos-evben_2_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/372-kal-tobb-kukorica-mit-jelenthet-az-ontozes-egy-aszalyos-evben_2_350x220.jpg.webp",
+      "sourceBytes": 69493,
+      "targetBytes": 25102,
+      "savedBytes": 44391,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/aszalyban-mutatkozik-meg-igazan-az-ontozes-erteke-termeshozam-helyett-termesbiztonsagban-is-erdemes_2_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/aszalyban-mutatkozik-meg-igazan-az-ontozes-erteke-termeshozam-helyett-termesbiztonsagban-is-erdemes_2_350x220.jpg.webp",
+      "sourceBytes": 69507,
+      "targetBytes": 25062,
+      "savedBytes": 44445,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/fullsize/hatekony-ontozes-a-korszeru-mezogazdasagban_1_1_780x400.jpg",
+      "target": "optimized-media/raster/tartalom/hir/fullsize/hatekony-ontozes-a-korszeru-mezogazdasagban_1_1_780x400.jpg.webp",
+      "sourceBytes": 68444,
+      "targetBytes": 16028,
+      "savedBytes": 52416,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/fullsize/ontozorendszer-tervezes-es-szerviz-egy-kezbol_1_1_780x400.jpg",
+      "target": "optimized-media/raster/tartalom/hir/fullsize/ontozorendszer-tervezes-es-szerviz-egy-kezbol_1_1_780x400.jpg.webp",
+      "sourceBytes": 97476,
+      "targetBytes": 30020,
+      "savedBytes": 67456,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/hatekony-ontozes-a-korszeru-mezogazdasagban_1_1_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/hatekony-ontozes-a-korszeru-mezogazdasagban_1_1_350x220.jpg.webp",
+      "sourceBytes": 26878,
+      "targetBytes": 6904,
+      "savedBytes": 19974,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/mennyit-er-1-millimeter-ontozoviz-a-viz-erteket-a-hasznosulasa-mutatja-meg_1_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/mennyit-er-1-millimeter-ontozoviz-a-viz-erteket-a-hasznosulasa-mutatja-meg_1_350x220.jpg.webp",
+      "sourceBytes": 69606,
+      "targetBytes": 25544,
+      "savedBytes": 44062,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/modern-gepek-a-dohanytermeszteshez_1_1_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/modern-gepek-a-dohanytermeszteshez_1_1_350x220.jpg.webp",
+      "sourceBytes": 65661,
+      "targetBytes": 24174,
+      "savedBytes": 41487,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/ontozorendszer-mint-kockazatkezeles-miert-valik-egyre-fontosabba-a-kiszamithato-vizellatas-az-alfol_1_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/ontozorendszer-mint-kockazatkezeles-miert-valik-egyre-fontosabba-a-kiszamithato-vizellatas-az-alfol_1_350x220.jpg.webp",
+      "sourceBytes": 66316,
+      "targetBytes": 25914,
+      "savedBytes": 40402,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/ontozorendszer-tervezes-es-szerviz-egy-kezbol_1_1_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/ontozorendszer-tervezes-es-szerviz-egy-kezbol_1_1_350x220.jpg.webp",
+      "sourceBytes": 33367,
+      "targetBytes": 10820,
+      "savedBytes": 22547,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/rm-my-irrigation-intelligens-ontozes-barhonnan-vezerelheto_1_1_350x220.png",
+      "target": "optimized-media/raster/tartalom/hir/rm-my-irrigation-intelligens-ontozes-barhonnan-vezerelheto_1_1_350x220.png.webp",
+      "sourceBytes": 91829,
+      "targetBytes": 65812,
+      "savedBytes": 26017,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "tartalom/hir/tobb-viz-nem-mindig-jelent-tobb-profitot-az-optimalis-ontozes-a-megfelelo-dozisrol-szol_1_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/hir/tobb-viz-nem-mindig-jelent-tobb-profitot-az-optimalis-ontozes-a-megfelelo-dozisrol-szol_1_350x220.jpg.webp",
+      "sourceBytes": 63416,
+      "targetBytes": 22832,
+      "savedBytes": 40584,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/hibridkukorica-ontozesenek-fejlesztese-szabolcson_1_350x220.png",
+      "target": "optimized-media/raster/tartalom/ref/hibridkukorica-ontozesenek-fejlesztese-szabolcson_1_350x220.png.webp",
+      "sourceBytes": 156158,
+      "targetBytes": 115036,
+      "savedBytes": 41122,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/komplex-ontozesfejlesztes-hajduboszormenyben_1_350x220.png",
+      "target": "optimized-media/raster/tartalom/ref/komplex-ontozesfejlesztes-hajduboszormenyben_1_350x220.png.webp",
+      "sourceBytes": 153509,
+      "targetBytes": 106742,
+      "savedBytes": 46767,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/kukoricaontozes-fejlesztese-nadudvaron_1_350x220.png",
+      "target": "optimized-media/raster/tartalom/ref/kukoricaontozes-fejlesztese-nadudvaron_1_350x220.png.webp",
+      "sourceBytes": 140618,
+      "targetBytes": 102282,
+      "savedBytes": 38336,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/nagy-teljesitmenyu-ontozorendszer-timaron_1_350x220.png",
+      "target": "optimized-media/raster/tartalom/ref/nagy-teljesitmenyu-ontozorendszer-timaron_1_350x220.png.webp",
+      "sourceBytes": 136282,
+      "targetBytes": 97918,
+      "savedBytes": 38364,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/takarmanykukorica-ontozese-zsadanyban_1_350x220.png",
+      "target": "optimized-media/raster/tartalom/ref/takarmanykukorica-ontozese-zsadanyban_1_350x220.png.webp",
+      "sourceBytes": 157329,
+      "targetBytes": 116512,
+      "savedBytes": 40817,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/takarmanykukorica-ontozesenek-fejlesztese-hajdudorogon_1_350x220.jpeg",
+      "target": "optimized-media/raster/tartalom/ref/takarmanykukorica-ontozesenek-fejlesztese-hajdudorogon_1_350x220.jpeg.webp",
+      "sourceBytes": 61439,
+      "targetBytes": 21082,
+      "savedBytes": 40357,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/teszt_1_300x220.jpg",
+      "target": "optimized-media/raster/tartalom/ref/teszt_1_300x220.jpg.webp",
+      "sourceBytes": 26578,
+      "targetBytes": 6894,
+      "savedBytes": 19684,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/teszt_1_350x220.jpg",
+      "target": "optimized-media/raster/tartalom/ref/teszt_1_350x220.jpg.webp",
+      "sourceBytes": 26640,
+      "targetBytes": 6936,
+      "savedBytes": 19704,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/teszt_2_300x220.jpg",
+      "target": "optimized-media/raster/tartalom/ref/teszt_2_300x220.jpg.webp",
+      "sourceBytes": 39025,
+      "targetBytes": 13256,
+      "savedBytes": 25769,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/teszt_3_300x220.jpg",
+      "target": "optimized-media/raster/tartalom/ref/teszt_3_300x220.jpg.webp",
+      "sourceBytes": 33351,
+      "targetBytes": 10904,
+      "savedBytes": 22447,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/vodar-center-ontozogepek-rakamazon_1_350x220.jpeg",
+      "target": "optimized-media/raster/tartalom/ref/vodar-center-ontozogepek-rakamazon_1_350x220.jpeg.webp",
+      "sourceBytes": 63746,
+      "targetBytes": 22398,
+      "savedBytes": 41348,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "tartalom/ref/vodar-korforgo-ontozoberendezes-tiszavasvariban_1_350x220.png",
+      "target": "optimized-media/raster/tartalom/ref/vodar-korforgo-ontozoberendezes-tiszavasvariban_1_350x220.png.webp",
+      "sourceBytes": 122934,
+      "targetBytes": 88134,
+      "savedBytes": 34800,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "tartalom/termek/1000gx_1_1.png",
+      "target": "optimized-media/raster/tartalom/termek/1000gx_1_1.png.webp",
+      "sourceBytes": 8114,
+      "targetBytes": 3072,
+      "savedBytes": 5042,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "tartalom/termek/540-gx_1_2.png",
+      "target": "optimized-media/raster/tartalom/termek/540-gx_1_2.png.webp",
+      "sourceBytes": 7908,
+      "targetBytes": 2976,
+      "savedBytes": 4932,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/00494d6fb5ee-image13(3).jpeg",
+      "target": "optimized-media/raster/uploads/00494d6fb5ee-image13(3).jpeg.webp",
+      "sourceBytes": 27738,
+      "targetBytes": 22462,
+      "savedBytes": 5276,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/02004890c798-image2(4).jpeg",
+      "target": "optimized-media/raster/uploads/02004890c798-image2(4).jpeg.webp",
+      "sourceBytes": 59338,
+      "targetBytes": 48280,
+      "savedBytes": 11058,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/04edb63408f5-magnum-giant_1_1.png",
+      "target": "optimized-media/raster/uploads/04edb63408f5-magnum-giant_1_1.png.webp",
+      "sourceBytes": 10376,
+      "targetBytes": 4836,
+      "savedBytes": 5540,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/06b13ed2ccff-sk.jpg",
+      "target": "optimized-media/raster/uploads/06b13ed2ccff-sk.jpg.webp",
+      "sourceBytes": 36437,
+      "targetBytes": 23210,
+      "savedBytes": 13227,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/07132f0b656d-image26.jpeg",
+      "target": "optimized-media/raster/uploads/07132f0b656d-image26.jpeg.webp",
+      "sourceBytes": 58873,
+      "targetBytes": 44794,
+      "savedBytes": 14079,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/07d624cf2096-image8(5).jpeg",
+      "target": "optimized-media/raster/uploads/07d624cf2096-image8(5).jpeg.webp",
+      "sourceBytes": 32321,
+      "targetBytes": 25912,
+      "savedBytes": 6409,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/088e2d93176e-mek.jpg",
+      "target": "optimized-media/raster/uploads/088e2d93176e-mek.jpg.webp",
+      "sourceBytes": 32989,
+      "targetBytes": 18700,
+      "savedBytes": 14289,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/0af54164d5aa-600-xjm_1.png",
+      "target": "optimized-media/raster/uploads/0af54164d5aa-600-xjm_1.png.webp",
+      "sourceBytes": 6963,
+      "targetBytes": 1824,
+      "savedBytes": 5139,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/0c817504138e-image1.jpeg",
+      "target": "optimized-media/raster/uploads/0c817504138e-image1.jpeg.webp",
+      "sourceBytes": 172466,
+      "targetBytes": 140894,
+      "savedBytes": 31572,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/0df830882ae1-image2.jpeg",
+      "target": "optimized-media/raster/uploads/0df830882ae1-image2.jpeg.webp",
+      "sourceBytes": 59652,
+      "targetBytes": 31142,
+      "savedBytes": 28510,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/0e11fcf86771-mekv_europa.jpg",
+      "target": "optimized-media/raster/uploads/0e11fcf86771-mekv_europa.jpg.webp",
+      "sourceBytes": 22974,
+      "targetBytes": 11156,
+      "savedBytes": 11818,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/0e1ee8cf9b92-image9(3).jpeg",
+      "target": "optimized-media/raster/uploads/0e1ee8cf9b92-image9(3).jpeg.webp",
+      "sourceBytes": 29505,
+      "targetBytes": 23512,
+      "savedBytes": 5993,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/0edbcaa0ddc2-image25(1).jpeg",
+      "target": "optimized-media/raster/uploads/0edbcaa0ddc2-image25(1).jpeg.webp",
+      "sourceBytes": 8321,
+      "targetBytes": 5434,
+      "savedBytes": 2887,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1032f02a9fab-sk_europa.jpg",
+      "target": "optimized-media/raster/uploads/1032f02a9fab-sk_europa.jpg.webp",
+      "sourceBytes": 51244,
+      "targetBytes": 26742,
+      "savedBytes": 24502,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/10f901d3a6ae-image27(1).jpeg",
+      "target": "optimized-media/raster/uploads/10f901d3a6ae-image27(1).jpeg.webp",
+      "sourceBytes": 18947,
+      "targetBytes": 15562,
+      "savedBytes": 3385,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1100GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/1100GX_Dimensioni.jpg.webp",
+      "sourceBytes": 55152,
+      "targetBytes": 15468,
+      "savedBytes": 39684,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/129f8958c7e4-image5(6).jpeg",
+      "target": "optimized-media/raster/uploads/129f8958c7e4-image5(6).jpeg.webp",
+      "sourceBytes": 33188,
+      "targetBytes": 26728,
+      "savedBytes": 6460,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/16712b3f46be-image6.jpeg",
+      "target": "optimized-media/raster/uploads/16712b3f46be-image6.jpeg.webp",
+      "sourceBytes": 46403,
+      "targetBytes": 22192,
+      "savedBytes": 24211,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/18df3487ef6f-magnum-xjm_1.png",
+      "target": "optimized-media/raster/uploads/18df3487ef6f-magnum-xjm_1.png.webp",
+      "sourceBytes": 8292,
+      "targetBytes": 2548,
+      "savedBytes": 5744,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/197a6d9f975a-magnum_1_1.png",
+      "target": "optimized-media/raster/uploads/197a6d9f975a-magnum_1_1.png.webp",
+      "sourceBytes": 8551,
+      "targetBytes": 3358,
+      "savedBytes": 5193,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/19eaf1518f1a-image11.jpeg",
+      "target": "optimized-media/raster/uploads/19eaf1518f1a-image11.jpeg.webp",
+      "sourceBytes": 51662,
+      "targetBytes": 29274,
+      "savedBytes": 22388,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1a88f9ee2ed5-image5(3).jpeg",
+      "target": "optimized-media/raster/uploads/1a88f9ee2ed5-image5(3).jpeg.webp",
+      "sourceBytes": 88612,
+      "targetBytes": 51630,
+      "savedBytes": 36982,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1c9b941faedf-albatros_1_1.png",
+      "target": "optimized-media/raster/uploads/1c9b941faedf-albatros_1_1.png.webp",
+      "sourceBytes": 6691,
+      "targetBytes": 2480,
+      "savedBytes": 4211,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/1da92ebedac0-image3(5).jpeg",
+      "target": "optimized-media/raster/uploads/1da92ebedac0-image3(5).jpeg.webp",
+      "sourceBytes": 30137,
+      "targetBytes": 23920,
+      "savedBytes": 6217,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1dfd12c5e644-image3(6).jpeg",
+      "target": "optimized-media/raster/uploads/1dfd12c5e644-image3(6).jpeg.webp",
+      "sourceBytes": 29641,
+      "targetBytes": 23912,
+      "savedBytes": 5729,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1eed926e55cb-image12(1).jpeg",
+      "target": "optimized-media/raster/uploads/1eed926e55cb-image12(1).jpeg.webp",
+      "sourceBytes": 93732,
+      "targetBytes": 72950,
+      "savedBytes": 20782,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1f1e948bbcdc-image16(3).jpeg",
+      "target": "optimized-media/raster/uploads/1f1e948bbcdc-image16(3).jpeg.webp",
+      "sourceBytes": 118666,
+      "targetBytes": 92014,
+      "savedBytes": 26652,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1f6b585c4d06-image1(3).jpeg",
+      "target": "optimized-media/raster/uploads/1f6b585c4d06-image1(3).jpeg.webp",
+      "sourceBytes": 12227,
+      "targetBytes": 6874,
+      "savedBytes": 5353,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/1th4_2.jpg",
+      "target": "optimized-media/raster/uploads/1th4_2.jpg.webp",
+      "sourceBytes": 72473,
+      "targetBytes": 71828,
+      "savedBytes": 645,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/23237e5aacb0-image29.png",
+      "target": "optimized-media/raster/uploads/23237e5aacb0-image29.png.webp",
+      "sourceBytes": 78709,
+      "targetBytes": 57500,
+      "savedBytes": 21209,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/2410d6ff9cef-image3.jpeg",
+      "target": "optimized-media/raster/uploads/2410d6ff9cef-image3.jpeg.webp",
+      "sourceBytes": 146391,
+      "targetBytes": 82602,
+      "savedBytes": 63789,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/26040994725e-image12(2).jpeg",
+      "target": "optimized-media/raster/uploads/26040994725e-image12(2).jpeg.webp",
+      "sourceBytes": 20795,
+      "targetBytes": 16020,
+      "savedBytes": 4775,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/27ec8c2e1282-image22(1).jpeg",
+      "target": "optimized-media/raster/uploads/27ec8c2e1282-image22(1).jpeg.webp",
+      "sourceBytes": 4841,
+      "targetBytes": 1962,
+      "savedBytes": 2879,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2853397474d6-image2(5).jpeg",
+      "target": "optimized-media/raster/uploads/2853397474d6-image2(5).jpeg.webp",
+      "sourceBytes": 23806,
+      "targetBytes": 17304,
+      "savedBytes": 6502,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/29bb00631724-image12(3).jpeg",
+      "target": "optimized-media/raster/uploads/29bb00631724-image12(3).jpeg.webp",
+      "sourceBytes": 32612,
+      "targetBytes": 27196,
+      "savedBytes": 5416,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2b41ac6b5c01-major-evo_1_1.png",
+      "target": "optimized-media/raster/uploads/2b41ac6b5c01-major-evo_1_1.png.webp",
+      "sourceBytes": 18474,
+      "targetBytes": 14050,
+      "savedBytes": 4424,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/2b4e551735ca-image22(2).jpeg",
+      "target": "optimized-media/raster/uploads/2b4e551735ca-image22(2).jpeg.webp",
+      "sourceBytes": 10408,
+      "targetBytes": 6356,
+      "savedBytes": 4052,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2c61520b367f-image6(4).jpeg",
+      "target": "optimized-media/raster/uploads/2c61520b367f-image6(4).jpeg.webp",
+      "sourceBytes": 29770,
+      "targetBytes": 23132,
+      "savedBytes": 6638,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2th2_1.jpg",
+      "target": "optimized-media/raster/uploads/2th2_1.jpg.webp",
+      "sourceBytes": 68107,
+      "targetBytes": 64688,
+      "savedBytes": 3419,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2th2_2.jpg",
+      "target": "optimized-media/raster/uploads/2th2_2.jpg.webp",
+      "sourceBytes": 76446,
+      "targetBytes": 72906,
+      "savedBytes": 3540,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2th2_3.jpg",
+      "target": "optimized-media/raster/uploads/2th2_3.jpg.webp",
+      "sourceBytes": 79258,
+      "targetBytes": 76656,
+      "savedBytes": 2602,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2tth_1.jpg",
+      "target": "optimized-media/raster/uploads/2tth_1.jpg.webp",
+      "sourceBytes": 88351,
+      "targetBytes": 88078,
+      "savedBytes": 273,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2tth_2.jpg",
+      "target": "optimized-media/raster/uploads/2tth_2.jpg.webp",
+      "sourceBytes": 72363,
+      "targetBytes": 70606,
+      "savedBytes": 1757,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2tth_3.jpg",
+      "target": "optimized-media/raster/uploads/2tth_3.jpg.webp",
+      "sourceBytes": 102379,
+      "targetBytes": 94082,
+      "savedBytes": 8297,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2tth_harvest_1.jpg",
+      "target": "optimized-media/raster/uploads/2tth_harvest_1.jpg.webp",
+      "sourceBytes": 89816,
+      "targetBytes": 80704,
+      "savedBytes": 9112,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/2tth_harvest_2.jpg",
+      "target": "optimized-media/raster/uploads/2tth_harvest_2.jpg.webp",
+      "sourceBytes": 63778,
+      "targetBytes": 57910,
+      "savedBytes": 5868,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/306ff429a4bf-asd7_1_1.png",
+      "target": "optimized-media/raster/uploads/306ff429a4bf-asd7_1_1.png.webp",
+      "sourceBytes": 8890,
+      "targetBytes": 3488,
+      "savedBytes": 5402,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/30e5323106f9-4es.jpg",
+      "target": "optimized-media/raster/uploads/30e5323106f9-4es.jpg.webp",
+      "sourceBytes": 26098,
+      "targetBytes": 12104,
+      "savedBytes": 13994,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/314c6f633dcb-image5.jpeg",
+      "target": "optimized-media/raster/uploads/314c6f633dcb-image5.jpeg.webp",
+      "sourceBytes": 44921,
+      "targetBytes": 21536,
+      "savedBytes": 23385,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/32f3be990d37-image16(1).jpeg",
+      "target": "optimized-media/raster/uploads/32f3be990d37-image16(1).jpeg.webp",
+      "sourceBytes": 84831,
+      "targetBytes": 74278,
+      "savedBytes": 10553,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/3421782c3295-skd_europa.jpg",
+      "target": "optimized-media/raster/uploads/3421782c3295-skd_europa.jpg.webp",
+      "sourceBytes": 34115,
+      "targetBytes": 18188,
+      "savedBytes": 15927,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/34ac08d2a6a3-image24.png",
+      "target": "optimized-media/raster/uploads/34ac08d2a6a3-image24.png.webp",
+      "sourceBytes": 133762,
+      "targetBytes": 77228,
+      "savedBytes": 56534,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/3ca52aace99a-image15.jpeg",
+      "target": "optimized-media/raster/uploads/3ca52aace99a-image15.jpeg.webp",
+      "sourceBytes": 22106,
+      "targetBytes": 18960,
+      "savedBytes": 3146,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/40f9b7cbde50-image9(1).jpeg",
+      "target": "optimized-media/raster/uploads/40f9b7cbde50-image9(1).jpeg.webp",
+      "sourceBytes": 15217,
+      "targetBytes": 9830,
+      "savedBytes": 5387,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/41a3e9466cf7-image25.jpeg",
+      "target": "optimized-media/raster/uploads/41a3e9466cf7-image25.jpeg.webp",
+      "sourceBytes": 23912,
+      "targetBytes": 15998,
+      "savedBytes": 7914,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/43e07f4c41fc-en733_sne1.jpg",
+      "target": "optimized-media/raster/uploads/43e07f4c41fc-en733_sne1.jpg.webp",
+      "sourceBytes": 56698,
+      "targetBytes": 31148,
+      "savedBytes": 25550,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/48774dd96c02-image10(2).jpeg",
+      "target": "optimized-media/raster/uploads/48774dd96c02-image10(2).jpeg.webp",
+      "sourceBytes": 42020,
+      "targetBytes": 34102,
+      "savedBytes": 7918,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/49c4af89b26e-image8(1).jpeg",
+      "target": "optimized-media/raster/uploads/49c4af89b26e-image8(1).jpeg.webp",
+      "sourceBytes": 41764,
+      "targetBytes": 28838,
+      "savedBytes": 12926,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/49e6f53b0670-ec_er_ecx6.jpg",
+      "target": "optimized-media/raster/uploads/49e6f53b0670-ec_er_ecx6.jpg.webp",
+      "sourceBytes": 45795,
+      "targetBytes": 19064,
+      "savedBytes": 26731,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/4a8ee97e0745-image5(4).jpeg",
+      "target": "optimized-media/raster/uploads/4a8ee97e0745-image5(4).jpeg.webp",
+      "sourceBytes": 51663,
+      "targetBytes": 39398,
+      "savedBytes": 12265,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/4b10f23e961d-800xj_1_1.png",
+      "target": "optimized-media/raster/uploads/4b10f23e961d-800xj_1_1.png.webp",
+      "sourceBytes": 9174,
+      "targetBytes": 3530,
+      "savedBytes": 5644,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/4c09cca0db22-image7.jpeg",
+      "target": "optimized-media/raster/uploads/4c09cca0db22-image7.jpeg.webp",
+      "sourceBytes": 36371,
+      "targetBytes": 18306,
+      "savedBytes": 18065,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/4ef2fcdf782f-image10.jpeg",
+      "target": "optimized-media/raster/uploads/4ef2fcdf782f-image10.jpeg.webp",
+      "sourceBytes": 42186,
+      "targetBytes": 20784,
+      "savedBytes": 21402,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/540GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/540GX_Dimensioni.jpg.webp",
+      "sourceBytes": 32255,
+      "targetBytes": 17448,
+      "savedBytes": 14807,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/54bcf036d7f5-image26(1).jpeg",
+      "target": "optimized-media/raster/uploads/54bcf036d7f5-image26(1).jpeg.webp",
+      "sourceBytes": 7694,
+      "targetBytes": 4994,
+      "savedBytes": 2700,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/560GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/560GX_Dimensioni.jpg.webp",
+      "sourceBytes": 43179,
+      "targetBytes": 12068,
+      "savedBytes": 31111,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/560GX_Tabella_2017_GB.jpg",
+      "target": "optimized-media/raster/uploads/560GX_Tabella_2017_GB.jpg.webp",
+      "sourceBytes": 132370,
+      "targetBytes": 64532,
+      "savedBytes": 67838,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/570GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/570GX_Dimensioni.jpg.webp",
+      "sourceBytes": 32307,
+      "targetBytes": 16832,
+      "savedBytes": 15475,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/570GX_Tabella_2017_GB.jpg",
+      "target": "optimized-media/raster/uploads/570GX_Tabella_2017_GB.jpg.webp",
+      "sourceBytes": 128202,
+      "targetBytes": 63312,
+      "savedBytes": 64890,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/57f352e56d54-image4(2).jpeg",
+      "target": "optimized-media/raster/uploads/57f352e56d54-image4(2).jpeg.webp",
+      "sourceBytes": 81426,
+      "targetBytes": 66096,
+      "savedBytes": 15330,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/581GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/581GX_Dimensioni.jpg.webp",
+      "sourceBytes": 34702,
+      "targetBytes": 18224,
+      "savedBytes": 16478,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/581GX_Tabella_2017_GB.jpg",
+      "target": "optimized-media/raster/uploads/581GX_Tabella_2017_GB.jpg.webp",
+      "sourceBytes": 127257,
+      "targetBytes": 62922,
+      "savedBytes": 64335,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/583c45cfffbe-image23(2).jpeg",
+      "target": "optimized-media/raster/uploads/583c45cfffbe-image23(2).jpeg.webp",
+      "sourceBytes": 28808,
+      "targetBytes": 19190,
+      "savedBytes": 9618,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/5ba99c2685b2-image1.jpg",
+      "target": "optimized-media/raster/uploads/5ba99c2685b2-image1.jpg.webp",
+      "sourceBytes": 128631,
+      "targetBytes": 76892,
+      "savedBytes": 51739,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/5dcb1d28c65f-image6(5).jpeg",
+      "target": "optimized-media/raster/uploads/5dcb1d28c65f-image6(5).jpeg.webp",
+      "sourceBytes": 45884,
+      "targetBytes": 38538,
+      "savedBytes": 7346,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/600-xjm_1.png",
+      "target": "optimized-media/raster/uploads/600-xjm_1.png.webp",
+      "sourceBytes": 6963,
+      "targetBytes": 1824,
+      "savedBytes": 5139,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/60bc750992ef-image1(6).jpeg",
+      "target": "optimized-media/raster/uploads/60bc750992ef-image1(6).jpeg.webp",
+      "sourceBytes": 20066,
+      "targetBytes": 12566,
+      "savedBytes": 7500,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/624fbd76692f-image28.jpeg",
+      "target": "optimized-media/raster/uploads/624fbd76692f-image28.jpeg.webp",
+      "sourceBytes": 24651,
+      "targetBytes": 13152,
+      "savedBytes": 11499,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/653177875d8b-image3(1).jpeg",
+      "target": "optimized-media/raster/uploads/653177875d8b-image3(1).jpeg.webp",
+      "sourceBytes": 104839,
+      "targetBytes": 89670,
+      "savedBytes": 15169,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/65a48baed9d6-image30(1).jpeg",
+      "target": "optimized-media/raster/uploads/65a48baed9d6-image30(1).jpeg.webp",
+      "sourceBytes": 11923,
+      "targetBytes": 6962,
+      "savedBytes": 4961,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/66a56433eba0-webdeb_logo.png",
+      "target": "optimized-media/raster/uploads/66a56433eba0-webdeb_logo.png.webp",
+      "sourceBytes": 2829,
+      "targetBytes": 1294,
+      "savedBytes": 1535,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/676ff22571b0-image4(6).jpeg",
+      "target": "optimized-media/raster/uploads/676ff22571b0-image4(6).jpeg.webp",
+      "sourceBytes": 32672,
+      "targetBytes": 26148,
+      "savedBytes": 6524,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/690GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/690GX_Dimensioni.jpg.webp",
+      "sourceBytes": 33133,
+      "targetBytes": 18508,
+      "savedBytes": 14625,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/690GX_Tabella_2017_GB.jpg",
+      "target": "optimized-media/raster/uploads/690GX_Tabella_2017_GB.jpg.webp",
+      "sourceBytes": 124843,
+      "targetBytes": 59626,
+      "savedBytes": 65217,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/69ad68660462-7500ppetites.jpg",
+      "target": "optimized-media/raster/uploads/69ad68660462-7500ppetites.jpg.webp",
+      "sourceBytes": 8821,
+      "targetBytes": 6630,
+      "savedBytes": 2191,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/69c2b70fbaa3-t.jpg",
+      "target": "optimized-media/raster/uploads/69c2b70fbaa3-t.jpg.webp",
+      "sourceBytes": 24473,
+      "targetBytes": 15204,
+      "savedBytes": 9269,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/69dadc5d2aae-image28(1).jpeg",
+      "target": "optimized-media/raster/uploads/69dadc5d2aae-image28(1).jpeg.webp",
+      "sourceBytes": 38019,
+      "targetBytes": 27772,
+      "savedBytes": 10247,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/6af57eb11a85-asdsad2_1_1.png",
+      "target": "optimized-media/raster/uploads/6af57eb11a85-asdsad2_1_1.png.webp",
+      "sourceBytes": 8218,
+      "targetBytes": 3128,
+      "savedBytes": 5090,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/6d02cf0a14bf-major-xjm_1.png",
+      "target": "optimized-media/raster/uploads/6d02cf0a14bf-major-xjm_1.png.webp",
+      "sourceBytes": 6465,
+      "targetBytes": 1508,
+      "savedBytes": 4957,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/6e21d24a9064-800-xjm_1.png",
+      "target": "optimized-media/raster/uploads/6e21d24a9064-800-xjm_1.png.webp",
+      "sourceBytes": 7248,
+      "targetBytes": 1996,
+      "savedBytes": 5252,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/70ec0aa5d863-image2.jpg",
+      "target": "optimized-media/raster/uploads/70ec0aa5d863-image2.jpg.webp",
+      "sourceBytes": 49836,
+      "targetBytes": 29066,
+      "savedBytes": 20770,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/73e2fd0169d4-image23(3).jpeg",
+      "target": "optimized-media/raster/uploads/73e2fd0169d4-image23(3).jpeg.webp",
+      "sourceBytes": 10478,
+      "targetBytes": 7136,
+      "savedBytes": 3342,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/73f7f58908ba-image4(4).jpeg",
+      "target": "optimized-media/raster/uploads/73f7f58908ba-image4(4).jpeg.webp",
+      "sourceBytes": 6079,
+      "targetBytes": 3564,
+      "savedBytes": 2515,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/756f89c51ede-tk.jpg",
+      "target": "optimized-media/raster/uploads/756f89c51ede-tk.jpg.webp",
+      "sourceBytes": 28614,
+      "targetBytes": 18470,
+      "savedBytes": 10144,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/7727e0feacd5-magnum-fx_2.png",
+      "target": "optimized-media/raster/uploads/7727e0feacd5-magnum-fx_2.png.webp",
+      "sourceBytes": 7203,
+      "targetBytes": 2764,
+      "savedBytes": 4439,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/789d5b3be929-boom_1_1.png",
+      "target": "optimized-media/raster/uploads/789d5b3be929-boom_1_1.png.webp",
+      "sourceBytes": 12884,
+      "targetBytes": 10972,
+      "savedBytes": 1912,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/790GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/790GX_Dimensioni.jpg.webp",
+      "sourceBytes": 56525,
+      "targetBytes": 36110,
+      "savedBytes": 20415,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/790GX_Tabella_2017_GB.jpg",
+      "target": "optimized-media/raster/uploads/790GX_Tabella_2017_GB.jpg.webp",
+      "sourceBytes": 128023,
+      "targetBytes": 62364,
+      "savedBytes": 65659,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/800-xjm_1.png",
+      "target": "optimized-media/raster/uploads/800-xjm_1.png.webp",
+      "sourceBytes": 7248,
+      "targetBytes": 1996,
+      "savedBytes": 5252,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/800-xjm_1_1.jpg",
+      "target": "optimized-media/raster/uploads/800-xjm_1_1.jpg.webp",
+      "sourceBytes": 178004,
+      "targetBytes": 76228,
+      "savedBytes": 101776,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/800-xjm_57.png",
+      "target": "optimized-media/raster/uploads/800-xjm_57.png.webp",
+      "sourceBytes": 7098,
+      "targetBytes": 1954,
+      "savedBytes": 5144,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/8500p-01.jpg",
+      "target": "optimized-media/raster/uploads/8500p-01.jpg.webp",
+      "sourceBytes": 152473,
+      "targetBytes": 138634,
+      "savedBytes": 13839,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/8500p-05.jpg",
+      "target": "optimized-media/raster/uploads/8500p-05.jpg.webp",
+      "sourceBytes": 245898,
+      "targetBytes": 235180,
+      "savedBytes": 10718,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/87cc3b3d7680-fk_europa.jpg",
+      "target": "optimized-media/raster/uploads/87cc3b3d7680-fk_europa.jpg.webp",
+      "sourceBytes": 43196,
+      "targetBytes": 20144,
+      "savedBytes": 23052,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/88213b273956-image1.jpeg",
+      "target": "optimized-media/raster/uploads/88213b273956-image1.jpeg.webp",
+      "sourceBytes": 66670,
+      "targetBytes": 37970,
+      "savedBytes": 28700,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/890GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/890GX_Dimensioni.jpg.webp",
+      "sourceBytes": 32719,
+      "targetBytes": 17058,
+      "savedBytes": 15661,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/890GX_Tabella_2017_GB.jpg",
+      "target": "optimized-media/raster/uploads/890GX_Tabella_2017_GB.jpg.webp",
+      "sourceBytes": 125937,
+      "targetBytes": 55884,
+      "savedBytes": 70053,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/8c584f42bb84-image20.jpeg",
+      "target": "optimized-media/raster/uploads/8c584f42bb84-image20.jpeg.webp",
+      "sourceBytes": 5034,
+      "targetBytes": 2038,
+      "savedBytes": 2996,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/8e91506ffa5c-image27.jpeg",
+      "target": "optimized-media/raster/uploads/8e91506ffa5c-image27.jpeg.webp",
+      "sourceBytes": 36080,
+      "targetBytes": 16754,
+      "savedBytes": 19326,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/8fa3da13deef-image10(1).jpeg",
+      "target": "optimized-media/raster/uploads/8fa3da13deef-image10(1).jpeg.webp",
+      "sourceBytes": 29608,
+      "targetBytes": 18976,
+      "savedBytes": 10632,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/908f8f884da8-image4.jpeg",
+      "target": "optimized-media/raster/uploads/908f8f884da8-image4.jpeg.webp",
+      "sourceBytes": 42690,
+      "targetBytes": 18266,
+      "savedBytes": 24424,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/90f0758e898d-liqu_1_1.png",
+      "target": "optimized-media/raster/uploads/90f0758e898d-liqu_1_1.png.webp",
+      "sourceBytes": 9944,
+      "targetBytes": 5640,
+      "savedBytes": 4304,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/9405ddd73bc7-rolunk_starpower.png",
+      "target": "optimized-media/raster/uploads/9405ddd73bc7-rolunk_starpower.png.webp",
+      "sourceBytes": 29589,
+      "targetBytes": 15122,
+      "savedBytes": 14467,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/9747f91bd68f-image17(1).jpeg",
+      "target": "optimized-media/raster/uploads/9747f91bd68f-image17(1).jpeg.webp",
+      "sourceBytes": 34211,
+      "targetBytes": 22522,
+      "savedBytes": 11689,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/990GX_Dimensioni.jpg",
+      "target": "optimized-media/raster/uploads/990GX_Dimensioni.jpg.webp",
+      "sourceBytes": 32567,
+      "targetBytes": 17412,
+      "savedBytes": 15155,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/99cbcfdeb80f-image1(4).jpeg",
+      "target": "optimized-media/raster/uploads/99cbcfdeb80f-image1(4).jpeg.webp",
+      "sourceBytes": 65156,
+      "targetBytes": 53572,
+      "savedBytes": 11584,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/9a440a332d41-790gx_1_1.png",
+      "target": "optimized-media/raster/uploads/9a440a332d41-790gx_1_1.png.webp",
+      "sourceBytes": 8372,
+      "targetBytes": 3144,
+      "savedBytes": 5228,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/9b0c37c8af0f-e_8.jpg",
+      "target": "optimized-media/raster/uploads/9b0c37c8af0f-e_8.jpg.webp",
+      "sourceBytes": 40784,
+      "targetBytes": 17478,
+      "savedBytes": 23306,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/9b4e0a4d0bb2-image8(4).jpeg",
+      "target": "optimized-media/raster/uploads/9b4e0a4d0bb2-image8(4).jpeg.webp",
+      "sourceBytes": 50646,
+      "targetBytes": 39974,
+      "savedBytes": 10672,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/9ed1df62bc5e-image7(1).jpeg",
+      "target": "optimized-media/raster/uploads/9ed1df62bc5e-image7(1).jpeg.webp",
+      "sourceBytes": 16464,
+      "targetBytes": 13918,
+      "savedBytes": 2546,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/9f15c5cae66f-image2(3).jpeg",
+      "target": "optimized-media/raster/uploads/9f15c5cae66f-image2(3).jpeg.webp",
+      "sourceBytes": 10499,
+      "targetBytes": 3334,
+      "savedBytes": 7165,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/Carrello-ok.png",
+      "target": "optimized-media/raster/uploads/Carrello-ok.png.webp",
+      "sourceBytes": 155077,
+      "targetBytes": 79168,
+      "savedBytes": 75909,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/DimensioniGX.jpg",
+      "target": "optimized-media/raster/uploads/DimensioniGX.jpg.webp",
+      "sourceBytes": 61281,
+      "targetBytes": 30406,
+      "savedBytes": 30875,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/LogoGreen.png",
+      "target": "optimized-media/raster/uploads/LogoGreen.png.webp",
+      "sourceBytes": 68643,
+      "targetBytes": 41834,
+      "savedBytes": 26809,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/LogoMOP.png",
+      "target": "optimized-media/raster/uploads/LogoMOP.png.webp",
+      "sourceBytes": 7040,
+      "targetBytes": 2000,
+      "savedBytes": 5040,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/SistemaCWM-1.jpg",
+      "target": "optimized-media/raster/uploads/SistemaCWM-1.jpg.webp",
+      "sourceBytes": 153693,
+      "targetBytes": 41562,
+      "savedBytes": 112131,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/a09a4065bf06-image5(2).jpeg",
+      "target": "optimized-media/raster/uploads/a09a4065bf06-image5(2).jpeg.webp",
+      "sourceBytes": 115553,
+      "targetBytes": 105918,
+      "savedBytes": 9635,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/a20081b4a070-image2.png",
+      "target": "optimized-media/raster/uploads/a20081b4a070-image2.png.webp",
+      "sourceBytes": 98372,
+      "targetBytes": 68804,
+      "savedBytes": 29568,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/a20d7b4bd27f-image7.jpg",
+      "target": "optimized-media/raster/uploads/a20d7b4bd27f-image7.jpg.webp",
+      "sourceBytes": 118155,
+      "targetBytes": 89732,
+      "savedBytes": 28423,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/a3143c2a42b9-image7(2).jpeg",
+      "target": "optimized-media/raster/uploads/a3143c2a42b9-image7(2).jpeg.webp",
+      "sourceBytes": 27456,
+      "targetBytes": 22290,
+      "savedBytes": 5166,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/a4126c6e4240-asd6_1_1.png",
+      "target": "optimized-media/raster/uploads/a4126c6e4240-asd6_1_1.png.webp",
+      "sourceBytes": 9555,
+      "targetBytes": 4086,
+      "savedBytes": 5469,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/a5694ee8a346-900xj-evo_1_1.png",
+      "target": "optimized-media/raster/uploads/a5694ee8a346-900xj-evo_1_1.png.webp",
+      "sourceBytes": 15495,
+      "targetBytes": 10132,
+      "savedBytes": 5363,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/a70afd1d43f2-image10(3).jpeg",
+      "target": "optimized-media/raster/uploads/a70afd1d43f2-image10(3).jpeg.webp",
+      "sourceBytes": 27462,
+      "targetBytes": 21236,
+      "savedBytes": 6226,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/a95391a75fd2-v.jpg",
+      "target": "optimized-media/raster/uploads/a95391a75fd2-v.jpg.webp",
+      "sourceBytes": 80695,
+      "targetBytes": 54588,
+      "savedBytes": 26107,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/aa8297cff32f-albatros-72_1_1.png",
+      "target": "optimized-media/raster/uploads/aa8297cff32f-albatros-72_1_1.png.webp",
+      "sourceBytes": 13008,
+      "targetBytes": 10756,
+      "savedBytes": 2252,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/aa853fa77056-image6.jpeg",
+      "target": "optimized-media/raster/uploads/aa853fa77056-image6.jpeg.webp",
+      "sourceBytes": 46587,
+      "targetBytes": 24330,
+      "savedBytes": 22257,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/ab611a87f62e-image18(1).jpeg",
+      "target": "optimized-media/raster/uploads/ab611a87f62e-image18(1).jpeg.webp",
+      "sourceBytes": 31224,
+      "targetBytes": 21190,
+      "savedBytes": 10034,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/adacb4a95816-image3.jpg",
+      "target": "optimized-media/raster/uploads/adacb4a95816-image3.jpg.webp",
+      "sourceBytes": 23280,
+      "targetBytes": 14352,
+      "savedBytes": 8928,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/afb16d3c537e-image4(3).jpeg",
+      "target": "optimized-media/raster/uploads/afb16d3c537e-image4(3).jpeg.webp",
+      "sourceBytes": 113234,
+      "targetBytes": 81582,
+      "savedBytes": 31652,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/afebf1a51f5c-image8(3).jpeg",
+      "target": "optimized-media/raster/uploads/afebf1a51f5c-image8(3).jpeg.webp",
+      "sourceBytes": 5539,
+      "targetBytes": 3062,
+      "savedBytes": 2477,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/albatros-07.jpg",
+      "target": "optimized-media/raster/uploads/albatros-07.jpg.webp",
+      "sourceBytes": 111558,
+      "targetBytes": 33214,
+      "savedBytes": 78344,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/albatros-08.jpg",
+      "target": "optimized-media/raster/uploads/albatros-08.jpg.webp",
+      "sourceBytes": 144389,
+      "targetBytes": 33888,
+      "savedBytes": 110501,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/albatros_1_2_853x387.jpg",
+      "target": "optimized-media/raster/uploads/albatros_1_2_853x387.jpg.webp",
+      "sourceBytes": 173768,
+      "targetBytes": 51124,
+      "savedBytes": 122644,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/apollo.jpg",
+      "target": "optimized-media/raster/uploads/apollo.jpg.webp",
+      "sourceBytes": 33442,
+      "targetBytes": 28360,
+      "savedBytes": 5082,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/b29f00c13d97-image9.jpeg",
+      "target": "optimized-media/raster/uploads/b29f00c13d97-image9.jpeg.webp",
+      "sourceBytes": 50330,
+      "targetBytes": 23624,
+      "savedBytes": 26706,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/b67b79cf7bb4-image3(4).jpeg",
+      "target": "optimized-media/raster/uploads/b67b79cf7bb4-image3(4).jpeg.webp",
+      "sourceBytes": 95373,
+      "targetBytes": 74128,
+      "savedBytes": 21245,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/ba0932154067-image6.jpg",
+      "target": "optimized-media/raster/uploads/ba0932154067-image6.jpg.webp",
+      "sourceBytes": 26027,
+      "targetBytes": 12244,
+      "savedBytes": 13783,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/baf9eba97569-image24.jpeg",
+      "target": "optimized-media/raster/uploads/baf9eba97569-image24.jpeg.webp",
+      "sourceBytes": 13051,
+      "targetBytes": 8256,
+      "savedBytes": 4795,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/bc0bb3288794-image15(2).jpeg",
+      "target": "optimized-media/raster/uploads/bc0bb3288794-image15(2).jpeg.webp",
+      "sourceBytes": 22215,
+      "targetBytes": 17126,
+      "savedBytes": 5089,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/bd80dea2a31a-image14(1).jpeg",
+      "target": "optimized-media/raster/uploads/bd80dea2a31a-image14(1).jpeg.webp",
+      "sourceBytes": 58037,
+      "targetBytes": 49344,
+      "savedBytes": 8693,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/be2fa14003c6-image17(2).jpeg",
+      "target": "optimized-media/raster/uploads/be2fa14003c6-image17(2).jpeg.webp",
+      "sourceBytes": 14359,
+      "targetBytes": 10300,
+      "savedBytes": 4059,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/bfaca931d140-04omega.jpg",
+      "target": "optimized-media/raster/uploads/bfaca931d140-04omega.jpg.webp",
+      "sourceBytes": 88316,
+      "targetBytes": 69360,
+      "savedBytes": 18956,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/boom-09.jpg",
+      "target": "optimized-media/raster/uploads/boom-09.jpg.webp",
+      "sourceBytes": 81997,
+      "targetBytes": 19174,
+      "savedBytes": 62823,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/boom-10.jpg",
+      "target": "optimized-media/raster/uploads/boom-10.jpg.webp",
+      "sourceBytes": 71629,
+      "targetBytes": 62198,
+      "savedBytes": 9431,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/boom-12.jpg",
+      "target": "optimized-media/raster/uploads/boom-12.jpg.webp",
+      "sourceBytes": 90407,
+      "targetBytes": 48428,
+      "savedBytes": 41979,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/boom-14.jpg",
+      "target": "optimized-media/raster/uploads/boom-14.jpg.webp",
+      "sourceBytes": 118491,
+      "targetBytes": 68190,
+      "savedBytes": 50301,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/boom-15.jpg",
+      "target": "optimized-media/raster/uploads/boom-15.jpg.webp",
+      "sourceBytes": 141958,
+      "targetBytes": 78684,
+      "savedBytes": 63274,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/boom_1_2_853x387.jpg",
+      "target": "optimized-media/raster/uploads/boom_1_2_853x387.jpg.webp",
+      "sourceBytes": 176057,
+      "targetBytes": 52974,
+      "savedBytes": 123083,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/c07c42f066fa-image19(1).jpeg",
+      "target": "optimized-media/raster/uploads/c07c42f066fa-image19(1).jpeg.webp",
+      "sourceBytes": 4939,
+      "targetBytes": 1906,
+      "savedBytes": 3033,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/c10c03d27621-falcon_1_1.png",
+      "target": "optimized-media/raster/uploads/c10c03d27621-falcon_1_1.png.webp",
+      "sourceBytes": 12273,
+      "targetBytes": 9074,
+      "savedBytes": 3199,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/c1cb6d4b6b15-image13(2).jpeg",
+      "target": "optimized-media/raster/uploads/c1cb6d4b6b15-image13(2).jpeg.webp",
+      "sourceBytes": 56770,
+      "targetBytes": 38522,
+      "savedBytes": 18248,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/c5d05bc8326d-image5(5).jpeg",
+      "target": "optimized-media/raster/uploads/c5d05bc8326d-image5(5).jpeg.webp",
+      "sourceBytes": 33188,
+      "targetBytes": 26728,
+      "savedBytes": 6460,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/c60b7ba08095-image8.jpeg",
+      "target": "optimized-media/raster/uploads/c60b7ba08095-image8.jpeg.webp",
+      "sourceBytes": 41904,
+      "targetBytes": 21466,
+      "savedBytes": 20438,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/c7c57904e0d3-image16(4).jpeg",
+      "target": "optimized-media/raster/uploads/c7c57904e0d3-image16(4).jpeg.webp",
+      "sourceBytes": 24626,
+      "targetBytes": 18842,
+      "savedBytes": 5784,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/cbdbb556ec17-image21(1).jpeg",
+      "target": "optimized-media/raster/uploads/cbdbb556ec17-image21(1).jpeg.webp",
+      "sourceBytes": 6033,
+      "targetBytes": 2306,
+      "savedBytes": 3727,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/ccff843b7519-image11(3).jpeg",
+      "target": "optimized-media/raster/uploads/ccff843b7519-image11(3).jpeg.webp",
+      "sourceBytes": 37842,
+      "targetBytes": 31490,
+      "savedBytes": 6352,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/cd47b9f9324b-image6(3).jpeg",
+      "target": "optimized-media/raster/uploads/cd47b9f9324b-image6(3).jpeg.webp",
+      "sourceBytes": 78098,
+      "targetBytes": 58202,
+      "savedBytes": 19896,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/ce42b9127cc5-image6(2).jpeg",
+      "target": "optimized-media/raster/uploads/ce42b9127cc5-image6(2).jpeg.webp",
+      "sourceBytes": 78203,
+      "targetBytes": 67400,
+      "savedBytes": 10803,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/chassis-options.jpg",
+      "target": "optimized-media/raster/uploads/chassis-options.jpg.webp",
+      "sourceBytes": 113140,
+      "targetBytes": 66874,
+      "savedBytes": 46266,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/cosmeco.png",
+      "target": "optimized-media/raster/uploads/cosmeco.png.webp",
+      "sourceBytes": 16617,
+      "targetBytes": 8154,
+      "savedBytes": 8463,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/d0ece43dec7a-rolunk_rm.png",
+      "target": "optimized-media/raster/uploads/d0ece43dec7a-rolunk_rm.png.webp",
+      "sourceBytes": 11241,
+      "targetBytes": 8040,
+      "savedBytes": 3201,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/d314731910c5-image3(3).jpeg",
+      "target": "optimized-media/raster/uploads/d314731910c5-image3(3).jpeg.webp",
+      "sourceBytes": 85606,
+      "targetBytes": 71012,
+      "savedBytes": 14594,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/d5b1d50b40fc-image1(1).jpeg",
+      "target": "optimized-media/raster/uploads/d5b1d50b40fc-image1(1).jpeg.webp",
+      "sourceBytes": 31668,
+      "targetBytes": 22038,
+      "savedBytes": 9630,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/d6dd2f498221-image8(2).jpeg",
+      "target": "optimized-media/raster/uploads/d6dd2f498221-image8(2).jpeg.webp",
+      "sourceBytes": 41764,
+      "targetBytes": 28838,
+      "savedBytes": 12926,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/da-ros.png",
+      "target": "optimized-media/raster/uploads/da-ros.png.webp",
+      "sourceBytes": 122537,
+      "targetBytes": 88960,
+      "savedBytes": 33577,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/da9095a47e36-image29.jpeg",
+      "target": "optimized-media/raster/uploads/da9095a47e36-image29.jpeg.webp",
+      "sourceBytes": 15950,
+      "targetBytes": 12122,
+      "savedBytes": 3828,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/dbbd034ceb51-image7(3).jpeg",
+      "target": "optimized-media/raster/uploads/dbbd034ceb51-image7(3).jpeg.webp",
+      "sourceBytes": 35433,
+      "targetBytes": 28874,
+      "savedBytes": 6559,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/dc0d2b225bb3-image31.jpeg",
+      "target": "optimized-media/raster/uploads/dc0d2b225bb3-image31.jpeg.webp",
+      "sourceBytes": 2909,
+      "targetBytes": 1584,
+      "savedBytes": 1325,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/de-cloet.png",
+      "target": "optimized-media/raster/uploads/de-cloet.png.webp",
+      "sourceBytes": 132997,
+      "targetBytes": 103876,
+      "savedBytes": 29121,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/decloet-transplanter-category.jpg",
+      "target": "optimized-media/raster/uploads/decloet-transplanter-category.jpg.webp",
+      "sourceBytes": 136550,
+      "targetBytes": 106252,
+      "savedBytes": 30298,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/dff6385ebc96-840xj_1_1.png",
+      "target": "optimized-media/raster/uploads/dff6385ebc96-840xj_1_1.png.webp",
+      "sourceBytes": 10102,
+      "targetBytes": 5698,
+      "savedBytes": 4404,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/dfff01846b42-asd3_1_1.png",
+      "target": "optimized-media/raster/uploads/dfff01846b42-asd3_1_1.png.webp",
+      "sourceBytes": 9391,
+      "targetBytes": 4036,
+      "savedBytes": 5355,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/diesel-generator.jpg",
+      "target": "optimized-media/raster/uploads/diesel-generator.jpg.webp",
+      "sourceBytes": 32349,
+      "targetBytes": 26604,
+      "savedBytes": 5745,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/e099d6562e8d-890-gx-890gxevo_1_1.png",
+      "target": "optimized-media/raster/uploads/e099d6562e8d-890-gx-890gxevo_1_1.png.webp",
+      "sourceBytes": 8439,
+      "targetBytes": 3200,
+      "savedBytes": 5239,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/e12ea151928a-image4(5).jpeg",
+      "target": "optimized-media/raster/uploads/e12ea151928a-image4(5).jpeg.webp",
+      "sourceBytes": 111175,
+      "targetBytes": 89322,
+      "savedBytes": 21853,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/e25cd72e24ee-image9(2).jpeg",
+      "target": "optimized-media/raster/uploads/e25cd72e24ee-image9(2).jpeg.webp",
+      "sourceBytes": 30036,
+      "targetBytes": 23908,
+      "savedBytes": 6128,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/e271eacb122c-image14(2).jpeg",
+      "target": "optimized-media/raster/uploads/e271eacb122c-image14(2).jpeg.webp",
+      "sourceBytes": 86936,
+      "targetBytes": 66930,
+      "savedBytes": 20006,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/e2a8f012bdda-image14(3).jpeg",
+      "target": "optimized-media/raster/uploads/e2a8f012bdda-image14(3).jpeg.webp",
+      "sourceBytes": 26517,
+      "targetBytes": 21062,
+      "savedBytes": 5455,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/e35790682320-image13(1).jpeg",
+      "target": "optimized-media/raster/uploads/e35790682320-image13(1).jpeg.webp",
+      "sourceBytes": 70867,
+      "targetBytes": 54564,
+      "savedBytes": 16303,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/e5c5de99e71c-condor_1_1.png",
+      "target": "optimized-media/raster/uploads/e5c5de99e71c-condor_1_1.png.webp",
+      "sourceBytes": 13101,
+      "targetBytes": 11194,
+      "savedBytes": 1907,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/e7ae7b9a3f65-990gx_1_1.png",
+      "target": "optimized-media/raster/uploads/e7ae7b9a3f65-990gx_1_1.png.webp",
+      "sourceBytes": 8374,
+      "targetBytes": 3188,
+      "savedBytes": 5186,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/e7dfcd111b4e-image16(2).jpeg",
+      "target": "optimized-media/raster/uploads/e7dfcd111b4e-image16(2).jpeg.webp",
+      "sourceBytes": 84831,
+      "targetBytes": 74278,
+      "savedBytes": 10553,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/ea7e9b0bda9e-image4.jpeg",
+      "target": "optimized-media/raster/uploads/ea7e9b0bda9e-image4.jpeg.webp",
+      "sourceBytes": 61296,
+      "targetBytes": 38098,
+      "savedBytes": 23198,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/ec7baac9456d-image11(2).jpeg",
+      "target": "optimized-media/raster/uploads/ec7baac9456d-image11(2).jpeg.webp",
+      "sourceBytes": 32672,
+      "targetBytes": 26148,
+      "savedBytes": 6524,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/eeb3eb7e3dbd-image1(5).jpeg",
+      "target": "optimized-media/raster/uploads/eeb3eb7e3dbd-image1(5).jpeg.webp",
+      "sourceBytes": 19658,
+      "targetBytes": 11500,
+      "savedBytes": 8158,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/eee32f1a538e-800-xjm_57.png",
+      "target": "optimized-media/raster/uploads/eee32f1a538e-800-xjm_57.png.webp",
+      "sourceBytes": 7098,
+      "targetBytes": 1954,
+      "savedBytes": 5144,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/electric-pump-range.jpg",
+      "target": "optimized-media/raster/uploads/electric-pump-range.jpg.webp",
+      "sourceBytes": 28692,
+      "targetBytes": 23172,
+      "savedBytes": 5520,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/electric-pump-set.jpg",
+      "target": "optimized-media/raster/uploads/electric-pump-set.jpg.webp",
+      "sourceBytes": 27484,
+      "targetBytes": 22076,
+      "savedBytes": 5408,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/f0a97dd67748-asd4_1_1.png",
+      "target": "optimized-media/raster/uploads/f0a97dd67748-asd4_1_1.png.webp",
+      "sourceBytes": 10117,
+      "targetBytes": 4340,
+      "savedBytes": 5777,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/f142a92020ef-image3.jpeg",
+      "target": "optimized-media/raster/uploads/f142a92020ef-image3.jpeg.webp",
+      "sourceBytes": 72184,
+      "targetBytes": 39814,
+      "savedBytes": 32370,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/f35b47a96522-image12.jpeg",
+      "target": "optimized-media/raster/uploads/f35b47a96522-image12.jpeg.webp",
+      "sourceBytes": 39682,
+      "targetBytes": 22004,
+      "savedBytes": 17678,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/f74d1ca1cedd-asd5_1_1.png",
+      "target": "optimized-media/raster/uploads/f74d1ca1cedd-asd5_1_1.png.webp",
+      "sourceBytes": 9102,
+      "targetBytes": 3536,
+      "savedBytes": 5566,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/f93601358061-image11(1).jpeg",
+      "target": "optimized-media/raster/uploads/f93601358061-image11(1).jpeg.webp",
+      "sourceBytes": 22246,
+      "targetBytes": 10736,
+      "savedBytes": 11510,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon-08.jpg",
+      "target": "optimized-media/raster/uploads/falcon-08.jpg.webp",
+      "sourceBytes": 141834,
+      "targetBytes": 51080,
+      "savedBytes": 90754,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon-09.jpg",
+      "target": "optimized-media/raster/uploads/falcon-09.jpg.webp",
+      "sourceBytes": 172217,
+      "targetBytes": 60924,
+      "savedBytes": 111293,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon-10.jpg",
+      "target": "optimized-media/raster/uploads/falcon-10.jpg.webp",
+      "sourceBytes": 124817,
+      "targetBytes": 40858,
+      "savedBytes": 83959,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon-11.jpg",
+      "target": "optimized-media/raster/uploads/falcon-11.jpg.webp",
+      "sourceBytes": 131868,
+      "targetBytes": 42998,
+      "savedBytes": 88870,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon-12.jpg",
+      "target": "optimized-media/raster/uploads/falcon-12.jpg.webp",
+      "sourceBytes": 116420,
+      "targetBytes": 40858,
+      "savedBytes": 75562,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon-13.jpg",
+      "target": "optimized-media/raster/uploads/falcon-13.jpg.webp",
+      "sourceBytes": 138607,
+      "targetBytes": 49218,
+      "savedBytes": 89389,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon-14.jpg",
+      "target": "optimized-media/raster/uploads/falcon-14.jpg.webp",
+      "sourceBytes": 132326,
+      "targetBytes": 48864,
+      "savedBytes": 83462,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon-15.jpg",
+      "target": "optimized-media/raster/uploads/falcon-15.jpg.webp",
+      "sourceBytes": 111928,
+      "targetBytes": 37578,
+      "savedBytes": 74350,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/falcon_1_2_853x387.jpg",
+      "target": "optimized-media/raster/uploads/falcon_1_2_853x387.jpg.webp",
+      "sourceBytes": 153141,
+      "targetBytes": 44410,
+      "savedBytes": 108731,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/fe71193f1064-image15(1).jpeg",
+      "target": "optimized-media/raster/uploads/fe71193f1064-image15(1).jpeg.webp",
+      "sourceBytes": 134282,
+      "targetBytes": 114242,
+      "savedBytes": 20040,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/fertilizer-scheme.png",
+      "target": "optimized-media/raster/uploads/fertilizer-scheme.png.webp",
+      "sourceBytes": 36974,
+      "targetBytes": 35964,
+      "savedBytes": 1010,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/fertilizer-table.png",
+      "target": "optimized-media/raster/uploads/fertilizer-table.png.webp",
+      "sourceBytes": 3156,
+      "targetBytes": 2592,
+      "savedBytes": 564,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/fertilizer.jpg",
+      "target": "optimized-media/raster/uploads/fertilizer.jpg.webp",
+      "sourceBytes": 30895,
+      "targetBytes": 25544,
+      "savedBytes": 5351,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/fffad2862cd5-image32.jpeg",
+      "target": "optimized-media/raster/uploads/fffad2862cd5-image32.jpeg.webp",
+      "sourceBytes": 10688,
+      "targetBytes": 7788,
+      "savedBytes": 2900,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtrofly-detail.png",
+      "target": "optimized-media/raster/uploads/filtrofly-detail.png.webp",
+      "sourceBytes": 42948,
+      "targetBytes": 41982,
+      "savedBytes": 966,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtrofly-table.png",
+      "target": "optimized-media/raster/uploads/filtrofly-table.png.webp",
+      "sourceBytes": 7948,
+      "targetBytes": 5048,
+      "savedBytes": 2900,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtrofly.jpg",
+      "target": "optimized-media/raster/uploads/filtrofly.jpg.webp",
+      "sourceBytes": 29117,
+      "targetBytes": 22816,
+      "savedBytes": 6301,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroline-scheme.png",
+      "target": "optimized-media/raster/uploads/filtroline-scheme.png.webp",
+      "sourceBytes": 22124,
+      "targetBytes": 21692,
+      "savedBytes": 432,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroline.jpg",
+      "target": "optimized-media/raster/uploads/filtroline.jpg.webp",
+      "sourceBytes": 33810,
+      "targetBytes": 24990,
+      "savedBytes": 8820,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-1c-battery-2.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-1c-battery-2.png.webp",
+      "sourceBytes": 131784,
+      "targetBytes": 121756,
+      "savedBytes": 10028,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-1c-battery-3.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-1c-battery-3.png.webp",
+      "sourceBytes": 113313,
+      "targetBytes": 102220,
+      "savedBytes": 11093,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-1c-battery-cap.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-1c-battery-cap.png.webp",
+      "sourceBytes": 102313,
+      "targetBytes": 101622,
+      "savedBytes": 691,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-1c-battery-scheme.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-1c-battery-scheme.png.webp",
+      "sourceBytes": 115823,
+      "targetBytes": 105696,
+      "savedBytes": 10127,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-1c-battery-table.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-1c-battery-table.png.webp",
+      "sourceBytes": 4256,
+      "targetBytes": 3454,
+      "savedBytes": 802,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-1c.jpg",
+      "target": "optimized-media/raster/uploads/filtroquarz-1c.jpg.webp",
+      "sourceBytes": 33600,
+      "targetBytes": 23794,
+      "savedBytes": 9806,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-2c-auto-murphy.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-2c-auto-murphy.png.webp",
+      "sourceBytes": 90423,
+      "targetBytes": 82276,
+      "savedBytes": 8147,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-2c-auto-scheme.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-2c-auto-scheme.png.webp",
+      "sourceBytes": 106923,
+      "targetBytes": 98092,
+      "savedBytes": 8831,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-2c-auto-table.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-2c-auto-table.png.webp",
+      "sourceBytes": 4798,
+      "targetBytes": 4028,
+      "savedBytes": 770,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-2c-auto-tappo.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-2c-auto-tappo.png.webp",
+      "sourceBytes": 102313,
+      "targetBytes": 101622,
+      "savedBytes": 691,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-2c-auto.jpg",
+      "target": "optimized-media/raster/uploads/filtroquarz-2c-auto.jpg.webp",
+      "sourceBytes": 45451,
+      "targetBytes": 35516,
+      "savedBytes": 9935,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-2c-table.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-2c-table.png.webp",
+      "sourceBytes": 6505,
+      "targetBytes": 5492,
+      "savedBytes": 1013,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-2c.jpg",
+      "target": "optimized-media/raster/uploads/filtroquarz-2c.jpg.webp",
+      "sourceBytes": 26930,
+      "targetBytes": 21740,
+      "savedBytes": 5190,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-scheme.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-scheme.png.webp",
+      "sourceBytes": 105198,
+      "targetBytes": 96172,
+      "savedBytes": 9026,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtroquarz-table.png",
+      "target": "optimized-media/raster/uploads/filtroquarz-table.png.webp",
+      "sourceBytes": 5001,
+      "targetBytes": 4122,
+      "savedBytes": 879,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtrosfer-detail.png",
+      "target": "optimized-media/raster/uploads/filtrosfer-detail.png.webp",
+      "sourceBytes": 20985,
+      "targetBytes": 19348,
+      "savedBytes": 1637,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtrosfer-filtroline.png",
+      "target": "optimized-media/raster/uploads/filtrosfer-filtroline.png.webp",
+      "sourceBytes": 25674,
+      "targetBytes": 24020,
+      "savedBytes": 1654,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtrosfer-table.png",
+      "target": "optimized-media/raster/uploads/filtrosfer-table.png.webp",
+      "sourceBytes": 6777,
+      "targetBytes": 4536,
+      "savedBytes": 2241,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/filtrosfer.jpg",
+      "target": "optimized-media/raster/uploads/filtrosfer.jpg.webp",
+      "sourceBytes": 34866,
+      "targetBytes": 29824,
+      "savedBytes": 5042,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/fx-900-6.jpg",
+      "target": "optimized-media/raster/uploads/fx-900-6.jpg.webp",
+      "sourceBytes": 32074,
+      "targetBytes": 5594,
+      "savedBytes": 26480,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/fx-logo-current.png",
+      "target": "optimized-media/raster/uploads/fx-logo-current.png.webp",
+      "sourceBytes": 24650,
+      "targetBytes": 7156,
+      "savedBytes": 17494,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/fx-magnum-2.jpg",
+      "target": "optimized-media/raster/uploads/fx-magnum-2.jpg.webp",
+      "sourceBytes": 129698,
+      "targetBytes": 22700,
+      "savedBytes": 106998,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/fx-magnum-3.jpg",
+      "target": "optimized-media/raster/uploads/fx-magnum-3.jpg.webp",
+      "sourceBytes": 32074,
+      "targetBytes": 5594,
+      "savedBytes": 26480,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/fx-shared-dim.jpg",
+      "target": "optimized-media/raster/uploads/fx-shared-dim.jpg.webp",
+      "sourceBytes": 61281,
+      "targetBytes": 16332,
+      "savedBytes": 44949,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/fx.png",
+      "target": "optimized-media/raster/uploads/fx.png.webp",
+      "sourceBytes": 11515,
+      "targetBytes": 7978,
+      "savedBytes": 3537,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/giunti.png",
+      "target": "optimized-media/raster/uploads/giunti.png.webp",
+      "sourceBytes": 16261,
+      "targetBytes": 4300,
+      "savedBytes": 11961,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/green-tobacco-handling.jpg",
+      "target": "optimized-media/raster/uploads/green-tobacco-handling.jpg.webp",
+      "sourceBytes": 110367,
+      "targetBytes": 76598,
+      "savedBytes": 33769,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/gx-logo.png",
+      "target": "optimized-media/raster/uploads/gx-logo.png.webp",
+      "sourceBytes": 4947,
+      "targetBytes": 3176,
+      "savedBytes": 1771,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/gx.png",
+      "target": "optimized-media/raster/uploads/gx.png.webp",
+      "sourceBytes": 9324,
+      "targetBytes": 6508,
+      "savedBytes": 2816,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/hydrant-head-harpoon.jpg",
+      "target": "optimized-media/raster/uploads/hydrant-head-harpoon.jpg.webp",
+      "sourceBytes": 42650,
+      "targetBytes": 8234,
+      "savedBytes": 34416,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/hydrocyclone-scheme.png",
+      "target": "optimized-media/raster/uploads/hydrocyclone-scheme.png.webp",
+      "sourceBytes": 35553,
+      "targetBytes": 33736,
+      "savedBytes": 1817,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/hydrocyclone-table.png",
+      "target": "optimized-media/raster/uploads/hydrocyclone-table.png.webp",
+      "sourceBytes": 6286,
+      "targetBytes": 4804,
+      "savedBytes": 1482,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/hydrocyclone.jpg",
+      "target": "optimized-media/raster/uploads/hydrocyclone.jpg.webp",
+      "sourceBytes": 11868,
+      "targetBytes": 6102,
+      "savedBytes": 5766,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/hydroplus-table.png",
+      "target": "optimized-media/raster/uploads/hydroplus-table.png.webp",
+      "sourceBytes": 22571,
+      "targetBytes": 12516,
+      "savedBytes": 10055,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/hydroplus.jpg",
+      "target": "optimized-media/raster/uploads/hydroplus.jpg.webp",
+      "sourceBytes": 18219,
+      "targetBytes": 13088,
+      "savedBytes": 5131,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/idrojet-125.jpg",
+      "target": "optimized-media/raster/uploads/idrojet-125.jpg.webp",
+      "sourceBytes": 193954,
+      "targetBytes": 174768,
+      "savedBytes": 19186,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/irroratrice-1400vv.jpg",
+      "target": "optimized-media/raster/uploads/irroratrice-1400vv.jpg.webp",
+      "sourceBytes": 53429,
+      "targetBytes": 49232,
+      "savedBytes": 4197,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/liquo-08.jpg",
+      "target": "optimized-media/raster/uploads/liquo-08.jpg.webp",
+      "sourceBytes": 136238,
+      "targetBytes": 50008,
+      "savedBytes": 86230,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/liquo-09.jpg",
+      "target": "optimized-media/raster/uploads/liquo-09.jpg.webp",
+      "sourceBytes": 23635,
+      "targetBytes": 4146,
+      "savedBytes": 19489,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/liquo-18.jpg",
+      "target": "optimized-media/raster/uploads/liquo-18.jpg.webp",
+      "sourceBytes": 178428,
+      "targetBytes": 56710,
+      "savedBytes": 121718,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/magnum-xjm_1.png",
+      "target": "optimized-media/raster/uploads/magnum-xjm_1.png.webp",
+      "sourceBytes": 8292,
+      "targetBytes": 2548,
+      "savedBytes": 5744,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/magnum_1_1.png",
+      "target": "optimized-media/raster/uploads/magnum_1_1.png.webp",
+      "sourceBytes": 8551,
+      "targetBytes": 3358,
+      "savedBytes": 5193,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/mantovani.png",
+      "target": "optimized-media/raster/uploads/mantovani.png.webp",
+      "sourceBytes": 40000,
+      "targetBytes": 15226,
+      "savedBytes": 24774,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/mop2.jpg",
+      "target": "optimized-media/raster/uploads/mop2.jpg.webp",
+      "sourceBytes": 57947,
+      "targetBytes": 37856,
+      "savedBytes": 20091,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/mop3.jpg",
+      "target": "optimized-media/raster/uploads/mop3.jpg.webp",
+      "sourceBytes": 53586,
+      "targetBytes": 34814,
+      "savedBytes": 18772,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/mop4.jpg",
+      "target": "optimized-media/raster/uploads/mop4.jpg.webp",
+      "sourceBytes": 125864,
+      "targetBytes": 81404,
+      "savedBytes": 44460,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/motor-clutch-range.jpg",
+      "target": "optimized-media/raster/uploads/motor-clutch-range.jpg.webp",
+      "sourceBytes": 112808,
+      "targetBytes": 91300,
+      "savedBytes": 21508,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/motor-pump-1.jpg",
+      "target": "optimized-media/raster/uploads/motor-pump-1.jpg.webp",
+      "sourceBytes": 43091,
+      "targetBytes": 40708,
+      "savedBytes": 2383,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/motor-pump.jpg",
+      "target": "optimized-media/raster/uploads/motor-pump.jpg.webp",
+      "sourceBytes": 43091,
+      "targetBytes": 40708,
+      "savedBytes": 2383,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/multi-sezione-1.png",
+      "target": "optimized-media/raster/uploads/multi-sezione-1.png.webp",
+      "sourceBytes": 50561,
+      "targetBytes": 27566,
+      "savedBytes": 22995,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/occhione.jpg",
+      "target": "optimized-media/raster/uploads/occhione.jpg.webp",
+      "sourceBytes": 132631,
+      "targetBytes": 58830,
+      "savedBytes": 73801,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/oliveragro.png",
+      "target": "optimized-media/raster/uploads/oliveragro.png.webp",
+      "sourceBytes": 77032,
+      "targetBytes": 59636,
+      "savedBytes": 17396,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/pto-generator.jpg",
+      "target": "optimized-media/raster/uploads/pto-generator.jpg.webp",
+      "sourceBytes": 39684,
+      "targetBytes": 34744,
+      "savedBytes": 4940,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/rotoblizz-full.png",
+      "target": "optimized-media/raster/uploads/rotoblizz-full.png.webp",
+      "sourceBytes": 85668,
+      "targetBytes": 75608,
+      "savedBytes": 10060,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/rotoblizz-standard.png",
+      "target": "optimized-media/raster/uploads/rotoblizz-standard.png.webp",
+      "sourceBytes": 46456,
+      "targetBytes": 41590,
+      "savedBytes": 4866,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/rotoblizz.png",
+      "target": "optimized-media/raster/uploads/rotoblizz.png.webp",
+      "sourceBytes": 76452,
+      "targetBytes": 69768,
+      "savedBytes": 6684,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/rotoclean.png",
+      "target": "optimized-media/raster/uploads/rotoclean.png.webp",
+      "sourceBytes": 59247,
+      "targetBytes": 50784,
+      "savedBytes": 8463,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/rotodisk.png",
+      "target": "optimized-media/raster/uploads/rotodisk.png.webp",
+      "sourceBytes": 74476,
+      "targetBytes": 65470,
+      "savedBytes": 9006,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/rovatti.png",
+      "target": "optimized-media/raster/uploads/rovatti.png.webp",
+      "sourceBytes": 49991,
+      "targetBytes": 26326,
+      "savedBytes": 23665,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/sem100-official.jpg",
+      "target": "optimized-media/raster/uploads/sem100-official.jpg.webp",
+      "sourceBytes": 149869,
+      "targetBytes": 85978,
+      "savedBytes": 63891,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/sprayer_2.jpg",
+      "target": "optimized-media/raster/uploads/sprayer_2.jpg.webp",
+      "sourceBytes": 110893,
+      "targetBytes": 61504,
+      "savedBytes": 49389,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/sprayer_3.jpg",
+      "target": "optimized-media/raster/uploads/sprayer_3.jpg.webp",
+      "sourceBytes": 172960,
+      "targetBytes": 106670,
+      "savedBytes": 66290,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/sprayer_cloche.jpg",
+      "target": "optimized-media/raster/uploads/sprayer_cloche.jpg.webp",
+      "sourceBytes": 48358,
+      "targetBytes": 18666,
+      "savedBytes": 29692,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/sprayer_computer.jpg",
+      "target": "optimized-media/raster/uploads/sprayer_computer.jpg.webp",
+      "sourceBytes": 120626,
+      "targetBytes": 53448,
+      "savedBytes": 67178,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/sprayer_volante.jpg",
+      "target": "optimized-media/raster/uploads/sprayer_volante.jpg.webp",
+      "sourceBytes": 113828,
+      "targetBytes": 54090,
+      "savedBytes": 59738,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/starpower.png",
+      "target": "optimized-media/raster/uploads/starpower.png.webp",
+      "sourceBytes": 78728,
+      "targetBytes": 61624,
+      "savedBytes": 17104,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/sunnyhose.jpg",
+      "target": "optimized-media/raster/uploads/sunnyhose.jpg.webp",
+      "sourceBytes": 26589,
+      "targetBytes": 21116,
+      "savedBytes": 5473,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/tk-series-official.jpg",
+      "target": "optimized-media/raster/uploads/tk-series-official.jpg.webp",
+      "sourceBytes": 103942,
+      "targetBytes": 20600,
+      "savedBytes": 83342,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/tobacco-drying.jpg",
+      "target": "optimized-media/raster/uploads/tobacco-drying.jpg.webp",
+      "sourceBytes": 95972,
+      "targetBytes": 66812,
+      "savedBytes": 29160,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/tornado-f1-category.jpg",
+      "target": "optimized-media/raster/uploads/tornado-f1-category.jpg.webp",
+      "sourceBytes": 34180,
+      "targetBytes": 17144,
+      "savedBytes": 17036,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/tray-seeder-01.jpeg",
+      "target": "optimized-media/raster/uploads/tray-seeder-01.jpeg.webp",
+      "sourceBytes": 19658,
+      "targetBytes": 11500,
+      "savedBytes": 8158,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/valducci-giunti-logo.jpg",
+      "target": "optimized-media/raster/uploads/valducci-giunti-logo.jpg.webp",
+      "sourceBytes": 31105,
+      "targetBytes": 23430,
+      "savedBytes": 7675,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/valducci.png",
+      "target": "optimized-media/raster/uploads/valducci.png.webp",
+      "sourceBytes": 51588,
+      "targetBytes": 32162,
+      "savedBytes": 19426,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/vodar.png",
+      "target": "optimized-media/raster/uploads/vodar.png.webp",
+      "sourceBytes": 50324,
+      "targetBytes": 39368,
+      "savedBytes": 10956,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/wire-lock.jpg",
+      "target": "optimized-media/raster/uploads/wire-lock.jpg.webp",
+      "sourceBytes": 16172,
+      "targetBytes": 10114,
+      "savedBytes": 6058,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-600-dim.jpg",
+      "target": "optimized-media/raster/uploads/xj-600-dim.jpg.webp",
+      "sourceBytes": 32737,
+      "targetBytes": 6146,
+      "savedBytes": 26591,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-600-logo.png",
+      "target": "optimized-media/raster/uploads/xj-600-logo.png.webp",
+      "sourceBytes": 10806,
+      "targetBytes": 5532,
+      "savedBytes": 5274,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-700-dim.jpg",
+      "target": "optimized-media/raster/uploads/xj-700-dim.jpg.webp",
+      "sourceBytes": 32913,
+      "targetBytes": 6204,
+      "savedBytes": 26709,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-700-table.jpg",
+      "target": "optimized-media/raster/uploads/xj-700-table.jpg.webp",
+      "sourceBytes": 139039,
+      "targetBytes": 39940,
+      "savedBytes": 99099,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-800-dim.jpg",
+      "target": "optimized-media/raster/uploads/xj-800-dim.jpg.webp",
+      "sourceBytes": 34460,
+      "targetBytes": 6116,
+      "savedBytes": 28344,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-800-table.jpg",
+      "target": "optimized-media/raster/uploads/xj-800-table.jpg.webp",
+      "sourceBytes": 137745,
+      "targetBytes": 62188,
+      "savedBytes": 75557,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-840-dim.jpg",
+      "target": "optimized-media/raster/uploads/xj-840-dim.jpg.webp",
+      "sourceBytes": 33067,
+      "targetBytes": 6250,
+      "savedBytes": 26817,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-900-dim.jpg",
+      "target": "optimized-media/raster/uploads/xj-900-dim.jpg.webp",
+      "sourceBytes": 33755,
+      "targetBytes": 6292,
+      "savedBytes": 27463,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-900-table.jpg",
+      "target": "optimized-media/raster/uploads/xj-900-table.jpg.webp",
+      "sourceBytes": 122568,
+      "targetBytes": 51722,
+      "savedBytes": 70846,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-giant-dim.jpg",
+      "target": "optimized-media/raster/uploads/xj-giant-dim.jpg.webp",
+      "sourceBytes": 55282,
+      "targetBytes": 11654,
+      "savedBytes": 43628,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-giant-main-logo.png",
+      "target": "optimized-media/raster/uploads/xj-giant-main-logo.png.webp",
+      "sourceBytes": 18039,
+      "targetBytes": 12390,
+      "savedBytes": 5649,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-giant-table.jpg",
+      "target": "optimized-media/raster/uploads/xj-giant-table.jpg.webp",
+      "sourceBytes": 147381,
+      "targetBytes": 70856,
+      "savedBytes": 76525,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-logo.png",
+      "target": "optimized-media/raster/uploads/xj-logo.png.webp",
+      "sourceBytes": 4710,
+      "targetBytes": 2904,
+      "savedBytes": 1806,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-major-dim.jpg",
+      "target": "optimized-media/raster/uploads/xj-major-dim.jpg.webp",
+      "sourceBytes": 32713,
+      "targetBytes": 5978,
+      "savedBytes": 26735,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-major-logo.png",
+      "target": "optimized-media/raster/uploads/xj-major-logo.png.webp",
+      "sourceBytes": 17243,
+      "targetBytes": 8554,
+      "savedBytes": 8689,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj-major-table.jpg",
+      "target": "optimized-media/raster/uploads/xj-major-table.jpg.webp",
+      "sourceBytes": 143803,
+      "targetBytes": 68222,
+      "savedBytes": 75581,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xj.png",
+      "target": "optimized-media/raster/uploads/xj.png.webp",
+      "sourceBytes": 9909,
+      "targetBytes": 6934,
+      "savedBytes": 2975,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-700-7.jpg",
+      "target": "optimized-media/raster/uploads/xjm-700-7.jpg.webp",
+      "sourceBytes": 91015,
+      "targetBytes": 22884,
+      "savedBytes": 68131,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-700-8.jpg",
+      "target": "optimized-media/raster/uploads/xjm-700-8.jpg.webp",
+      "sourceBytes": 47356,
+      "targetBytes": 10872,
+      "savedBytes": 36484,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-840-4.jpg",
+      "target": "optimized-media/raster/uploads/xjm-840-4.jpg.webp",
+      "sourceBytes": 143160,
+      "targetBytes": 24558,
+      "savedBytes": 118602,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-840-5.jpg",
+      "target": "optimized-media/raster/uploads/xjm-840-5.jpg.webp",
+      "sourceBytes": 91321,
+      "targetBytes": 14734,
+      "savedBytes": 76587,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-900-3.jpg",
+      "target": "optimized-media/raster/uploads/xjm-900-3.jpg.webp",
+      "sourceBytes": 32525,
+      "targetBytes": 6110,
+      "savedBytes": 26415,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-giant-4.jpg",
+      "target": "optimized-media/raster/uploads/xjm-giant-4.jpg.webp",
+      "sourceBytes": 148391,
+      "targetBytes": 25600,
+      "savedBytes": 122791,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-giant-5.jpg",
+      "target": "optimized-media/raster/uploads/xjm-giant-5.jpg.webp",
+      "sourceBytes": 32448,
+      "targetBytes": 5942,
+      "savedBytes": 26506,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-hydraulic.jpg",
+      "target": "optimized-media/raster/uploads/xjm-hydraulic.jpg.webp",
+      "sourceBytes": 152467,
+      "targetBytes": 55810,
+      "savedBytes": 96657,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-logo.png",
+      "target": "optimized-media/raster/uploads/xjm-logo.png.webp",
+      "sourceBytes": 6796,
+      "targetBytes": 4624,
+      "savedBytes": 2172,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-major-7.jpg",
+      "target": "optimized-media/raster/uploads/xjm-major-7.jpg.webp",
+      "sourceBytes": 81795,
+      "targetBytes": 22158,
+      "savedBytes": 59637,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-major-8.jpg",
+      "target": "optimized-media/raster/uploads/xjm-major-8.jpg.webp",
+      "sourceBytes": 34102,
+      "targetBytes": 6076,
+      "savedBytes": 28026,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-shared-dim.jpg",
+      "target": "optimized-media/raster/uploads/xjm-shared-dim.jpg.webp",
+      "sourceBytes": 63114,
+      "targetBytes": 17164,
+      "savedBytes": 45950,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm-tank.jpg",
+      "target": "optimized-media/raster/uploads/xjm-tank.jpg.webp",
+      "sourceBytes": 135093,
+      "targetBytes": 48990,
+      "savedBytes": 86103,
+      "mode": "WebP q88",
+      "poster": false
+    },
+    {
+      "source": "uploads/xjm.png",
+      "target": "optimized-media/raster/uploads/xjm.png.webp",
+      "sourceBytes": 12359,
+      "targetBytes": 8540,
+      "savedBytes": 3819,
+      "mode": "lossless WebP",
+      "poster": false
+    },
+    {
+      "source": "uploads/zimmatic-9500p.jpg",
+      "target": "optimized-media/raster/uploads/zimmatic-9500p.jpg.webp",
+      "sourceBytes": 122835,
+      "targetBytes": 121420,
+      "savedBytes": 1415,
+      "mode": "WebP q88",
+      "poster": false
+    }
+  ],
+  "rasterCandidates": {
+    "count": 381,
+    "sourceBytes": 22919076,
+    "converted": 358,
+    "skipped": 23
+  }
+}
