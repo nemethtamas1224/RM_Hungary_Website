@@ -81,7 +81,12 @@
 
 ## 2026-10-23 – Egytermékes családok közvetlen hivatkozásai
 
-- A `catalog.json` alapján 12 termékcsaládhoz pontosan egy közzétett termék tartozik. A családkártyák közül 22 kártyahivatkozást állítottam át 19 gyártói/kategóriaoldalon a megfelelő termékoldalra; a családoldalak URL-jei továbbra is elérhetők.
+- A `catalog.json` alapján 13 termékcsaládhoz pontosan egy közzétett termék tartozik. A VODAR körforgó család kártyái már közvetlen termékoldalra mutattak; a további 12 család 22 kártyahivatkozását állítottam át 19 gyártói/kategóriaoldalon. A családoldalak URL-jei továbbra is elérhetők.
 - A Da Ros gyártói kártya közvetlenül a Da Ros tálcás magvetőgép oldalára visz. Hasonlóan közvetlenek lettek többek között a De Cloet, Lindsay, Mantovani, Oliveragro, RM, Rovatti, Starpower és Valducci egytermékes kártyái.
 - Ellenőrzés: mind a 22 új célútvonal létezik. Helyi böngészőben a Da Ros kártya a termékoldal URL-jét mutatja; a termékoldal HTTP 200-zal és teljes főtartalommal betöltött. `git diff --check` hibát nem jelzett.
-- A kártyák szövege, képe és stílusa nem változott. GitHub Desktop feltöltés és GitHub Pages ellenőrzés még hátravan.
+- A kártyák szövege, képe és stílusa nem változott. GitHub Desktopból feltöltve a `main` ágra (`793ea063c82154056fc2d3f4cadedcb16cd034a8`); a statikus Pages telepítés és a Pages build/deployment sikeres. Az élő Da Ros gyártói oldalon a közvetlen termékhivatkozást, az élő Da Ros termékoldalt és a Valducci kategória közvetlen kártyáját böngészőben ellenőriztem.
+
+## 2026-10-23 – RM böngészőfül-ikon
+
+- A statikus kiadás 252 HTML-oldalának `<head>` részébe favicon-hivatkozás került. Forrása a meglévő `images/RM_hajdu_monogram_v01.png` kis RM monogram; tartalmat és oldalkinézetet nem módosít.
+- Ellenőrzés: mind a 252 oldal azonos ikont hivatkozik; helyben a `/termekek/` oldal 200, az ikon PNG-je 200 és `image/png` típusú. Feltöltés és élő ikonellenőrzés még hátravan.
