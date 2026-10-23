@@ -404,7 +404,7 @@
   })
 
   if (document.querySelector('.category-choice-grid, .quote-form')) {
-    fetch(siteUrl('/catalog.json?v=20261023l')).then((r) => r.ok ? r.json() : null).then((catalog) => {
+    fetch(siteUrl('/catalog.json?v=20261023m')).then((r) => r.ok ? r.json() : null).then((catalog) => {
       if (!catalog) return
       catalogProductNames = Object.fromEntries(catalog.products.map(product => [product.slug, product.name]))
       setupHomeCatalog(catalog)

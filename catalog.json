@@ -640,6 +640,29 @@
   ],
   "products": [
     {
+      "id": 139,
+      "name": "Öntözésvezérlés",
+      "slug": "ontozesvezerles",
+      "brand": "Kántor Automatika",
+      "summary": "A vezérlés pivot, sarokkaros, pivot-lineár és lineáris öntözőgépekhez is kialakíthatók. A vezérlés más gyártók meglévő gépszerkezetéhez is illeszthető. A konkrét kompatibilitást, a szükséges átalakításokat és az integráció módját minden gépnél műszaki felmérés alapján határozzuk meg.",
+      "category_id": 55,
+      "family_id": null,
+      "image_id": null,
+      "card_image_id": null,
+      "product_kind": "type",
+      "status": "published",
+      "show_in_family": 1,
+      "image": "/optimized-media/images/kantor/control-panel-transparent-v12-lossless-w800-v17.webp",
+      "alt": "Kántor Automatika öntözésvezérlő szekrény érintőképernyővel és kezelőszervekkel",
+      "href": "/termekek/ontozesi-tartozekok/ontozesi-automatika/ontozesvezerles",
+      "categoryIds": [
+        "55",
+        "35",
+        "36"
+      ],
+      "familyId": null
+    },
+    {
       "id": 51,
       "name": "VODAR öntözőgép",
       "slug": "vodar-center-pivot",
