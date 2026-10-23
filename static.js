@@ -299,22 +299,10 @@
     grantLink.append(grantImage)
     document.body.append(grantLink)
     const compactGrantLinkForPage = Boolean(document.querySelector('main .product-detail, main .catalog-grid, main .category-card-grid'))
-    const grantLinkCoversContent = () => {
-      const rect = grantLink.getBoundingClientRect()
-      const xPoints = [rect.left + 8, rect.left + rect.width / 2, rect.right - 8]
-      const yPoints = [rect.top + 7, rect.top + rect.height / 2, rect.bottom - 7]
-      const meaningful = 'a,button,input,select,textarea,img,video,figure,figcaption,p,h1,h2,h3,h4,h5,h6,table,dt,dd,footer,.footer-contact,.footer-categories,.footer-brand,.category-card,.product-card,.product-slideshow,.gx-family-section,.gx-product-grid,.catalog-grid'
-      const previousVisibility = grantLink.style.visibility
-      grantLink.style.visibility = 'hidden'
-      const coversContent = xPoints.some((x) => yPoints.some((y) => document.elementsFromPoint(x, y).some((element) =>
-        element !== grantLink && !grantLink.contains(element) && element.matches(meaningful)
-      )))
-      grantLink.style.visibility = previousVisibility
-      return coversContent
-    }
     const syncGrantLink = () => {
+      // Keep the floating link visible while scrolling. Only change its size;
+      // hit-testing content beneath a fixed element made it flicker on scroll.
       grantLink.classList.toggle('is-compact', window.scrollY > 180 || compactGrantLinkForPage)
-      grantLink.classList.toggle('is-obscuring', grantLinkCoversContent())
     }
     let grantUpdateQueued = false
     const queueGrantUpdate = () => {
