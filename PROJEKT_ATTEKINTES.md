@@ -117,3 +117,10 @@
 - Főkategória kiválasztásakor az oldal finoman az újonnan megjelenő alkategória-választóhoz gördül. A fejléc magasságát figyelembe veszi, így a panel teteje a fejléc alatt marad; a rendszer mozgáscsökkentési beállítását is tiszteletben tartja.
 - Ellenőrzés: helyi, 1280×820-as és 390×844-es böngészőnézetben a kiválasztott öntözőgép-kategória után az alkategória-panel a képernyőn látható, 5 választható alkategóriával. A `static.js` szintaxisellenőrzése és `git diff --check` sikeres.
 - A változtatást a GitHub Desktopból feltöltöttem a `main` ágra (`b4245e6`); a távoli `main` SHA megegyezik a helyi commit SHA-val.
+
+## 2026-10-23 – Giunti csepegtető és mikroöntöző kategória
+
+- A `/termekek/ontozogepek/csepegteto-mikro/` oldalon megtartottam a meglévő termékcsalád-kártyát, és alatta új, tematikus bemutatót adtam hozzá a csepegtetésről, tápoldatozásról, vezetékekről és idomokról, szűrőkről, csepegtetőcsövekről és mikroelemekről. A felhasználó által megadott műszaki értékeket és szolgáltatási tartalmat gördülékeny, kereskedői megfogalmazásban rendeztem el; a Giunti prospektust a helyi PDF-re linkeltem.
+- Forrás: [RM Hungary, `alkat=13`](https://www.rmhungary.hu/index.php?alkat=13). A forrásoldal 34 képét használtam. Mind a 34 eredeti kép SHA-256 lenyomata egyezett a projektben őrzött eredeti fájléval. A megjelenítés meglévő, optimalizált WebP-változatokat használ: 1 089 018 bájt a forrásképek 1 476 222 bájtjához képest, 387 204 bájttal (26,2%) kisebb.
+- Ellenőrzés: helyi kategóriaútvonalon 34/34 kép betöltött, a Giunti PDF 200-as választ adott, böngészőhibát és vízszintes kilógást nem találtam. 1440×1000-es nézetben a galériák négy, 390×844-es nézetben két oszloposak. `static.js` változatlan; a CSS-t a böngésző feldolgozta.
+- Korlát: az üzemi nyomások, szűrési finomságok, hozamok és vízhasznosulási értékek a megadott, illetve a forrásoldali leírásból származnak; ezeket külön gyártói dokumentummal nem ellenőriztem. A GitHub `main` feltöltése és a Pages megjelenésének ellenőrzése még hátravan.
