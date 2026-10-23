@@ -2,6 +2,37 @@
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches
   document.documentElement.classList.add('motion-ready')
 
+  // Make wide product diagrams and data tables reachable with a keyboard as
+  // well as a touch swipe. Their fixed-width source material is kept intact.
+  const horizontalScrollers = [...document.querySelectorAll('.spec-section figure, .gx-table-scroll, .rm-mop-table-wrap')]
+  const enhanceHorizontalScrollers = () => {
+    horizontalScrollers.forEach((region) => {
+      if (region.scrollWidth <= region.clientWidth) return
+      region.tabIndex = 0
+      const isTable = region.matches('.gx-table-scroll, .rm-mop-table-wrap')
+      if (isTable) region.setAttribute('role', 'region')
+      if (!region.hasAttribute('aria-label')) {
+        const heading = region.closest('.spec-section')?.querySelector('h2')?.textContent?.trim()
+        const imageAlt = region.querySelector('img')?.alt?.trim()
+        region.setAttribute('aria-label', heading || imageAlt || (isTable ? 'Görgethető műszaki táblázat' : 'Görgethető műszaki ábra'))
+      }
+      if (!region.hasAttribute('aria-description')) region.setAttribute('aria-description', 'A teljes tartalomhoz használja a vízszintes görgetést. A fókuszban lévő elemet a balra és jobbra nyílbillentyűvel is görgetheti.')
+      if (region.dataset.horizontalKeyboardReady) return
+      region.dataset.horizontalKeyboardReady = 'true'
+      region.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+          region.scrollBy({ left: event.key === 'ArrowRight' ? 80 : -80, behavior: reduceMotion ? 'auto' : 'smooth' })
+          event.preventDefault()
+        } else if (event.key === 'Home' || event.key === 'End') {
+          region.scrollTo({ left: event.key === 'Home' ? 0 : region.scrollWidth, behavior: reduceMotion ? 'auto' : 'smooth' })
+          event.preventDefault()
+        }
+      })
+    })
+  }
+  enhanceHorizontalScrollers()
+  window.addEventListener('resize', enhanceHorizontalScrollers, { passive: true })
+
   // Keep the third-party map out of the initial request. Start loading it
   // automatically shortly before it enters the viewport.
   const mapBoxes = [...document.querySelectorAll('.about-map-box[data-map-src]')]
@@ -110,8 +141,135 @@
   const basePath = location.pathname.startsWith('/RM_Hungary_Website/') ? '/RM_Hungary_Website' : ''
   const siteUrl = (value) => { const path = String(value || ''); return path.startsWith('/') && !path.startsWith('//') ? `${basePath}${path}` : path }
 
-  // Keep the Széchenyi grant link available from every page.
-  if (!document.querySelector('.floating-grant-link')) {
+  // The Rotosark product page has 31 crop-specific videos. Group those
+  // existing embeds and load a player only after a visitor chooses one.
+  document.querySelectorAll('.gx-videos').forEach((videoList) => {
+    const videos = [...videoList.querySelectorAll(':scope > .gx-video > iframe')]
+    if (videos.length < 10 || !videos.every((frame) => /^Rotosark\s*[–-]\s*/i.test(frame.title))) return
+
+    const categories = new Map()
+    videos.forEach((frame) => {
+      const title = frame.title.trim()
+      const match = title.match(/^Rotosark\s*[–-]\s*([^,]+)(?:,\s*\d+\.\s*videó)?$/i)
+      if (!match) return
+      const name = match[1].trim()
+      if (!categories.has(name)) categories.set(name, [])
+      categories.get(name).push(frame)
+    })
+    if (!categories.size) return
+
+    const groups = document.createElement('div')
+    groups.className = 'video-category-list'
+    let firstCategory = true
+    categories.forEach((frames, name) => {
+      const category = document.createElement('details')
+      category.className = 'video-category'
+      if (firstCategory) category.open = true
+      firstCategory = false
+      const summary = document.createElement('summary')
+      summary.textContent = name
+      const count = document.createElement('span')
+      count.className = 'video-category-count'
+      count.textContent = `${frames.length} videó`
+      summary.append(count)
+      const content = document.createElement('div')
+      const cards = document.createElement('div')
+      cards.className = 'gx-videos video-category-videos'
+      frames.forEach((frame) => {
+        const source = frame.getAttribute('src')
+        const videoId = source?.match(/\/embed\/([A-Za-z0-9_-]+)/)?.[1]
+        if (!videoId) return
+        const card = frame.closest('.gx-video')
+        if (!card) return
+        const title = frame.title || 'Videó'
+        frame.removeAttribute('src')
+        const preview = document.createElement('button')
+        preview.type = 'button'
+        preview.className = 'video-preview'
+        preview.setAttribute('aria-label', `Videó lejátszása: ${title}`)
+        const media = document.createElement('span')
+        media.className = 'video-preview-media'
+        const image = document.createElement('img')
+        image.src = siteUrl(`/optimized-media/video-posters/${videoId}.jpg`)
+        image.alt = ''
+        image.width = 320
+        image.height = 180
+        image.loading = 'lazy'
+        image.decoding = 'async'
+        const play = document.createElement('span')
+        play.className = 'video-preview-play'
+        play.setAttribute('aria-hidden', 'true')
+        play.textContent = '▶'
+        media.append(image, play)
+        const caption = document.createElement('span')
+        caption.className = 'video-preview-caption'
+        caption.textContent = title
+        preview.append(media, caption)
+        preview.addEventListener('click', () => {
+          const player = frame.cloneNode(false)
+          const playerUrl = new URL(source, location.href)
+          playerUrl.searchParams.set('autoplay', '1')
+          player.src = playerUrl.href
+          player.loading = 'eager'
+          card.classList.remove('has-video-preview')
+          card.replaceChildren(player)
+        }, { once: true })
+        card.classList.add('has-video-preview')
+        card.replaceChildren(preview)
+        cards.append(card)
+      })
+      content.append(cards)
+      category.append(summary, content)
+      groups.append(category)
+    })
+    videoList.replaceWith(groups)
+  })
+
+  // A few product videos render as empty black players before playback. Show a local, verified YouTube thumbnail and load the unchanged player only after activation.
+  document.querySelectorAll('.gx-videos > .gx-video > iframe[data-video-preview]').forEach((frame) => {
+    const videoId = frame.dataset.videoPreview
+    const source = frame.getAttribute('src')
+    const card = frame.closest('.gx-video')
+    if (!videoId || !source || !card) return
+    const title = frame.title || 'Videó'
+    frame.removeAttribute('src')
+    const preview = document.createElement('button')
+    preview.type = 'button'
+    preview.className = 'video-preview'
+    preview.setAttribute('aria-label', `Videó lejátszása: ${title}`)
+    const media = document.createElement('span')
+    media.className = 'video-preview-media'
+    const image = document.createElement('img')
+    image.src = siteUrl(`/optimized-media/video-posters/${videoId}.jpg`)
+    image.alt = ''
+    image.width = 320
+    image.height = 180
+    image.loading = 'lazy'
+    image.decoding = 'async'
+    const play = document.createElement('span')
+    play.className = 'video-preview-play'
+    play.setAttribute('aria-hidden', 'true')
+    play.textContent = '▶'
+    const caption = document.createElement('span')
+    caption.className = 'video-preview-caption'
+    caption.textContent = title
+    media.append(image, play)
+    preview.append(media, caption)
+    preview.addEventListener('click', () => {
+      const player = frame.cloneNode(false)
+      const playerUrl = new URL(source, location.href)
+      playerUrl.searchParams.set('autoplay', '1')
+      player.src = playerUrl.href
+      player.loading = 'eager'
+      card.classList.remove('has-video-preview')
+      card.replaceChildren(player)
+    }, { once: true })
+    card.classList.add('has-video-preview')
+    card.replaceChildren(preview)
+  })
+
+  // Keep the Széchenyi grant link available throughout the site; omit it on its destination to avoid covering the grant documents.
+  if (!document.querySelector('.floating-grant-link') && !document.querySelector('main.grant-page')) {
     const grantLink = document.createElement('a')
     grantLink.className = 'floating-grant-link'
     grantLink.href = siteUrl('/palyazat')
@@ -125,8 +283,40 @@
     grantImage.fetchPriority = 'low'
     grantLink.append(grantImage)
     document.body.append(grantLink)
+    const compactGrantLinkForPage = Boolean(document.querySelector('main .product-detail, main .catalog-grid, main .category-card-grid'))
+    const grantLinkCoversContent = () => {
+      const rect = grantLink.getBoundingClientRect()
+      const xPoints = [rect.left + 8, rect.left + rect.width / 2, rect.right - 8]
+      const yPoints = [rect.top + 7, rect.top + rect.height / 2, rect.bottom - 7]
+      const meaningful = 'a,button,input,select,textarea,img,video,figure,figcaption,p,h1,h2,h3,h4,h5,h6,table,dt,dd,footer,.footer-contact,.footer-categories,.footer-brand,.category-card,.product-card,.product-slideshow'
+      const previousVisibility = grantLink.style.visibility
+      grantLink.style.visibility = 'hidden'
+      const coversContent = xPoints.some((x) => yPoints.some((y) => document.elementsFromPoint(x, y).some((element) =>
+        element !== grantLink && !grantLink.contains(element) && element.matches(meaningful)
+      )))
+      grantLink.style.visibility = previousVisibility
+      return coversContent
+    }
+    const syncGrantLink = () => {
+      grantLink.classList.toggle('is-compact', window.scrollY > 180 || compactGrantLinkForPage)
+      grantLink.classList.toggle('is-obscuring', grantLinkCoversContent())
+    }
+    let grantUpdateQueued = false
+    const queueGrantUpdate = () => {
+      if (grantUpdateQueued) return
+      grantUpdateQueued = true
+      requestAnimationFrame(() => {
+        syncGrantLink()
+        grantUpdateQueued = false
+      })
+    }
+    syncGrantLink()
+    grantLink.classList.add('is-ready')
+    window.addEventListener('scroll', queueGrantUpdate, { passive: true })
+    window.addEventListener('resize', queueGrantUpdate, { passive: true })
   }
 
+  const normalize = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('hu').trim()
   const familyFilter = new URLSearchParams(location.search).get('families')
   if (familyFilter) {
     const allowedFamilies = new Set(familyFilter.split(',').filter(Boolean))
@@ -135,7 +325,25 @@
       card.hidden = !allowedFamilies.has(slug)
     })
   }
-  const normalize = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('hu').trim()
+  const brandFilter = new URLSearchParams(location.search).get('brand')
+  if (brandFilter) {
+    const wantedBrand = normalize(brandFilter)
+    document.querySelectorAll('[data-brand-copy]').forEach((copy) => {
+      copy.hidden = normalize(copy.dataset.brandCopy) !== wantedBrand
+    })
+    document.querySelectorAll('.category-card-grid > .category-card').forEach((card) => {
+      const label = normalize(`${card.textContent} ${card.querySelector('img')?.alt || ''}`)
+      card.hidden = !label.includes(wantedBrand)
+    })
+    document.querySelectorAll('.catalog-grid > article.product-card').forEach((card) => {
+      const brand = normalize(card.querySelector('.product-card-meta span')?.textContent)
+      card.hidden = brand !== wantedBrand
+    })
+    document.querySelectorAll('section.catalog-section').forEach((section) => {
+      const familyGrid = section.querySelector(':scope > .category-card-grid')
+      if (familyGrid && ![...familyGrid.children].some((card) => !card.hidden)) section.hidden = true
+    })
+  }
   const cleanMail = (value) => String(value || '').replace(/[\r\n\0]/g, ' ').trim()
   const cleanBody = (value) => String(value || '').replace(/\0/g, '').trim()
   let catalogProductNames = {}
@@ -193,14 +401,14 @@
   })
 
   if (document.querySelector('.category-choice-grid, .quote-form')) {
-    fetch(siteUrl('/catalog.json')).then((r) => r.ok ? r.json() : null).then((catalog) => {
+    fetch(siteUrl('/catalog.json?v=20261023l')).then((r) => r.ok ? r.json() : null).then((catalog) => {
       if (!catalog) return
       catalogProductNames = Object.fromEntries(catalog.products.map(product => [product.slug, product.name]))
       setupHomeCatalog(catalog)
     }).catch(() => {})
   }
 
-  if (document.querySelector('.search-large')) fetch(siteUrl('/search-index.json')).then((r) => r.ok ? r.json() : []).then((index) => {
+  if (document.querySelector('.search-large')) fetch(siteUrl('/search-index.json?v=20261023l')).then((r) => r.ok ? r.json() : []).then((index) => {
     let resultBox = document.querySelector('.search-results')
     if (!resultBox) {
       const form = document.querySelector('.search-large')

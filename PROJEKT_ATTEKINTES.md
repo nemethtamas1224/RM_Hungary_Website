@@ -16,7 +16,7 @@
 
 ## 2026-10-23 – Aktuális statikus kiadás
 
-- A `main` repó tartalmát a munkamappa friss `site/` könyvtárával szinkronizáltam. A változásban benne van az RM MOP logó Starpower logóknál kisebb megjelenítése (desktop 98×52 px, mobil 86×46 px; a Starpower logók nem változtak), a friss reszponzív termékfotók és a 252 HTML-oldalon használt helyes relatív alapútvonal.
+- A `main` repó tartalmát a munkamappa friss `site/` könyvtárával szinkronizáltam. A változásban benne van az RM MOP logó Starpower logóknál kisebb megjelenítése (desktop 79×42 px, mobil 68×36 px; a Starpower logók nem változtak), a friss reszponzív termékfotók és a 252 HTML-oldalon használt helyes relatív alapútvonal.
 - Helyi böngészős ellenőrzés: 252 útvonal × 3 nézet = 756/756; nincs HTTP-, túlcsordulási, helyi képhiány- vagy JavaScript-hiba. A mobil/desktop MOP-logóméretek és az interakciók (márkasorrend, kategóriaválasztó, menü, galéria, keresés) rendben.
 - A statikus forrásmásolat, Next.js projekt és nem Pages éles weboldal változatlan. A teljes tartalmi egyezés továbbra sem igazolt; lásd a fenti összehasonlítási korlátot.
 - A statikus frissítés helyi commitja elkészült (`02f3a8b`), a GitHubra nem került fel: a parancssori hitelesítés hiányzik, a GitHub Desktop pedig a zárolt Mac miatt nem volt elérhető. Feltöltés előtt oldd fel a Macet; ezután a kész commit feltölthető. A GitHub Pages ellenőrzése még hátravan.
@@ -63,7 +63,7 @@
 
 ## 2026-10-23 – MOP logóméret
 
-- A motoros szivattyúegység kategória RM MOP logója a kártyán 52 px magas/legfeljebb 140 px széles, mobilon 46 px/120 px; a Starpower logók mérete változatlan.
+- A motoros szivattyúegység kategória RM MOP logója a kártyán 42 px magas/legfeljebb 110 px széles, mobilon 36 px/96 px; a Starpower logók mérete változatlan.
 - A helyi módosítás együtt kerül fel a GitHub `main` ágára a pályázati bannerrel, piros CTA-val és Rovatti-zöld kártyakörvonallal.
 
 
@@ -73,3 +73,8 @@
 - A dohányszárító, dohánytetejező, zölddohány-feldolgozó és magvető oldalakon, valamint az elérhető archív HTML-oldalakon eltávolítottam a korábbi RM-oldalakra utaló megjegyzéseket. A horganyzott gerincvezetéknél is kikerült az ilyen eredetű kínálati hivatkozás.
 - Az összes HTML-oldal célzott átvizsgálásakor nem maradt „korábbi RM” vagy a korábbi RM-weboldalra utaló szöveg. A dohányszárító oldal új leírása megőrzi a 12–18 konténeres és fűtési információt, de nem hivatkozik korábbi oldalra.
 - Feltöltött commit: `0512284`; a GitHub Pages telepítés sikeres. Az élő dohányszárító-, motoros szivattyúegység-, öntözésvezérlés-oldal és a közös CSS útvonala HTTP 200 választ adott.
+
+## 2026-10-23 – MOP-logó méretkorrekció
+
+- A motoros szivattyúegységek kártyáján az RM MOP logó további kisebbítést kapott: 42 px magas asztali, 36 px mobilnézetben; a Starpower logók mérete változatlan.
+- Helyi előnézeti mérés 390/1440 px-en: 2/2 HTTP 200; minden logó betöltött; nincs vízszintes kilógás vagy böngészőhiba. A módosítás és az aktuális statikus kiadás a `main` ágra feltöltésre kerül.
