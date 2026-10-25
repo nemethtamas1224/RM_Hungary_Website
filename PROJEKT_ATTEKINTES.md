@@ -132,3 +132,11 @@
 - 12 ismétlődő meta-leírást egyedivé tettem. A hat korábbi belső link nélküli indexelhető URL releváns belső linket kapott. A látható breadcrumbot tartalmazó 212 oldalon JSON-LD BreadcrumbList került a headbe.
 - Ellenőrzés: 252 HTML; 229 indexelhető oldal mindegyikén title/description/H1/canonical; 0 duplikált description; 229/229 sitemap URL helyi fájlhoz tartozik; 0 JSON-LD parse/struktúrahiba; a hat céloldalnak van belső bejövő linkje.
 - Search Console/backlink/Analytics és végleges domainre történő robots/sitemap/canonical/301 ellenőrzés külső hozzáférést vagy domain-telepítést igényel.
+
+
+## 2026-10-25 – Rovatti-kategóriakártyák
+
+- A Rovatti kategória- és termékcsalád-kártyák zöld (`#3A9043`) körvonalat kapnak, a kártyára mutató útvonal alapján; a kiemelés hover állapotban is zöld marad.
+- A gyorsítótár-verziót 248 statikus HTML-oldalon frissítettem, hogy a böngészők az új CSS-t töltsék be.
+- Ellenőrzés: a kútszivattyúk kategóriaoldalán a Rovatti-kártya zöld körvonallal jelenik meg; `git diff --check` sikeres.
+- A GitHub Pages-feltöltés és élő ellenőrzés még hátravan.
