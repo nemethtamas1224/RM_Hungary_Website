@@ -4,27 +4,26 @@
 /hirek.php /hirek 301!
 /palyazat.php /palyazat 301!
 /kapcsolat.php /kapcsolat 301!
-/index.php?alkat=10 /termekek/ontozogepek/csevelodobos 301!
-/index.php?alkat=48 /termekek/ontozogepek/ontozoszarnyak 301!
-/index.php?alkat=37 /termekek/ontozogepek/csevelodobos 301!
-/index.php?alkat=11 /termekek/ontozogepek/linearis 301!
-/index.php?alkat=13 /termekek/ontozogepek/csepegteto-mikro 301!
-/index.php?alkat=14 /termekek/szivattyuk/kutszivattyuk 301!
-/index.php?alkat=15 /termekek/szivattyuk/motoros-szivattyuegysegek 301!
-/index.php?alkat=16 /termekek/energiaellatas/dizel-aramfejlesztok 301!
-/index.php?alkat=9 /termekek/dohanytermesztes/magveto-gepek 301!
-/index.php?alkat=5 /termekek/dohanytermesztes/talajelokeszites 301!
-/index.php?alkat=44 /termekek/dohanytermesztes/novenyapolas 301!
-/index.php?alkat=8 /termekek/dohanytermesztes/palantaulteto-gepek 301!
-/index.php?alkat=7 /termekek/dohanytermesztes/permetezogepek 301!
-/index.php?alkat=6 /termekek/dohanytermesztes/dohanytetejezes 301!
-/index.php?alkat=38 /termekek/dohanytermesztes/dohanybetakaritas 301!
-/index.php?alkat=39 /termekek/dohanytermesztes/dohany-szaritas 301!
-/index.php?alkat=40 /termekek/dohanytermesztes/zold-dohany-feldolgozas 301!
-/index.php?alkat=42 /termekek/arokaso/arokaso-arokmaro 301!
-/index.php?alkat=47 /termekek/mezogazdasagi-tarolok/ivsatrak 301!
-/index.php?alkat=43 /hasznalt-gepek 301!
-/rolunk /#rolunk 301!
+/index.php alkat=10 /termekek/ontozogepek/csevelodobos 301!
+/index.php alkat=48 /termekek/ontozogepek/ontozoszarnyak 301!
+/index.php alkat=37 /termekek/ontozogepek/csevelodobos 301!
+/index.php alkat=11 /termekek/ontozogepek/linearis 301!
+/index.php alkat=13 /termekek/ontozogepek/csepegteto-mikro 301!
+/index.php alkat=14 /termekek/szivattyuk/kutszivattyuk 301!
+/index.php alkat=15 /termekek/szivattyuk/motoros-szivattyuegysegek 301!
+/index.php alkat=16 /termekek/energiaellatas/dizel-aramfejlesztok 301!
+/index.php alkat=9 /termekek/dohanytermesztes/magveto-gepek 301!
+/index.php alkat=5 /termekek/dohanytermesztes/talajelokeszites 301!
+/index.php alkat=44 /termekek/dohanytermesztes/novenyapolas 301!
+/index.php alkat=8 /termekek/dohanytermesztes/palantaulteto-gepek 301!
+/index.php alkat=7 /termekek/dohanytermesztes/permetezogepek 301!
+/index.php alkat=6 /termekek/dohanytermesztes/dohanytetejezes 301!
+/index.php alkat=38 /termekek/dohanytermesztes/dohanybetakaritas 301!
+/index.php alkat=39 /termekek/dohanytermesztes/dohany-szaritas 301!
+/index.php alkat=40 /termekek/dohanytermesztes/zold-dohany-feldolgozas 301!
+/index.php alkat=42 /termekek/arokaso/arokaso-arokmaro 301!
+/index.php alkat=47 /termekek/mezogazdasagi-tarolok/ivsatrak 301!
+/index.php alkat=43 /hasznalt-gepek 301!
 /termekek/ontozogepek/csevelodobos/rm-nagy-teljesitmenyu /termekek/ontozogepek/csevelodobos/rm-magnum 301!
 /termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/albatros-72 /termekek/ontozogepek/ontozoszarnyak/rm-ontozoszarnyak/albatros 301!
 /termekek/rm-mobil-ontozogepek-rm-csevelodobok-ontozo-konzolok-vizagyuk-gx-xj /termekek/ontozogepek/csevelodobos 301!
