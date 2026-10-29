@@ -140,3 +140,22 @@
 - A gyorsítótár-verziót 248 statikus HTML-oldalon frissítettem, hogy a böngészők az új CSS-t töltsék be.
 - Ellenőrzés: a kútszivattyúk kategóriaoldalán a Rovatti-kártya zöld körvonallal jelenik meg; `git diff --check` sikeres.
 - A GitHub Pages-feltöltés és élő ellenőrzés még hátravan.
+
+
+## 2026-10-29 – SEO-javítás, 2. kör (Open Graph, title/description)
+
+- Mind a 229 indexelhető oldal Open Graph- és Twitter Card-metaadatot kapott (`og:type`, `og:site_name`, `og:locale`, `og:title`, `og:description`, `og:url` = canonical, `og:image`, `twitter:card`). Az `og:image` az oldal fő képe (fetchpriority="high" vagy az első tartalmi kép), ennek hiányában a vízszintes logó; mind a 229 kép helyi fájlhoz tartozik. A hírek és referenciák `og:type` értéke `article`.
+- 22 túl hosszú vagy túl rövid title-t módosítottam (hírek, referenciák, RM-családok, öntözőszárnyak, Starpower, Lindsay, Rovatti Midy). A H1-ek változatlanok.
+- 51 rövid (70 karakter alatti) meta description-t bővítettem. Az RM csévélődob-modelleknél a leírás az oldalon szereplő tömlőméret-változatok számából és átmérőtartományából készül; a többinél csak az oldalon már szereplő, gyártónak tulajdonított adatokat használtam.
+- Elírásjavítás: „RM JX” → „RM XJ” a csévélődobos kategóriaoldalon, az RM XJ családoldalon, a `catalog.json`-ban és a `search-index.json`-ban (az URL, a modellnevek és a logófájl is XJ).
+- A `dohanytoro-kombajnok` átirányító oldal relatív canonicalja abszolút URL lett.
+- Korlát: a `www.rmhungary.hu` jelenleg a régi webhelyet szolgálja ki, így a canonical-, sitemap- és `og:image`-URL-ek az új útvonalakon most 404-et adnak; ezek a domain átállításakor válnak érvényessé. GitHub Pages-en a perjel nélküli útvonalak 301-gyel perjeles változatra irányítanak, a canonicalok viszont perjel nélküliek; a végleges tárhely ismeretében ezt egységesíteni kell. A GitHub Pages a `_redirects` fájlt nem értelmezi; a régi `.php` URL-ek csak a `404.html` JavaScript-átirányításával működnek, ami nem valódi 301.
+- Ellenőrzés: újrafuttatott audit – 0 duplikált title/description, 0 hiányzó OG-tag indexelhető oldalon, 0 hiányzó `og:image` fájl.
+
+
+## 2026-10-29 – SEO-javítás, 3. kör (képméretek, címsorszintek, strukturált adat)
+
+- Képméretek: a 230 méretattribútum nélküli képből 658 előfordulás Next.js „fill” kép (abszolút pozícionált, rögzített méretű dobozban), ezek nem okoznak elrendeződés-ugrást. A valóban méretezetlen 78 kép (23 oldal: hírek, referenciák, pályázat, csepegtető kategória) a fájl valós pixelméretéből `width`/`height` attribútumot kapott.
+- Címsorszintek: 30 oldalon a H1 után közvetlenül H3-as termékkártya-címek álltak. A 82 érintett kártyacím `<h2 class="product-card-title">` lett (a korábbi `role="heading" aria-level="2"` kerülőmegoldás helyett). A CSS minden kártyás `h3` szabálya (`.product-card`, `.gx-product-card`, `.showcase-card`) megkapta az azonos `h2.product-card-title` párját; a CSS gyorsítótár-verziója `20261029seo` lett mind a 249 oldalon.
+- Strukturált adat: 16 indexelhető oldal kapott JSON-LD-t. Gyűjtőoldalak: `CollectionPage` (termékek, gyártók, referenciák, hírek, használt gépek), `WebPage` (ajánlatkérés, szolgáltatások, pályázat), `ContactPage` Organization-adatokkal (székhely Rákóczi u. 8., telefon, e-mail – a kapcsolat oldalról). Hét beágyazott termékoldal a látható breadcrumb alapján `BreadcrumbList`-et kapott.
+- Ellenőrzés: böngészőben 53 érintett oldalon, 1280 és 390 px szélességen a módosítás előtt és után mért 408 képméret és 164 kártyacím-stílus (betűméret, margó, betűköz, sormagasság, szín, magasság) 0 eltérést mutatott. Az audit szerint 0 címsorszint-ugrás; JSON-LD csak a 4 noindex oldalon hiányzik; minden JSON-LD érvényes JSON.
